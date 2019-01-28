@@ -4,7 +4,7 @@ import logo from '../logo.svg';
 class Navigation extends React.Component {
     render() {
         return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-darkPurple">
         <a className="navbar-brand" href="/">
             <img src={logo} className="d-block" width="36" height="36" alt="logo" />
         </a>

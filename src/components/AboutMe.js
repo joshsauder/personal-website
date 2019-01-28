@@ -6,7 +6,7 @@ class AboutMe extends React.Component {
     render(){
         return(
             <div>
-                <div class="card">
+                <div class="card w-90 mx-auto bg-darkPurple text-white">
                     <div class="card-body">
                         <h5 class="card-title">About Me</h5>
                         <ul class="list-group list-group-flush">
@@ -17,7 +17,7 @@ class AboutMe extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card w-90 mx-auto bg-darkPurple text-white">
                     <div class="card-body">
                         <h5 class="card-title">My Projects</h5>
                         <div class="row">

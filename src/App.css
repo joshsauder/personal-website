@@ -70,3 +70,11 @@
   background-color: white;
   margin-top: 40px;
 }
+
+.w-90 {
+  width: 90%!important
+}
+
+.bg-darkPurple{
+  background-color: #6200EA!important
+}
