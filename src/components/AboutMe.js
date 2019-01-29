@@ -1,39 +1,51 @@
 import React from 'react';
 import InTheClear from '../InTheClear.png';
 import ReactLogo from '../React.png';
+import selfie from '../SelfImage.png'
 
 class AboutMe extends React.Component {
     render(){
         return(
             <div>
-                <div class="card w-90 mx-auto bg-darkPurple text-white">
-                    <div class="card-body">
-                        <h5 class="card-title">About Me</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-item">B.S. Computer Science Engineering - The Ohio State University</li>
-                            <li class="list-item">Software Engineer - Network Technologies International</li>
-                            <li class="list-item">Passion for Web and iOS Application Development</li>
-                            <li class="list-item">Love Running Full/Half Marathons</li>
-                        </ul>
+              <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img className="first-slide" src={selfie} alt="First slide" />
+                    <div className="container">
+                      <div className="carousel-caption">
+                          <h5>Welcome!</h5>
+                          <p>B.S. Computer Science Engineering - The Ohio State University</p>
+                          <p>Software Engineer - Network Technologies Internation</p>
+                          <p>Passion for Web and iOS Application Developemt</p>
+                          <p>Running and Fitness Fanatic</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="container marketing">
+                <div className="row featurette">
+                      <div className="col-md-7">
+                          <h2 className="featurette-heading">In The Clear</h2>
+                          <p className="lead">An iOS app built that allows the user to get weather information during there travel.</p>
+                      </div>
+                      <div className="col-md-5">
+                          <img className="featurette-image img-fluid mx-auto" src={InTheClear}></img>
+                      </div>
+                </div>
+
+                <hr className="featurette-divider"/>
+
+                <div className="row featurette">
+                    <div className="col-md-7 order-md-2">
+                        <h2 className="featurette-heading">Personal Website</h2>
+                        <p class="lead">A website I built using React that shows what I have done professionally and in my free time</p>
+                    </div>
+                    <div className="col-md-5">
+                        <img className="featurette-image img-fluid mx-auto" src={ReactLogo}></img>
                     </div>
                 </div>
-                <div class="card w-90 mx-auto bg-darkPurple text-white">
-                    <div class="card-body">
-                        <h5 class="card-title">My Projects</h5>
-                        <div class="row">
-                            <div class="col textWithBlurredBg">
-                                <img class="img-fluid rounded textOverImage" src={InTheClear}></img>
-                                <h2>In The Clear</h2>
-                                <h3>An iOS app built that allows the user to get weather information during there travel.</h3>
-                            </div>
-                            <div class="col textWithBlurredBg">
-                                <img class="img-fluid rounded textOverImage" src={ReactLogo}></img>
-                                <h2>Personal Website</h2>
-                                <h3>A website I built using React that shows what I have done professionally and in my free time</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
         )
     }
