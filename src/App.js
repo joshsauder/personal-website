@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Navigation from './components/Navigation';
-import AboutMe from './components/AboutMe'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import Home from './components/Home';
+import About from './components/About';
+import Projects from "./components/Projects";
+
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Navigation />
-        <AboutMe />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }
