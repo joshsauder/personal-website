@@ -2,11 +2,13 @@ import React from 'react';
 import InTheClear from '../InTheClear.png';
 import ReactLogo from '../React.png';
 import selfie from '../SelfImage.png'
+import Navigation from './Navigation';
 
 class AboutMe extends React.Component {
     render(){
         return(
             <div>
+              <Navigation />
               <div id="myCarousel" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
