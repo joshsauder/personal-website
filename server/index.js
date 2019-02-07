@@ -43,8 +43,8 @@ Send the email here
 router.post('/send', (req, res, next) => {
   var name = req.body.name
   var email = req.body.email
-  var message = req.body.messages
-  var content = '${name} would like to request access to InTheClear \n \n ${content}'
+  var organization = req.body.organization
+  var content = req.body.content
 
 /*
 Set up physical email here
@@ -53,7 +53,7 @@ Set up physical email here
     from: name,
     to: 'joshsauder@gmail.com',
     subject: 'InTheClear Git Request',
-    text: content
+    text: '${name} (${email}) from ${organization} would like to request access to InTheClear \n \n ${content}'
   }
 
 /*
