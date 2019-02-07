@@ -8,7 +8,6 @@ class AboutMe extends React.Component {
     render(){
         return(
             <div>
-              <Navigation />
               <div id="myCarousel" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
