@@ -4,13 +4,21 @@ import InTheClear from '../InTheClear.png';
 import ReactLogo from '../React.png';
 import '../App.css';
 import Navigation from './Navigation';
-import ContactFrom from './contactFrom';
+import ContactForm from './ContactForm';
 
 class Projects extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {show: false}
+  }
   render() {
+    let modalClose = () => this.setState({ modalShow: false });
+
     return (
       <div>
         <Navigation />
+        <ContactForm modal={this.state.show} onHide={modalClose} />
         <div className="featurette-divider"></div>
         <div className="container marketing">
           <div className="row featurette">
@@ -21,10 +29,8 @@ class Projects extends Component {
                     <p className="lead">I've always had a fascination for meterology. A common problem with living in the midwest is that when you travel, you can experience a variety of different weather conditions. This app solves this issue by telling the user what types of weather they will experience during their travels.</p>
                     <p className="lead">Built using Swift</p>
                     <p className="lead">Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftlyJSON</p>
-                    <button type="button" class="btn btn-success" onClick={this.showModal}>Request Access of Source Code</button>
-                    <ContactForm />
-                    <button type="button" class="btn btn-warning" onClick={this.showModal}>Feedback</button>
-                    <ContactForm />
+                    <button type="button" className="btn btn-success" onClick={() => this.setState({ show: true})}>Request Access of Source Code</button>
+                    <button type="button" className="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">Feedback</button>
                 </div>
                 <div className="col-md-5">
                     <img className="featurette-image img-fluid mx-auto" src={InTheClear}></img>
@@ -39,10 +45,8 @@ class Projects extends Component {
                     <p className="lead">I've always enjoyed web development and a personal web page is something that I thought wouldn't be a bad thing to have</p>
                     <p className="lead">It's basically a great way to find out what I've done, and an easy way to get to know me.</p>
                     <p className="lead">Build using ReactJS, Bootstrap, Webpack, and NodeJS</p>
-                    <button type="button" class="btn btn-success" onClick={this.showModal}>Request Access of Source Code</button>
-                    <ContactForm />
-                    <button type="button" class="btn btn-warning" onClick={this.showModal}>Feedback</button>
-                    <ContactForm />
+                    <button type="button" className="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">Request Access of Source Code</button>
+                    <button type="button" className="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">Feedback</button>
                 </div>
                 <div className="col-md-5">
                     <img className="featurette-image img-fluid mx-auto" src={ReactLogo}></img>
