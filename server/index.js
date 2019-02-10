@@ -5,6 +5,8 @@ const cors = require('cors');
 
 const app = express();
 
+app.options('*', cors());
+
 const port = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
@@ -39,14 +41,13 @@ Send the email here
 */
 
 app.post('/email', function(req,res){
+    var body = req.body.name + '(' + req.body.email  + ') ' + 'from ' + req.body.organization + ' would like to request access. \n' + req.body.content
     var mailOptions = {
       from: 'saudertech@gmail.com',
       to: 'saudertech@gmail.com',
-      subject: 'Request',
-      body: req.body.content,
-      name: req.body.name,
+      subject: req.body.type,
+      text: body
     }
-    console.log(mailOptions);
     transporter.sendMail(mailOptions, function(error, response){
      if(error){
             console.log(error);

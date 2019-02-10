@@ -11,18 +11,17 @@ class ContactForm extends Component {
     this.state = { show: props.modal };
 
     }
-    componentWillReceiveProps(nextProps){
-        if(this.state.show!==nextProps.modal){
-        this.setState({show: nextProps.modal})
-      }
+  componentWillReceiveProps(nextProps){
+      if(this.state.show!==nextProps.modal){
+      this.setState({show: nextProps.modal})
+    }
   }
 
-  onSubmitClick () {
+  handleClick(props) {
     var name = $('#name').val();
     var email = $('#email').val();
     var org = $('#organization').val();
     var comments = $("textarea[name='comments']").val();
-    console.log(comments);
 
     fetch('http://localhost:4000/email', {
       method: 'Post',
@@ -33,9 +32,11 @@ class ContactForm extends Component {
         name: name,
         email: email,
         organization: org,
-        content: comments
+        content: comments,
+        type: props.title
       })
     })
+    this.setState({ show: false})
   }
 
   render() {
@@ -44,7 +45,7 @@ class ContactForm extends Component {
     return (
       <Modal show={this.state.show} onHide={close}>
           <Modal.Header closeButton>
-            <Modal.Title>Contact Form</Modal.Title>
+            <Modal.Title>{this.props.title} Form</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <div className="form-group">
@@ -65,7 +66,7 @@ class ContactForm extends Component {
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="primary" onClick={this.onSubmitClick} >
+            <Button variant="primary" onClick={() => { this.handleClick(this.props) }} >
               Submit
             </Button>
             <Button variant="primary" onClick={close} >
