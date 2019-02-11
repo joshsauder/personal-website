@@ -1,7 +1,7 @@
 import React from 'react';
 import InTheClear from '../InTheClear.png';
 import ReactLogo from '../React.png';
-import selfie from '../SelfImage.png'
+import Cover from '../CoverPhoto.png'
 import Navigation from './Navigation';
 
 class AboutMe extends React.Component {
@@ -11,16 +11,7 @@ class AboutMe extends React.Component {
               <div id="myCarousel" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img className="first-slide" src={selfie} alt="First slide" />
-                    <div className="container">
-                      <div className="carousel-caption">
-                          <h5>Welcome!</h5>
-                          <p>B.S. Computer Science Engineering - The Ohio State University</p>
-                          <p>Software Engineer - Network Technologies Internation</p>
-                          <p>Passion for Web and iOS Application Developemt</p>
-                          <p>Running and Fitness Fanatic</p>
-                      </div>
-                    </div>
+                    <img className="first-slide" src={Cover} alt="First slide" />
                   </div>
                 </div>
               </div>
