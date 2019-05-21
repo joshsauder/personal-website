@@ -121,6 +121,11 @@
   letter-spacing: -.05rem;
 }
 
+.featurette-img-align {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;

@@ -37,7 +37,7 @@ class Projects extends Component {
                       <img src={appStore}></img>
                     </button>
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-5 featurette-img-align">
                     <img className="featurette-image img-fluid mx-auto" src={InTheClear}></img>
                 </div>
           </div>
@@ -55,7 +55,7 @@ class Projects extends Component {
                     <button type="button" className="btn btn-dark mr-3" onClick={() => this.setState({ show: true, title: "Website Request"})}>Request Access of Source Code</button>
                     <button type="button" className="btn btn-dark" onClick={() => this.setState({ show: true, title: "Website Feedback"})}>Feedback</button>
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-5 featurette-img-align">
                     <img className="featurette-image img-fluid mx-auto" src={ReactLogo}></img>
                 </div>
             </div>
