@@ -61,6 +61,11 @@
   border-radius: 0 3px 3px 0;
 }
 
+.navbar-brand {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
 .carousel {
   margin-bottom: 4rem;
   margin-top: 4rem;
