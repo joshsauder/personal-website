@@ -22,6 +22,7 @@ class Projects extends Component {
         <ContactForm modal={this.state.show} onHide={modalClose} title={this.state.title} />
         <div className="featurette-divider"></div>
         <div className="container marketing">
+        <div className= "shadow mb-5">
           <Jumbotron>
           <div className="row featurette">
                 <div className="col-md-7">
@@ -40,12 +41,14 @@ class Projects extends Component {
                 <div className="col-md-5 featurette-img-align">
                     <img className="featurette-image img-fluid mx-auto" src={InTheClear}></img>
                 </div>
-          </div>
-        </Jumbotron>
+            </div>
+          </Jumbotron>
+        </div>
 
           <hr className="featurette-divider"/>
-          <Jumbotron>
-          <div className="row featurette">
+          <div className= "shadow mb-5">
+            <Jumbotron>
+            <div className="row featurette">
                 <div className="col-md-7 order-md-2">
                     <h2 className="featurette-heading">Personal Website</h2>
                     <p className="lead">A website that shows what I've done both professionally and in my free time</p>
@@ -60,6 +63,7 @@ class Projects extends Component {
                 </div>
             </div>
             </Jumbotron>
+          </div>
         </div>
       </div>
     );

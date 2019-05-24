@@ -18,6 +18,7 @@ class AboutMe extends React.Component {
               </div>
               </div>
               <div className="container marketing mt-8">
+              <div className= "shadow mb-5">
                 <Jumbotron>
                   <div className="row featurette">
                         <div className="col-md-7">
@@ -29,19 +30,22 @@ class AboutMe extends React.Component {
                         </div>
                   </div>
                 </Jumbotron>
+              </div>
 
                 <hr className="featurette-divider"/>
-                <Jumbotron>
-                  <div className="row featurette">
-                      <div className="col-md-7 order-md-2">
-                          <h2 className="featurette-heading">Personal Website</h2>
-                          <p class="lead">A website I built using React that shows what I have done professionally and in my free time</p>
-                      </div>
-                      <div className="col-md-5 featurette-img-align">
-                          <img className="featurette-image img-fluid mx-auto" src={ReactLogo}></img>
-                      </div>
-                  </div>
-                </Jumbotron>
+                <div className= "shadow mb-5">
+                  <Jumbotron>
+                    <div className="row featurette">
+                        <div className="col-md-7 order-md-2">
+                            <h2 className="featurette-heading">Personal Website</h2>
+                            <p class="lead">A website I built using React that shows what I have done professionally and in my free time</p>
+                        </div>
+                        <div className="col-md-5 featurette-img-align">
+                            <img className="featurette-image img-fluid mx-auto" src={ReactLogo}></img>
+                        </div>
+                    </div>
+                  </Jumbotron>
+                </div>
                 </div>
               </div>
         )
