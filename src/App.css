@@ -148,3 +148,13 @@ body {
   z-index: 1030;
   top: 0;
 }
+
+.navbar-dark {
+  border-color: transparent;
+}
+
+
+
+.mt-8 {
+  margin-top: 8rem !important;
+}

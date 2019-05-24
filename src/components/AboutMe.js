@@ -1,22 +1,23 @@
 import React from 'react';
 import InTheClear from '../InTheClear.png';
 import ReactLogo from '../React.png';
-import Cover from '../CoverPhoto.png'
-import Navigation from './Navigation';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Particles from 'react-particles-js';
+import Logo from '../logo.png';
+import ParticlesBackground from '../components/particles';
 
 class AboutMe extends React.Component {
     render(){
         return(
             <div>
-              <div id="myCarousel" className="carousel slide" data-ride="carousel">
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img className="first-slide" src={Cover} alt="First slide" />
-                  </div>
-                </div>
+              <div className="col-12">
+              <ParticlesBackground />
+              <div className="mt-8">
+                <img className="mx-auto d-block" src={Logo}></img>
+                <h2 className="text-center">Let&rsquo;s build something that brings a positive impact on the world!</h2>
               </div>
-              <div className="container marketing">
+              </div>
+              <div className="container marketing mt-8">
                 <Jumbotron>
                   <div className="row featurette">
                         <div className="col-md-7">
@@ -41,8 +42,8 @@ class AboutMe extends React.Component {
                       </div>
                   </div>
                 </Jumbotron>
+                </div>
               </div>
-            </div>
         )
     }
 }
