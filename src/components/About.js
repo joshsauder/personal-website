@@ -8,32 +8,42 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 class About extends Component {
   render() {
     return (
-      <div className="fill-screen">
-        <div className="featurette-divider"></div>
+      <div>
+        <h1 className="text-center text-white mt-5">About Me</h1>
         <div className="container marketing">
-        <div className= "shadow mb-5">
-          <Jumbotron>
-            <div className="row featurette">
+        <div className="row ">
+        <div className= "col-md-8 ml-3">
+            <div className="featurette">
+              <Jumbotron className="row">
                   <div className="col-md-7">
                       <h2 className="featurette-heading">Professionally</h2>
-                      <p className="lead">B.S. Computer Science Engineering - The Ohio State University</p>
-                      <p className="lead">Software Engineer - Network Technologies International</p>
-                      <p className="lead">I am currently working with customers, and solving any issues they run into. This typically involves replicating there issue and reporting this to developers. Customers also come up with ways to use our product that have not been done yet, and it's my job to test it in the manner they want to use it and ensure that I can provide addiquite support.</p>
-                      <p className="lead">This job invovles the use of SQL, SQL Server, AWS, Oracle DB, creating XML and XSLT stylesheets, replicating data to HPE NonStop Servers, and, most importantly, your communication skills.</p>
-                      <p className="lead">Internships/Co-Ops - Chemical Abstract Services and XPO Logistics</p>
-                      <p>Chemical Abstracts Services - I was a web developer working on a in-house web app. During this Co-Op, I used AngularJS, Spring Boot, and Java.</p>
-                      <p>XPO Logistics - I primarily worked with Microsoft SQL Server creating SQL scripts, and business reports using SSRS. I also tested an in-house application looking for various bugs.</p>
+                      <p>My goal as a developer is to create applications that better the users life. I truely believe applications can positively impact a persons life and help make the world a better place.</p>
+                      <p>I've always been a curious person and learning a new skill has never been something I've shied away from. It always me to increase my knowledge set, and broadens my horizons.</p>
                   </div>
                   <div className="col-md-5 featurette-img-align">
                       <img className="featurette-image img-fluid mx-auto" src={GradPhoto}></img>
                   </div>
+                </Jumbotron>
+            </div>
+        </div>
+        <div className= "col-md-3 ml-3">
+            <div className="row featurette">
+              <Jumbotron>
+              <div className="col-md-12">
+                <h2 className="featurette-heading">Experience</h2>
+                <p>B.S. Computer Science Engineering - The Ohio State University</p>
+                <p>Software Engineer - Network Technologies International</p>
+                <p>Internships/Co-Ops - Chemical Abstract Services and XPO Logistics</p>
               </div>
-            </Jumbotron>
-          </div>
+              </Jumbotron>
+            </div>
+        </div>
+        </div>
+
 
           <hr className="featurette-divider"/>
 
-          <div className= "shadow mb-5">
+          <div className= "shadow mb-3">
             <Jumbotron>
             <div className="row featurette">
                   <div className="col-md-7">
