@@ -17,7 +17,7 @@ class Projects extends Component {
     let modalClose = () => this.setState({ modalShow: false });
 
     return (
-      <div>
+      <div className="fill-screen">
         <Navigation />
         <ContactForm modal={this.state.show} onHide={modalClose} title={this.state.title} />
         <div className="featurette-divider"></div>

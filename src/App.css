@@ -157,3 +157,16 @@ body {
 .mt-8 {
   margin-top: 8rem !important;
 }
+
+.fill-screen {
+  height: 100vh;
+}
+
+.fa {
+  color: white;
+}
+
+.text-white {
+  color: white;
+  font-family: Chewy;
+}

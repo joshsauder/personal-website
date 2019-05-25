@@ -8,8 +8,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 class About extends Component {
   render() {
     return (
-      <div>
-        <Navigation />
+      <div className="fill-screen">
         <div className="featurette-divider"></div>
         <div className="container marketing">
         <div className= "shadow mb-5">
@@ -39,8 +38,9 @@ class About extends Component {
             <div className="row featurette">
                   <div className="col-md-7">
                       <h2 className="featurette-heading">Personally</h2>
-                      <p className="lead">Born in Pettisville, OH (Toledo area). Graduated from Pettisville with a class of 50. Pretty small right. One of the things that you are taught when you grow up here is the value of hard work. Most people in the community are farmers who have to work hard to make ends meet.</p>
-                      <p className="lead">Self-proclaimed running fanatic. I've run 2 full marathons, 3 half marathons, and numerous 5ks and 10ks. If you're wondering what I'm doing after work, there's a good chance I'm out running.</p>
+                      <p className="lead">Born in Pettisville, OH (Toledo area). Graduated from Pettisville with a class of 50. Pretty small right!</p>
+                      <p className="lead">In my free-time you'll most likely find me, outside running. I'm sort of a self-proclaimed running fanatic. I've run 2 full marathons, 3 half marathons, and numerous 5ks and 10ks. If you're wondering what I'm doing after work, there's a good chance I'm out running.</p>
+                      <p className="lead">I also love traveling and exploring new places. I've always enjoyed venturing to new places and trying new /foreign cuisines.</p>
                       <p className="lead">Huge Ohio State Buckeye fan. I love watching OSU football and basketball whether I'm at the game, or watching it on TV.</p>                      <p className="lead">I also love traveling. I also find it interesting to visit a new city and try there cuisine, and visit various landmarks throughout the city.</p>
                   </div>
                   <div className="col-md-5 featurette-img-align">

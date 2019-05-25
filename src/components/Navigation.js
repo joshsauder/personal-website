@@ -22,10 +22,6 @@ class Navigation extends React.Component {
             <Nav.Link href="/about" active>About Me</Nav.Link>
             <Nav.Link href="/projects" active>My Projects</Nav.Link>
           </Nav>
-          <Nav className="justify-content-end">
-            <Nav.Link className="justify-content-end" href="mailto:joshsauder@gmail.com"><i className="fa fa-envelope fa-lg"></i></Nav.Link>
-            <Nav.Link className="justify-content-end" href="www.linkedin.com/in/josh-sauder-5231a1106"><i className="fa fa-linkedin fa-lg"></i></Nav.Link>
-          </Nav>
           </Navbar.Collapse>
       </Navbar>
     </div>
