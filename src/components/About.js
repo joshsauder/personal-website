@@ -3,18 +3,34 @@ import MarathonPhoto from '../IMG_0138.png';
 import GradPhoto from '../IMG_0028.png';
 import '../App.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import NTIModal from './NTIModal';
+import CASModal from './CASModal';
+import XPOModal from './XPOModal';
+import OSUModal from './OSUModal'
 
 class About extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {show: false, title: ""}
+    this.state = {
+      NTIShow: false,
+      CASShow: false,
+      XPOShow: false,
+      OSUModal: false,
+    };
   }
   render() {
-    let modalClose = () => this.setState({ modalShow: false });
+    let NTIClose = () => this.setState({ NTIShow: false });
+    let CASClose = () => this.setState({ CASShow: false });
+    let XPOClose = () => this.setState({ XPOShow: false });
+    let OSUClose = () => this.setState({ OSUShow: false });
 
     return (
       <div>
+        <NTIModal modal={this.state.NTIShow} onHide={NTIClose} />
+        <CASModal modal={this.state.CASShow} onHide={CASClose} />
+        <XPOModal modal={this.state.XPOShow} onHide={XPOClose} />
+        <OSUModal modal={this.state.OSUShow} onHide={OSUClose} />
         <h1 className="text-center text-white mt-5">About Me</h1>
         <div className="container marketing">
         <div className="row ">
@@ -37,14 +53,15 @@ class About extends Component {
               <Jumbotron>
               <div className="col-md-12">
                 <h2 className="featurette-heading">Experience</h2>
-                <a onClick={() => this.setState({ show: true, title: "Website Request"})}><p>B.S. Computer Science Engineering - The Ohio State University</p></a>
-                <p>Software Engineer - Network Technologies International</p>
-                <p>Internships/Co-Ops - Chemical Abstract Services and XPO Logistics</p>
+                <button type ="button" className="btn btn-clear" onClick={() => this.setState({ OSUShow: true })}>B.S. Computer Science Engineering - The Ohio State University</button>
+                <button type ="button" className="btn btn-clear" onClick={() => this.setState({ NTIShow: true })}>Software Engineer - Network Technologies International</button>
+                <button type ="button" className="btn btn-clear" onClick={() => this.setState({ CASShow: true })}>Chemical Abstract Services - Software Engineering Co-Op</button>
+                <button type = "button" className="btn btn-clear" onClick={() => this.setState({ XPOShow: true })}>XPO Logistics - IT Intern</button>
               </div>
               </Jumbotron>
             </div>
         </div>
-        </div>
+        </div>]
 
 
           <hr className="featurette-divider"/>
