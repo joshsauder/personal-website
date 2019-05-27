@@ -192,3 +192,8 @@ body {
   border-color: grey;
 }
 
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
