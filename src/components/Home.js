@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Navigation from './Navigation';
-import About from './About';
-import Projects from './Projects';
 import Logo from '../logo.png';
 import ParticlesBackground from '../components/particles';
 
 class Home extends Component {
+
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return (
-      <div>
+      <div id={this.props.id}>
         <Navigation />
         <div className="col-12 fill-screen">
               <ParticlesBackground />
@@ -26,8 +29,6 @@ class Home extends Component {
                 <h2 className="text-center text-white mt-5">Let&rsquo;s build something that brings a positive impact on the world!</h2>
               </div>
         </div>
-        <About />
-        <Projects />
       </div>
     );
   }

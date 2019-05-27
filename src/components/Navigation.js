@@ -3,6 +3,7 @@ import logo from '../logo.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'font-awesome/css/font-awesome.min.css';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 class Navigation extends React.Component {
@@ -18,9 +19,32 @@ class Navigation extends React.Component {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/" active>Home</Nav.Link>
-            <Nav.Link href="/about" active>About Me</Nav.Link>
-            <Nav.Link href="/projects" active>My Projects</Nav.Link>
+            <Link className="nav-link" activeClass="active"
+              to="Home"
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={400}>
+              Home
+            </Link>
+            <Link className="nav-link" activeClass="active"
+                to="About"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={400}
+                >
+                About Me
+            </Link>
+            <Link className="nav-link" activeClass="active"
+              to="Projects"
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={400}
+              >
+              My Projects
+            </Link>
           </Nav>
           </Navbar.Collapse>
       </Navbar>

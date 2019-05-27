@@ -26,7 +26,7 @@ class About extends Component {
     let OSUClose = () => this.setState({ OSUShow: false });
 
     return (
-      <div>
+      <div id={this.props.id}>
         <NTIModal modal={this.state.NTIShow} onHide={NTIClose} />
         <CASModal modal={this.state.CASShow} onHide={CASClose} />
         <XPOModal modal={this.state.XPOShow} onHide={XPOClose} />

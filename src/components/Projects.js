@@ -17,7 +17,7 @@ class Projects extends Component {
     let modalClose = () => this.setState({ modalShow: false });
 
     return (
-      <div>
+      <div id={this.props.id}>
         <ContactForm modal={this.state.show} onHide={modalClose} title={this.state.title} />
         <div className="featurette-divider"></div>
         <h1 className="text-center text-white mt-5">My Projects</h1>
