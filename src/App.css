@@ -149,8 +149,8 @@ body {
   top: 0;
 }
 
-.navbar-dark {
-  border-color: transparent;
+.navbar-dark .navbar-toggler {
+  border-color: transparent !important;
 }
 
 
@@ -162,11 +162,24 @@ body {
   height: 100vh;
 }
 
-.fa {
+.btn-social {
   color: white;
+  padding: 20px;
+  border-radius: 50%;
+
+}
+
+.fa-linkedin {
+  background-color: #007bb5;
+}
+
+.fa-envelope {
+  background-color: #263238;
 }
 
 .text-white {
   color: white;
   font-family: Chewy;
 }
+
+

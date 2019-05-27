@@ -55,7 +55,7 @@ class Projects extends Component {
                     <p className="lead">I've always enjoyed web development and a personal web page is something that I thought wouldn't be a bad thing to have</p>
                     <p className="lead">It's basically a great way to find out what I've done, and an easy way to get to know me.</p>
                     <p className="lead">Build using ReactJS, Bootstrap, Webpack, and NodeJS</p>
-                    <button type="button" className="btn btn-dark mr-3" onClick={() => this.setState({ show: true, title: "Website Request"})}>Request Access of Source Code</button>
+                    <button type="button" className="btn btn-dark mr-3" onClick={() => this.setState({ show: true, title: "Website Request"})}>Source Code Request</button>
                     <button type="button" className="btn btn-dark" onClick={() => this.setState({ show: true, title: "Website Feedback"})}>Feedback</button>
                 </div>
                 <div className="col-md-5 featurette-img-align">

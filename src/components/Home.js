@@ -17,10 +17,10 @@ class Home extends Component {
                 <img className="mx-auto d-block" src={Logo}></img>
                 <div className="text-center row">
                   <div className="col-sm-2 offset-md-4">
-                    <a href="mailto:joshsauder@gmail.com" ><i className="fa fa-envelope fa-lg"></i></a>
+                    <a href="mailto:joshsauder@gmail.com"><i className="fa fa-envelope fa-lg btn-social"></i></a>
                   </div>
                   <div className="col-sm-2">
-                    <a href="www.linkedin.com/in/josh-sauder-5231a1106"><i className="fa fa-linkedin fa-lg"></i></a>
+                    <a href="www.linkedin.com/in/josh-sauder-5231a1106"><i className="fa fa-linkedin fa-lg btn-social"></i></a>
                   </div>
                 </div>
                 <h2 className="text-center text-white mt-5">Let&rsquo;s build something that brings a positive impact on the world!</h2>

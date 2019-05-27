@@ -13,7 +13,7 @@ class Navigation extends React.Component {
           <Navbar.Brand href="/">
             <img src={logo} className="d-block" height="60" alt="logo" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggle">
             <i className="fa fa-align-right"></i>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
