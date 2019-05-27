@@ -11,9 +11,13 @@ class NTIModal extends Component {
     this.state = { NTIShow: props.modal };
  }
 
- componentWillReceiveProps(nextProps){
-  if(this.state.NTIShow!==nextProps.modal){
-    this.setState({NTIShow: nextProps.modal})
+static getDerivedStateFromProps(nextProps, prevState){
+  if(nextProps.modal != prevState.NTIShow){
+      return {
+          NTIShow: nextProps.modal 
+      }
+  }else {
+      return null;
   }
 }
 

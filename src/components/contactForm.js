@@ -10,12 +10,17 @@ class ContactForm extends Component {
     super(props)
     this.state = { show: props.modal };
 
-    }
-  componentWillReceiveProps(nextProps){
-      if(this.state.show!==nextProps.modal){
-      this.setState({show: nextProps.modal})
-    }
   }
+
+  static getDerivedStateFromProps(nextProps, prevState){
+    if(nextProps.modal != prevState.show){
+        return {
+            show: nextProps.modal 
+        }
+    }else {
+        return null;
+    }
+}
 
   handleClick(props) {
     var name = $('#name').val();

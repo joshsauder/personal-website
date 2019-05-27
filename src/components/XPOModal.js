@@ -11,11 +11,16 @@ class XPOModal extends Component {
     this.state = { XPOShow: props.modal };
   }
 
-  componentWillReceiveProps(nextProps){
-    if(this.state.XPOShow!==nextProps.modal){
-      this.setState({XPOShow: nextProps.modal})
+
+  static getDerivedStateFromProps(nextProps, prevState){
+    if(nextProps.modal != prevState.XPOShow){
+        return {
+            XPOShow: nextProps.modal 
+        }
+    }else {
+        return null;
     }
-  }
+}
   
 
   render() {

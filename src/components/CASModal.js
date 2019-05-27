@@ -11,11 +11,15 @@ class CASModal extends Component {
     this.state = { CASShow: props.modal };
   }
 
-  componentWillReceiveProps(nextProps){
-    if(this.state.CASShow!==nextProps.modal){
-      this.setState({CASShow: nextProps.modal})
+  static getDerivedStateFromProps(nextProps, prevState){
+    if(nextProps.modal != prevState.CASShow){
+        return {
+            CASShow: nextProps.modal 
+        }
+    }else {
+        return null;
     }
-  }
+}
 
   render() {
     return (

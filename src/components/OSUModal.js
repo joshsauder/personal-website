@@ -11,10 +11,15 @@ class OSUModal extends Component {
     this.state = { OSUShow: props.modal };
   }
 
-  componentWillReceiveProps(nextProps){
-    if(this.state.OSUShow!==nextProps.modal){
-      this.setState({OSUShow: nextProps.modal})
-    }
+
+  static getDerivedStateFromProps(nextProps, prevState){
+      if(nextProps.modal != prevState.OSUShow){
+          return {
+              OSUShow: nextProps.modal 
+          }
+      }else {
+          return null;
+      }
   }
 
   render() {
