@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import InTheClear from '../InTheClear.png';
-import ReactLogo from '../React.png';
-import appStore from '../appStore.svg'
+import InTheClear from '../images/InTheClear.png';
+import ReactLogo from '../images/React.png';
+import appStore from '../images/appStore.svg'
 import '../App.css';
-import Navigation from './Navigation';
 import ContactForm from './ContactForm';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 

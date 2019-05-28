@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import GradPhoto from '../IMG_0138.png';
-import Selfie from '../SelfImage.png';
+import GradPhoto from '../images/IMG_0138.png';
+import Selfie from '../images/SelfImage.png';
 import '../App.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import NTIModal from './NTIModal';
