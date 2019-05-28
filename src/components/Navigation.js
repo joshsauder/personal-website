@@ -2,8 +2,10 @@ import React from 'react';
 import logo from '../logo.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import '../App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { Link, animateScroll as scroll } from "react-scroll";
+import '../styles/Navigation.css';
 
 
 class Navigation extends React.Component {

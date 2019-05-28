@@ -7,6 +7,7 @@ import NTIModal from './NTIModal';
 import CASModal from './CASModal';
 import XPOModal from './XPOModal';
 import OSUModal from './OSUModal'
+import '../styles/About.css'
 
 class About extends Component {
 
@@ -92,7 +93,7 @@ class About extends Component {
                       <p className="lead">Born in Pettisville, OH (Toledo area). Graduated from Pettisville with a class of 50. Pretty small right!</p>
                       <p className="lead">In my free-time you'll most likely find me, outside running. I'm sort of a self-proclaimed running fanatic. I've run 2 full marathons, 3 half marathons, and numerous 5ks and 10ks. If you're wondering what I'm doing after work, there's a good chance I'm out running.</p>
                       <p className="lead">I also love traveling and exploring new places. I've always enjoyed venturing to new places and trying new foreign cuisines.</p>
-                      <p className="lead">Huge Ohio State Buckeye fan. I love watching OSU football and basketball whether I'm at the game, or watching it on TV.</p>
+                      <p className="lead">Finally, I'm a huge Ohio State Buckeye fan. I love watching OSU football and basketball whether I'm at the game, or watching it on TV.</p>
                   </div>
                   <div className="col-md-5 col-5 featurette-img-align">
                       <img className="featurette-image img-fluid mx-auto rounded" src={Selfie}></img>

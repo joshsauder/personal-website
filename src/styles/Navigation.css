@@ -1,0 +1,24 @@
+.nav-link{
+    font-family: chewy;
+    font-size: 1.2rem;
+  }
+
+.nav-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+ }
+  
+.navbar-dark .navbar-toggler {
+   border-color: transparent !important;
+}
+
+.navbar-brand {
+  padding-top: 0rem!important;
+ }
+
+.bg-darkPurple{
+  background-color: #4A148C!important
+}

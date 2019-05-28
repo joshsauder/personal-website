@@ -1,114 +1,18 @@
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+.featurette-heading {
+  font-size: 40px;
 }
 
-.textWithBlurredBg{
-  width:300px;
-  height:auto;
-  display:inline-block;
-  position:relative;
-  transition:.3s;
-  margin:4px;
-}
-
-.textWithBlurredBg img{
-  width:100%;
-  height:100%;
-  transition:.3s;
-  border-radius:4px;
-}
-
-.textWithBlurredBg:hover img{
-  filter:blur(2px) brightness(60%);
-  box-shadow:0 0 16px cyan;
-}
-
-.textWithBlurredBg :not(img){
-  position:absolute;
-  z-index:1;
-  top:30%;
-  width:100%;
-  text-align:center;
-  color:#fff;
-  opacity:0;
-  transition:.3s;
-}
-
-.textWithBlurredBg h3{
-  top:50%
-}
-
-.textWithBlurredBg:hover :not(img){
-  opacity:1;
-}
-
-.card {
-  background-color: white;
-  margin-top: 40px;
-}
-
-.w-90 {
-  width: 90%!important
-}
-
-.bg-darkPurple{
-  background-color: #4A148C!important
-}
-
-.card-img-right {
-  height: 100%;
-  border-radius: 0 3px 3px 0;
-}
-
-.navbar-brand {
-  padding-top: 0rem!important;
-}
-
-.carousel {
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 36rem;
-  background-color: #777;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 36rem;
-}
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 40px;
-  }
-
-}
 
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
 .marketing h2 {
   font-weight: 400;
 }
+
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
@@ -140,64 +44,6 @@ body {
   padding-bottom: 3rem;
 }
 
-.nav-fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  top: 0;
-}
-
-.navbar-dark .navbar-toggler {
-  border-color: transparent !important;
-}
-
-
 .mt-8 {
   margin-top: 8rem !important;
-}
-
-.fill-screen {
-  height: 100vh;
-}
-
-.btn-social {
-  color: white;
-  padding: 20px;
-  border-radius: 50%;
-
-}
-
-.fa-linkedin {
-  background-color: #007bb5;
-}
-
-.fa-envelope {
-  background-color: #263238;
-}
-
-.text-white {
-  color: white;
-  font-family: Chewy;
-}
-
-.btn-clear {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.btn-clear:hover {
-  background-color: grey;
-  border-color: grey;
-}
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.nav-link{
-  font-family: chewy;
-  font-size: 1.2rem;
 }

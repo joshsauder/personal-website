@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import '../styles/Home.css';
 import Navigation from './Navigation';
 import Logo from '../logo.png';
 import ParticlesBackground from '../components/particles';
