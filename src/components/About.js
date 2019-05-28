@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MarathonPhoto from '../IMG_0138.png';
-import GradPhoto from '../IMG_0028.png';
+import GradPhoto from '../IMG_0138.png';
+import Selfie from '../SelfImage.png';
 import '../App.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import NTIModal from './NTIModal';
@@ -43,7 +43,7 @@ class About extends Component {
                       <p>I've always been a curious person and learning a new skill has never been something I've shied away from. It always me to increase my knowledge set, and broadens my horizons.</p>
                   </div>
                   <div className="col-md-5 featurette-img-align">
-                      <img className="featurette-image img-fluid mx-auto" src={GradPhoto}></img>
+                      <img className="featurette-image img-fluid mx-auto rounded" src={GradPhoto}></img>
                   </div>
                 </Jumbotron>
             </div>
@@ -61,10 +61,7 @@ class About extends Component {
               </Jumbotron>
             </div>
         </div>
-        </div>]
-
-
-          <hr className="featurette-divider"/>
+        </div>
 
           <div className= "shadow mb-3">
             <Jumbotron>
@@ -77,12 +74,13 @@ class About extends Component {
                       <p className="lead">Huge Ohio State Buckeye fan. I love watching OSU football and basketball whether I'm at the game, or watching it on TV.</p>
                   </div>
                   <div className="col-md-5 featurette-img-align">
-                      <img className="featurette-image img-fluid mx-auto" src={MarathonPhoto}></img>
+                      <img className="featurette-image img-fluid mx-auto rounded" src={Selfie}></img>
                   </div>
               </div>
               </Jumbotron>
             </div>
-          </div>
+          <hr className="featurette-divider"/>
+        </div>
       </div>
     );
   }

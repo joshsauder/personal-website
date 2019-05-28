@@ -39,13 +39,11 @@ class Projects extends Component {
                     </button>
                 </div>
                 <div className="col-md-5 featurette-img-align">
-                    <img className="featurette-image img-fluid mx-auto" src={InTheClear}></img>
+                    <img className="featurette-image img-fluid mx-auto rounded" src={InTheClear}></img>
                 </div>
             </div>
           </Jumbotron>
         </div>
-
-          <hr className="featurette-divider"/>
           <div className= "shadow mb-5">
             <Jumbotron>
             <div className="row featurette">
@@ -59,7 +57,7 @@ class Projects extends Component {
                     <button type="button" className="btn btn-dark" onClick={() => this.setState({ show: true, title: "Website Feedback"})}>Feedback</button>
                 </div>
                 <div className="col-md-5 featurette-img-align">
-                    <img className="featurette-image img-fluid mx-auto" src={ReactLogo}></img>
+                    <img className="featurette-image img-fluid mx-auto rounded" src={ReactLogo}></img>
                 </div>
             </div>
             </Jumbotron>

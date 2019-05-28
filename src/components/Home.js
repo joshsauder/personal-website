@@ -20,7 +20,7 @@ class Home extends Component {
                 <img className="mx-auto d-block img-responsive" src={Logo}></img>
                 <div className="row justify-content-center">
                   <div className="col-1">
-                    <a href="mailto:joshsauder@gmail.com" Title="Email"><i className="fa fa-envelope fa-lg btn-social"></i></a>
+                    <a href="mailto:joshsauder@gmail.com" title="Email"><i className="fa fa-envelope fa-lg btn-social"></i></a>
                   </div>
                   <div className="col-1">
                     <a href="www.linkedin.com/in/josh-sauder-5231a1106" title="LinkedIn Profile"><i className="fa fa-linkedin fa-lg btn-social"></i></a>
