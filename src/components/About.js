@@ -58,10 +58,10 @@ class About extends Component {
               <Jumbotron>
               <div className="col-md-12 col-12">
                 <h2 className="featurette-heading">Experience</h2>
-                <button type ="button" className="btn btn-clear" onClick={() => this.setState({ OSUShow: true })}>B.S. Computer Science Engineering - The Ohio State University</button>
-                <button type ="button" className="btn btn-clear" onClick={() => this.setState({ NTIShow: true })}>Software Engineer - Network Technologies International</button>
-                <button type ="button" className="btn btn-clear" onClick={() => this.setState({ CASShow: true })}>Chemical Abstract Services - Software Engineering Co-Op</button>
-                <button type ="button" className="btn btn-clear" onClick={() => this.setState({ XPOShow: true })}>XPO Logistics - IT Intern</button>
+                <button type ="button" className="btn btn-clear text-left" onClick={() => this.setState({ OSUShow: true })}>B.S. Computer Science Engineering - The Ohio State University</button>
+                <button type ="button" className="btn btn-clear text-left" onClick={() => this.setState({ NTIShow: true })}>Software Engineer - Network Technologies International</button>
+                <button type ="button" className="btn btn-clear text-left" onClick={() => this.setState({ CASShow: true })}>Chemical Abstract Services - Software Engineering Co-Op</button>
+                <button type ="button" className="btn btn-clear text-left" onClick={() => this.setState({ XPOShow: true })}>XPO Logistics - IT Intern</button>
               </div>
               </Jumbotron>
             </div>
