@@ -20,7 +20,7 @@ class Home extends Component {
         <div className="col-12 fill-screen">
               <ParticlesBackground />
               <div className="mt-8">
-                <Bounce left>
+                <Bounce left duration={2000}>
                   <img className="mx-auto d-block img-responsive" src={Logo}></img>
                 </Bounce>
                 <div className="row justify-content-center">
@@ -35,7 +35,9 @@ class Home extends Component {
                   </div>
                   </Slide>
                 </div>
-                <h2 className="text-center text-white mt-5">Let&rsquo;s build something that brings a positive impact on the world!</h2>
+                <Slide bottom duration={2000}>
+                  <h2 className="text-center text-white mt-5">Let&rsquo;s build something that brings a positive impact on the world!</h2>
+                </Slide>
               </div>
         </div>
       </div>
