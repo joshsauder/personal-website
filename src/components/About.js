@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import '../App.css';
+import '../styles/About.css';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Slide from 'react-reveal/Slide';
 import GradPhoto from '../images/IMG_0138.png';
 import Selfie from '../images/SelfImage.png';
-import '../App.css';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import NTIModal from './NTIModal';
 import CASModal from './CASModal';
 import XPOModal from './XPOModal';
-import OSUModal from './OSUModal'
-import '../styles/About.css'
+import OSUModal from './OSUModal';
 
 class About extends Component {
 
@@ -35,6 +36,7 @@ class About extends Component {
         <h1 className="text-center text-white mt-5">About Me</h1>
         <div className="container marketing">
         <div className="row ">
+        <Slide left>
         <div className= "col-md-8 col-8 ml-3">
             <div className="featurette">
               <Jumbotron className="row">
@@ -49,7 +51,9 @@ class About extends Component {
                 </Jumbotron>
             </div>
         </div>
-        <div className= "col-md-3 ml-4 col-3">
+        </Slide>
+        <Slide right>
+        <div className= "col-md-3 ml-4">
             <div className="row featurette">
               <Jumbotron>
               <div className="col-md-12 col-12">
@@ -62,8 +66,10 @@ class About extends Component {
               </Jumbotron>
             </div>
         </div>
+        </Slide>
       </div>  
       <div className="row">
+        <Slide left>
           <div className="col-md-7 col-7 ml-3">
             <div className="featurette">
               <Jumbotron className="row">
@@ -75,6 +81,8 @@ class About extends Component {
               </Jumbotron>
             </div>
           </div>
+        </Slide>
+        <Slide right>
           <div className="col-md-4 col-4 ml-4">
             <div className="featurette">
               <Jumbotron className="row">
@@ -84,11 +92,13 @@ class About extends Component {
               </Jumbotron>
             </div>
           </div> 
+        </Slide>
       </div>
+      <Slide left>
       <div className= "shadow mb-3">
           <Jumbotron>
             <div className="row featurette">
-                  <div className="col-md-6 col-6">
+                  <div className="col-md-7 col-7">
                       <h2 className="featurette-heading">Personally</h2>
                       <p className="lead">Born in Pettisville, OH (Toledo area). Graduated from Pettisville with a class of 50. Pretty small right!</p>
                       <p className="lead">In my free-time you'll most likely find me, outside running. I'm sort of a self-proclaimed running fanatic. I've run 2 full marathons, 3 half marathons, and numerous 5ks and 10ks. If you're wondering what I'm doing after work, there's a good chance I'm out running.</p>
@@ -101,6 +111,7 @@ class About extends Component {
               </div>
           </Jumbotron>
       </div>
+      </Slide>
       <hr className="featurette-divider"/>
       </div>
       </div>

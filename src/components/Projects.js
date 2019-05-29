@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import '../App.css';
+import Slide from 'react-reveal/Slide';
 import InTheClear from '../images/InTheClear.png';
 import ReactLogo from '../images/React.png';
 import appStore from '../images/appStore.svg'
-import '../App.css';
 import ContactForm from './ContactForm';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
@@ -21,6 +22,7 @@ class Projects extends Component {
         <div className="featurette-divider"></div>
         <h1 className="text-center text-white mt-5">My Projects</h1>
         <div className="container marketing">
+        <Slide right>
         <div className= "shadow mb-5">
           <Jumbotron>
           <div className="row featurette">
@@ -43,6 +45,8 @@ class Projects extends Component {
             </div>
           </Jumbotron>
         </div>
+        </Slide>
+        <Slide left>
           <div className= "shadow mb-5">
             <Jumbotron>
             <div className="row featurette">
@@ -61,6 +65,7 @@ class Projects extends Component {
             </div>
             </Jumbotron>
           </div>
+        </Slide>
         </div>
       </div>
     );
