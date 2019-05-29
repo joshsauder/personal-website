@@ -22,7 +22,7 @@ class Projects extends Component {
         <div className="featurette-divider"></div>
         <h1 className="text-center text-white mt-5">My Projects</h1>
         <div className="container marketing">
-        <Slide right>
+        <Slide left>
         <div className= "shadow mb-5">
           <Jumbotron>
           <div className="row featurette">
@@ -46,7 +46,7 @@ class Projects extends Component {
           </Jumbotron>
         </div>
         </Slide>
-        <Slide left>
+        <Slide right>
           <div className= "shadow mb-5">
             <Jumbotron>
             <div className="row featurette">

@@ -112,6 +112,18 @@ class About extends Component {
           </Jumbotron>
       </div>
       </Slide>
+      <Slide right>
+        <Jumbotron>
+            <div className="row featurette">
+              <div className="col-md-12 col-12">
+                <h2 className="featurette-heading">Volunteer Work</h2>
+                <p className="lead">I've always been a firm believer that volunteer work is a vital aspect of a persons life. Not only for the personal benefits, but also because it benefits the communities involved.</p>
+                <p className="lead">I've always enjoyed helping those with special needs, and always loved participating in athletics. I also noticed that those with special needs werent't always given the opportunity to participate in athletics.</p>
+                <p className="lead">I recently started volunteering at Special Olympic events and absolutely love watching these individuals do things that others told them they couldn't. The encouragement and support they are given by the fans and volunteers is always a fun and gives the athletes an environment were they can be proud of there achievements.</p>
+              </div>
+            </div>
+        </Jumbotron>
+      </Slide>
       <hr className="featurette-divider"/>
       </div>
       </div>
