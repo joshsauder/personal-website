@@ -1,0 +1,15 @@
+.btn-primary {
+    color: #ffffff;
+    background-color: #4A148C;
+    border-color: #4A148C;
+}
+
+.btn-primary:hover {
+    background-color: #3d1075;
+    border-color: #3d1075;
+}
+
+.btn-primary:active {
+    vertical-align: top;
+    padding: 8px 13px 6px;
+}

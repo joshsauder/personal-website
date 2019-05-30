@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import '../styles/About.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Button from 'react-bootstrap/Button'
 import Slide from 'react-reveal/Slide';
 import GradPhoto from '../images/IMG_0138.png';
 import Selfie from '../images/SelfImage.png';
@@ -58,10 +59,10 @@ class About extends Component {
               <div className="row featurette">
                 <div className="col-md-12">
                   <h2 className="featurette-heading">Experience</h2>
-                  <button type ="button" className="btn btn-clear text-left" onClick={() => this.setState({ OSUShow: true })}>B.S. Computer Science Engineering - The Ohio State University</button>
-                  <button type ="button" className="btn btn-clear text-left" onClick={() => this.setState({ NTIShow: true })}>Software Engineer - Network Technologies International</button>
-                  <button type ="button" className="btn btn-clear text-left" onClick={() => this.setState({ CASShow: true })}>Chemical Abstract Services - Software Engineering Co-Op</button>
-                  <button type ="button" className="btn btn-clear text-left" onClick={() => this.setState({ XPOShow: true })}>XPO Logistics - IT Intern</button>
+                  <Button variant="outline-secondary" className="text-left mb-3" onClick={() => this.setState({ OSUShow: true })}>B.S. Computer Science Engineering - The Ohio State University</Button>
+                  <Button variant="outline-secondary" className=" text-left mb-3" onClick={() => this.setState({ NTIShow: true })}>Software Engineer - Network Technologies International</Button>
+                  <Button variant="outline-secondary" className=" text-left mb-3" onClick={() => this.setState({ CASShow: true })}>Chemical Abstract Services - Software Engineering Co-Op</Button>
+                  <Button variant="outline-secondary" className=" text-left" onClick={() => this.setState({ XPOShow: true })}>XPO Logistics - IT Intern</Button>
                 </div>
               </div>  
             </Jumbotron>
