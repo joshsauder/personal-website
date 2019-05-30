@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import '../styles/Projects.css'
 import Slide from 'react-reveal/Slide';
 import InTheClear from '../images/InTheClear.png';
 import ReactLogo from '../images/React.png';
@@ -16,7 +15,7 @@ class Projects extends Component {
     this.state = {show: false, title: ""}
   }
   render() {
-    let modalClose = () => this.setState({ modalShow: false });
+    let modalClose = () => this.setState({ show: false });
 
     return (
       <div id={this.props.id}>

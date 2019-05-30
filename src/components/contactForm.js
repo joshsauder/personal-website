@@ -45,10 +45,8 @@ class ContactForm extends Component {
   }
 
   render() {
-    let close = () => this.setState({ show: false});
-
     return (
-      <Modal show={this.state.show} onHide={close}>
+      <Modal show={this.state.show} onHide={this.props.onHide}>
           <Modal.Header closeButton>
             <Modal.Title>{this.props.title} Form</Modal.Title>
           </Modal.Header>
@@ -74,7 +72,7 @@ class ContactForm extends Component {
             <Button variant="primary" onClick={() => { this.handleClick(this.props) }} >
               Submit
             </Button>
-            <Button variant="primary" onClick={close} >
+            <Button variant="primary" onClick={this.props.onHide} >
               Close
             </Button>
           </Modal.Footer>
