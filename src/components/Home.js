@@ -25,12 +25,12 @@ class Home extends Component {
                 </Bounce>
                 <div className="row justify-content-center">
                   <Slide top>
-                  <div className="col-1">
+                  <div className="col-md-1 col-3 ml-1">
                     <a href="mailto:joshsauder@gmail.com" title="Email"><i className="fa fa-envelope fa-lg btn-social"></i></a>
                   </div>
                   </Slide>
                   <Slide top>
-                  <div className="col-1">
+                  <div className="col-md-1 col-3">
                     <a href="www.linkedin.com/in/josh-sauder-5231a1106" title="LinkedIn Profile"><i className="fa fa-linkedin fa-lg btn-social"></i></a>
                   </div>
                   </Slide>
