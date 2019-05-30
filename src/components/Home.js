@@ -36,7 +36,7 @@ class Home extends Component {
                   </Slide>
                 </div>
                 <Slide bottom duration={2000}>
-                  <h2 className="text-center text-white mt-5">Let&rsquo;s build something that brings a positive impact on the world!</h2>
+                  <h2 className="text-center text-white mt-5">Let&rsquo;s build a better world, one line of code at a time!</h2>
                 </Slide>
               </div>
         </div>
