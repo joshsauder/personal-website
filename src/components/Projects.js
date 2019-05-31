@@ -34,6 +34,13 @@ class Projects extends Component {
                     <p className="lead">I've always had a fascination for meterology. A common problem with living in the midwest is that when you travel, you can experience a variety of different weather conditions. This app solves this issue by telling the user what types of weather they will experience during their travels.</p>
                     <p className="lead">Built using Swift</p>
                     <p className="lead">Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftlyJSON</p>
+                    <p className="lead">Planned Updates</p>
+                    <ul>
+                      <li>Implement a backend API to limit the number of API calls the users device has to make.</li>
+                      <li>Allow the user to plan stops (overnight hotel stay) along the way.</li>
+                      <li>Give the user the option to input a planned start time so they can plan ahead.</li>
+                      <li>Tell the user if they will experience any severe weather (blizzard conditions, or severe storms) along the way.</li>
+                    </ul>
                     <p>
                       <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "InTheClear Request"})}>Source Code Request</Button>
                       <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "InTheClear Feedback"})}>Feedback</Button>
