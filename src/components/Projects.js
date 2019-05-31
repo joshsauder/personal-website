@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Slide from 'react-reveal/Slide';
 import InTheClear from '../images/InTheClear.png';
-import logoShot from '../images/logoSceenShot.png';
+import logoShot from '../images/logoScreenShot.png';
 import appStore from '../images/appStore.svg'
 import ContactForm from './ContactForm';
 import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -34,16 +34,16 @@ class Projects extends Component {
                     <p className="lead">I've always had a fascination for meterology. A common problem with living in the midwest is that when you travel, you can experience a variety of different weather conditions. This app solves this issue by telling the user what types of weather they will experience during their travels.</p>
                     <p className="lead">Built using Swift</p>
                     <p className="lead">Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftlyJSON</p>
-                    <p className="lead">Planned Updates</p>
+                    <p className="lead">Planned Updates:</p>
                     <ul>
-                      <li>Implement a backend API to limit the number of API calls the users device has to make.</li>
-                      <li>Allow the user to plan stops (overnight hotel stay) along the way.</li>
-                      <li>Give the user the option to input a planned start time so they can plan ahead.</li>
-                      <li>Tell the user if they will experience any severe weather (blizzard conditions, or severe storms) along the way.</li>
+                      <li className="lead">Implement a backend API to limit the number of API calls the users device has to make.</li>
+                      <li className="lead">Allow the user to plan stops (overnight hotel stay) along the way.</li>
+                      <li className="lead">Give the user the option to input a planned start time so they can plan ahead.</li>
+                      <li className="lead">Tell the user if they will experience any severe weather (blizzard conditions, or severe storms) along the way.</li>
                     </ul>
                     <p>
-                      <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "InTheClear Request"})}>Source Code Request</Button>
-                      <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "InTheClear Feedback"})}>Feedback</Button>
+                      <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Request"})}>Source Code Request</Button>
+                      <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Feedback"})}>Feedback</Button>
                       <a href="">
                         <img src={appStore}></img>
                       </a>
@@ -77,6 +77,22 @@ class Projects extends Component {
             </div>
             </Jumbotron>
           </div>
+        </Slide>
+        <Slide left>
+          <Jumbotron>
+            <div className="row featurette">
+              <div className="col-md-7">
+                <h2 className="featurette-heading">In The Clear Web App <span className="text-muted">Coming Soon!</span></h2>
+                <p className="lead">A web app that will give the user all the functionality of the In The Clear iOS app.</p>
+                <p className="lead">It will be build using ReactJS, NodeJS, and most likely MongoDB </p>
+                <p className="lead">It will also use Google Maps and Google Places similar to the iOS App.</p>
+                <p className="lead">Since this app isn't free, I will need to implement a user sign-in component (using MongoDB) on both the web app and iOS app.</p>
+              </div>
+              <div className="col-md-5 featurette-img-align">
+                <img className="featureete-image img-fluid mx-auto rounded" src={InTheClear}></img>
+              </div>
+            </div>
+          </Jumbotron>
         </Slide>
         </div>
       </div>

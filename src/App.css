@@ -3,6 +3,9 @@
   font-size: 40px;
 }
 
+.text-muted {
+  color: #6c757d!important;
+}
 
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
