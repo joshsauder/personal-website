@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Slide from 'react-reveal/Slide';
 import InTheClear from '../images/InTheClear.png';
-import ReactLogo from '../images/React.png';
+import logoShot from '../images/logoSceenShot.png';
 import appStore from '../images/appStore.svg'
 import ContactForm from './ContactForm';
 import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -65,7 +65,7 @@ class Projects extends Component {
                     </p>
                 </div>
                 <div className="col-md-5 featurette-img-align">
-                    <img className="featurette-image img-fluid mx-auto rounded" src={ReactLogo}></img>
+                    <img className="featurette-image img-fluid mx-auto rounded" src={logoShot}></img>
                 </div>
             </div>
             </Jumbotron>
