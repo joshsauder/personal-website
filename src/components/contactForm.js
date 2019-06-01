@@ -58,8 +58,14 @@ class ContactForm extends Component {
         this.setState({
           failAlert: true
         })
-      }
-    })
+      }    
+    },
+    (error) => {
+      this.setState({
+        failAlert: true
+      })
+    }
+    )
   }
 
   render() {
