@@ -2,37 +2,33 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+const dotenv = require('dotenv');
+dotenv.config();
 
 const app = express();
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 app.options('*', cors());
 
 const port = process.env.PORT || 4000;
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-app.use(cors());
-
-/*
-Start express server
-*/
-
 
 
 /*
-Login here
+Setup transport
 */
 var transport = {
   host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
-        auth: {
-          user: 'saudertech@gmail.com',
-          pass: 'Detroit12'
-
+  port: 465,
+  secure: true,
+  auth: {
+      user: process.env.USERNAME,
+      pass: process.env.password
   }
-}
+
+};
 
 var transporter = nodemailer.createTransport(transport)
 
@@ -43,17 +39,19 @@ Send the email here
 app.post('/email', function(req,res){
     var body = req.body.name + '(' + req.body.email  + ') ' + 'from ' + req.body.organization + ' would like to request access. \n' + req.body.content
     var mailOptions = {
-      from: 'saudertech@gmail.com',
-      to: 'saudertech@gmail.com',
+      from: 'intheclearapp@gmail.com',
+      to: 'intheclearapp@gmail.com',
       subject: req.body.type,
-      text: body
+      text: body,
     }
     transporter.sendMail(mailOptions, function(error, response){
      if(error){
             console.log(error);
         res.end("error");
+        res.status = "400"
      }else{
-            console.log("Message sent: " + response.message);
+        
+        console.log("Message sent: " + response.message);
         res.end("sent");
          }
 });
