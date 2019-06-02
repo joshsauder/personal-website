@@ -44,7 +44,7 @@ class Projects extends Component {
                     <p>
                       <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Request", alert: false})}>Source Code Request</Button>
                       <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Feedback", alert: false})}>Feedback</Button>
-                      <a href="">
+                      <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank">
                         <img src={appStore}></img>
                       </a>
                     </p>

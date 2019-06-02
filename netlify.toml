@@ -1,0 +1,8 @@
+[build]
+  Functions = "functions"
+  Publish = "build"
+  command = "cd server && npm install && cd .. && netlify-lambda build func"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
