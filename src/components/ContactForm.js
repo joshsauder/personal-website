@@ -49,6 +49,7 @@ class ContactForm extends Component {
       })
     })
     .then((response)=> {
+      console.log(response.status);
       if (response.status == 200){
         this.setState({
           successAlert: true
