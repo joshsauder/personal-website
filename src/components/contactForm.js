@@ -35,7 +35,7 @@ class ContactForm extends Component {
     var org = $('#organization').val();
     var comments = $("textarea[name='comments']").val();
 
-    fetch('/.netlify/server/sendMail', {
+    fetch('/.netlify/functions/sendMail', {
       method: 'Post',
       headers : {
         'Content-Type': 'application/json'
