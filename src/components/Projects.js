@@ -67,7 +67,7 @@ class Projects extends Component {
                     <p className="lead">It's basically a great way to find out what I've done, and an easy way to get to know me.</p>
                     <p className="lead">Build using ReactJS, Bootstrap, Webpack, and NodeJS</p>
                     <p>
-                      <Button variant="outline-secondary" className="mr-3"  onClick={() => this.setState({ show: true, title: "Website Request", alert: false})}>Source Code</Button>
+                      <Button variant="outline-secondary" className="mr-3"  href="https://bitbucket.org/joshsauder/personal-webpage/src/master/" target="_blank">Source Code</Button>
                       <Button variant="outline-secondary" className="mr-3"  onClick={() => this.setState({ show: true, title: "Website Feedback", alert: false})}>Feedback</Button>
                     </p>
                 </div>
