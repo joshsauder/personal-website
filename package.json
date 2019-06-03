@@ -9,6 +9,7 @@
     "body-parser": "^1.18.3",
     "bootstrap": "^4.3.1",
     "cors": "^2.8.5",
+    "create-react-app": "^3.0.1",
     "dotenv": "^8.0.0",
     "exit": "^0.1.2",
     "express": "^4.16.4",
@@ -34,7 +35,7 @@
   "scripts": {
     "start": "react-scripts start",
     "start:lambda": "netlify-lambda serve server",
-    "build": "run-p build:**",
+    "build": "react-scripts build",
     "build:app": "react-scripts build",
     "build:lambda": "netlify-lambda build server",
     "test": "react-scripts test",
