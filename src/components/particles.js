@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 
 var style = {
-    width: "100%",
+    width: "102%",
     height: "100%",
     position: "absolute"
 };
@@ -17,19 +17,23 @@ class ParticlesBackground extends Component {
                 params={{
                     "particles": {
                     "number": {
-                    "value": 90
+                        "value": 80
+                    },
+                    "density": {
+                        "enable": true,
+                        "value_area": 800 
                     },
                     "size": {
                     "value": 2.5
                     }
                 },
                     "interactivity": {
-                    "events": {
-                    "onhover": {
-                    "enable": false,
-                    "mode": "repulse"
-                    }
-                    }
+                        "events": {
+                            "onhover": {
+                                "enable": false,
+                                "mode": "repulse"
+                            }
+                        }
                     }
                 }}/>
             </div>

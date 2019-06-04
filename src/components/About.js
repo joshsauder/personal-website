@@ -34,7 +34,7 @@ class About extends Component {
         <CASModal modal={this.state.CASShow} onHide={CASClose} />
         <XPOModal modal={this.state.XPOShow} onHide={XPOClose} />
         <OSUModal modal={this.state.OSUShow} onHide={OSUClose} />
-        <h1 className="text-center text-white mt-5">About Me</h1>
+        <h1 className="text-center text-white">About Me</h1>
         <div className="container marketing">
         <div className="row ">
         <Slide left>

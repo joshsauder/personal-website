@@ -17,7 +17,7 @@ class Home extends Component {
     return (
       <div id={this.props.id}>
         <Navigation />
-        <div className="col-12 fill-screen">
+        <div className="fill-screen">
               <ParticlesBackground />
               <div className="mt-8">
                 <Bounce left duration={2000}>
@@ -25,7 +25,7 @@ class Home extends Component {
                 </Bounce>
                 <div className="row justify-content-center">
                   <Slide top>
-                  <div className="col-md-1 col-3 ml-1">
+                  <div className="col-md-1 col-3 ml-5">
                     <a href="mailto:joshsauder@gmail.com" title="Email"><i className="fa fa-envelope fa-lg btn-social"></i></a>
                   </div>
                   </Slide>
