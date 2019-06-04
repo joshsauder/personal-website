@@ -25,11 +25,11 @@ class CASModal extends Component {
     return (
       <Modal show={this.state.CASShow} onHide={this.props.onHide}>
           <Modal.Header closeButton>
-            <Modal.Title>CAS - May 2017 - May 2018</Modal.Title>
+            <Modal.Title>Chemical Abstract Services - May 2017 - May 2018</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-          <p>I was a web developer working on a in-house web app.</p>
-          <p>I was also given the opportunity to work on my own project to showcase what I learned during my Co-Op. I worked with an employee to had to manually call numerous web-services just to obtain a single ID. I ended up building a tool that allowed him to to do all this just by putting in his inital ID and would return a list of ID's that he may need. He also requested that I give him the option to output a Excel spreadsheet of any associated ID's with other applicable data. I ended up implementing this feature through the use of an Apache framework.</p>
+          <p>During this Co-Op, I worked primary on an in-house web app. I worked with 5 other developers and a scrum master on this app in an Agile environment. Each week, we'd have a weekly sprint meeting to determine what was completed, and what items from the product backlog were to be completed during the next sprint.</p>
+          <p>I was also given the opportunity to work on my own project to showcase what I learned throughout my Co-Op. I worked with an employee to had to manually call numerous web-services just to obtain a single ID. I ended up building a tool that allowed him to to do all this just by putting in a single ID and would return a list of ID's that he may need. He also requested that I give him the option to output an Excel spreadsheet of any associated ID's and other applicable data. By the end of my Co-Op, it was made known to me that numerous other employees had found out about this tool, and had found it to make their job easier.</p>
           <p>Technologies used:</p>
           <ul>
               <li>Front-End: AngularJS, bootstrap, Gulp (Automated Development Workflow)</li>

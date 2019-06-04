@@ -29,15 +29,15 @@ class Projects extends Component {
           <div className="row featurette">
                 <div className="col-md-7">
                     <h2 className="featurette-heading">In The Clear</h2>
-                    <p className="lead">Allows the user to determine what weather conditions they will be experiencing during their travels</p>
-                    <p className="lead">Includes a drop-down menu that shows the user, city by city, what weather and what temperatures they should expect</p>
-                    <p className="lead">I've always had a fascination for meterology. A common problem with living in the midwest is that when you travel, you can experience a variety of different weather conditions. This app solves this issue by telling the user what types of weather they will experience during their travels.</p>
+                    <p className="lead">This app allows the user to determine what weather conditions they will be experiencing during their travels.</p>
+                    <p className="lead">Includes a drop-down menu that shows the user, city-by-city, what weather and what temperatures they should expect.</p>
+                    <p className="lead">I've always had a fascination with meterology. A common problem with living in the midwest is that when you travel, you can experience a variety of different weather conditions. This app solves this issue by telling the user what types of weather they will experience during their travels.</p>
                     <p className="lead">Built using Swift</p>
                     <p className="lead">Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftlyJSON</p>
                     <p className="lead">Planned Updates:</p>
                     <ul>
                       <li className="lead">Implement a backend API to limit the number of API calls the users device has to make.</li>
-                      <li className="lead">Allow the user to plan stops (overnight hotel stay) along the way.</li>
+                      <li className="lead">Allow the user to plan stops (overnight hotel stays) along the way.</li>
                       <li className="lead">Give the user the option to input a planned start time so they can plan ahead.</li>
                       <li className="lead">Tell the user if they will experience any severe weather (blizzard conditions, or severe storms) along the way.</li>
                     </ul>
@@ -62,10 +62,10 @@ class Projects extends Component {
             <div className="row featurette">
                 <div className="col-md-7">
                     <h2 className="featurette-heading">Personal Website</h2>
-                    <p className="lead">A website that shows what I've done both professionally and in my free time</p>
-                    <p className="lead">I've always enjoyed web development and a personal web page is something that I thought wouldn't be a bad thing to have</p>
+                    <p className="lead">A website that shows what I've done both professionally and in my free time.</p>
+                    <p className="lead">I've always enjoyed web development and a personal web page is something that has always been on my list of things to create.</p>
                     <p className="lead">It's basically a great way to find out what I've done, and an easy way to get to know me.</p>
-                    <p className="lead">Build using ReactJS, Bootstrap, Webpack, and NodeJS</p>
+                    <p className="lead">Build using ReactJS, Bootstrap, Webpack, NodeJS, and Netlify Functions</p>
                     <p>
                       <Button variant="outline-secondary" className="mr-3"  href="https://bitbucket.org/joshsauder/personal-webpage/src/master/" target="_blank">Source Code</Button>
                       <Button variant="outline-secondary" className="mr-3"  onClick={() => this.setState({ show: true, title: "Website Feedback", alert: false})}>Feedback</Button>

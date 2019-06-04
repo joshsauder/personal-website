@@ -30,7 +30,7 @@ class XPOModal extends Component {
             <Modal.Title>XPO Logistics- June 2016 - August 206</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-          <p>XPO Logistics - I primarily worked with Microsoft SQL Server creating SQL scripts, and business reports using SSRS. </p>
+          <p>I primarily worked with Microsoft SQL Server creating SQL scripts, and business reports using SSRS. </p>
           <p>I also tested an in-house application looking for various bugs.</p>
           <p>Technologies used:</p>
           <ul>

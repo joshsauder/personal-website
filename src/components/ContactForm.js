@@ -92,16 +92,10 @@ class ContactForm extends Component {
             <div className="form-group">
               <label htmlFor="name" className="col-form-label">Name</label>
               <input type="text" className="form-control" id="name"/>
-              <div className="invalid-feedback">
-                Please provide a valid Name.
-              </div>
             </div>
             <div className="form-group">
               <label htmlFor="email" className="col-form-label">Email</label>
               <input type="text" className="form-control" id="email"/>
-              <div className="invalid-feedback">
-                Please provide a valid email.
-              </div>
             </div>
             <div className="form-group">
               <label htmlFor="organization" className="col-form-label">Organization (optional)</label>
