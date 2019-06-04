@@ -33,7 +33,8 @@
     "xoauth2": "^1.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && netlify-lambda serve serve",
+    "start:app": "react-scripts start",
     "start:lambda": "netlify-lambda serve server",
     "build": "react-scripts build && netlify-lambda build server",
     "build:app": "react-scripts build",

@@ -9,10 +9,6 @@ import ParticlesBackground from '../components/particles';
 
 class Home extends Component {
 
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div id={this.props.id}>
@@ -21,7 +17,7 @@ class Home extends Component {
               <ParticlesBackground />
               <div className="mt-8">
                 <Bounce left duration={2000}>
-                  <img className="mx-auto d-block img-responsive" src={Logo}></img>
+                  <img className="mx-auto d-block img-responsive" alt="logo" src={Logo}></img>
                 </Bounce>
                 <div className="row justify-content-center">
                   <Slide top>
@@ -36,7 +32,7 @@ class Home extends Component {
                   </Slide>
                 </div>
                 <Slide bottom duration={2000}>
-                  <h2 className="text-center text-white mt-5">Let&rsquo;s build a better world, one line of code at a time!</h2>
+                  <h2 className="text-center text-white chewy-font mt-5">Let&rsquo;s build a better world, one line of code at a time!</h2>
                 </Slide>
               </div>
         </div>

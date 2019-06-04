@@ -44,13 +44,13 @@ class Projects extends Component {
                     <p>
                       <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Request", alert: false})}>Source Code Request</Button>
                       <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Feedback", alert: false})}>Feedback</Button>
-                      <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank">
-                        <img src={appStore}></img>
+                      <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer">
+                        <img alt="App Store Link" src={appStore}></img>
                       </a>
                     </p>
                 </div>
                 <div className="col-md-5 featurette-img-align">
-                    <img className="featurette-image img-fluid mx-auto rounded" src={InTheClear}></img>
+                    <img className="featurette-image img-fluid mx-auto rounded" alt="In The Clear Logo" src={InTheClear}></img>
                 </div>
             </div>
           </Jumbotron>
@@ -67,12 +67,12 @@ class Projects extends Component {
                     <p className="lead">It's basically a great way to find out what I've done, and an easy way to get to know me.</p>
                     <p className="lead">Build using ReactJS, Bootstrap, Webpack, NodeJS, and Netlify Functions</p>
                     <p>
-                      <Button variant="outline-secondary" className="mr-3"  href="https://bitbucket.org/joshsauder/personal-webpage/src/master/" target="_blank">Source Code</Button>
+                      <Button variant="outline-secondary" className="mr-3"  href="https://bitbucket.org/joshsauder/personal-webpage/src/master/" target="_blank" rel="noopener noreferrer">Source Code</Button>
                       <Button variant="outline-secondary" className="mr-3"  onClick={() => this.setState({ show: true, title: "Website Feedback", alert: false})}>Feedback</Button>
                     </p>
                 </div>
                 <div className="col-md-5 featurette-img-align">
-                    <img className="featurette-image img-fluid mx-auto rounded" src={logoShot}></img>
+                    <img className="featurette-image img-fluid mx-auto rounded" alt="Personal Logo" src={logoShot}></img>
                 </div>
             </div>
             </Jumbotron>
@@ -89,7 +89,7 @@ class Projects extends Component {
                 <p className="lead">Since this app isn't free, I will need to implement a user sign-in component (using MongoDB) on both the web app and iOS app.</p>
               </div>
               <div className="col-md-5 featurette-img-align">
-                <img className="featureete-image img-fluid mx-auto rounded" src={InTheClear}></img>
+                <img className="featureete-image img-fluid mx-auto rounded" alt="In The Clear Logo" src={InTheClear}></img>
               </div>
             </div>
           </Jumbotron>

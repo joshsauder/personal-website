@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../App.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import $ from 'jquery';
 
 class XPOModal extends Component {
 
@@ -13,7 +12,7 @@ class XPOModal extends Component {
 
 
   static getDerivedStateFromProps(nextProps, prevState){
-    if(nextProps.modal != prevState.XPOShow){
+    if(nextProps.modal !== prevState.XPOShow){
         return {
             XPOShow: nextProps.modal 
         }

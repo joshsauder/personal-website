@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../App.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import $ from 'jquery';
 
 class OSUModal extends Component {
 
@@ -13,7 +12,7 @@ class OSUModal extends Component {
 
 
   static getDerivedStateFromProps(nextProps, prevState){
-      if(nextProps.modal != prevState.OSUShow){
+      if(nextProps.modal !== prevState.OSUShow){
           return {
               OSUShow: nextProps.modal 
           }

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../App.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import $ from 'jquery';
 
 class CASModal extends Component {
 
@@ -12,7 +11,7 @@ class CASModal extends Component {
   }
 
   static getDerivedStateFromProps(nextProps, prevState){
-    if(nextProps.modal != prevState.CASShow){
+    if(nextProps.modal !== prevState.CASShow){
         return {
             CASShow: nextProps.modal 
         }
@@ -32,7 +31,7 @@ class CASModal extends Component {
           <p>I was also given the opportunity to work on my own project to showcase what I learned throughout my Co-Op. I worked with an employee to had to manually call numerous web-services just to obtain a single ID. I ended up building a tool that allowed him to to do all this just by putting in a single ID and would return a list of ID's that he may need. He also requested that I give him the option to output an Excel spreadsheet of any associated ID's and other applicable data. By the end of my Co-Op, it was made known to me that numerous other employees had found out about this tool, and had found it to make their job easier.</p>
           <p>Technologies used:</p>
           <ul>
-              <li>Front-End: AngularJS, bootstrap, Gulp (Automated Development Workflow)</li>
+              <li>Front-End: AngularJS, Bootstrap, Gulp (Automated Development Workflow)</li>
               <li>Back-End: Spring, Spring Boot, Java EE</li>
               <li>Testing: JUnit, Jasmine and Karma</li>
           </ul>

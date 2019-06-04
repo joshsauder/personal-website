@@ -18,7 +18,7 @@ class ContactForm extends Component {
   }
 
   static getDerivedStateFromProps(nextProps, prevState){
-    if(nextProps.modal != prevState.show){
+    if(nextProps.modal !== prevState.show){
         return {
             show: nextProps.modal,
             successAlert: nextProps.alert,
@@ -50,7 +50,7 @@ class ContactForm extends Component {
     })
     .then((response)=> {
       console.log(response.status);
-      if (response.status == 200){
+      if (response.status === 200){
         this.setState({
           successAlert: true
         })

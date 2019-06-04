@@ -22,3 +22,7 @@
 .fill-screen {
     height: 100vh;
 }
+
+.chewy-font {
+    font-family: chewy;
+}

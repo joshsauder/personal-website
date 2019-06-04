@@ -47,7 +47,7 @@ class About extends Component {
                       <p className="lead">One trait that has always helped me professionally is my curiosity. I've always been a curious person and learning a new skill has never been something I've shied away from. It has always me to increase my knowledge set, and broadens my horizons.</p>
                   </div>
                   <div className="col-md-5 featurette-img-align">
-                      <img className="featurette-image img-fluid mx-auto rounded" src={GradPhoto}></img>
+                      <img className="featurette-image img-fluid mx-auto rounded" alt="Graduation" src={GradPhoto}></img>
                   </div>
               </div>
             </Jumbotron>
@@ -111,7 +111,7 @@ class About extends Component {
                       <p className="lead">Finally, I'm a huge Ohio State Buckeye fan. I love watching OSU football and basketball whether I'm at the game, or watching it on TV.</p>
                   </div>
                   <div className="col-md-5 featurette-img-align">
-                      <img className="featurette-image img-fluid mx-auto rounded" src={Selfie}></img>
+                      <img className="featurette-image img-fluid mx-auto rounded" alt="Personal" src={Selfie}></img>
                   </div>
               </div>
           </Jumbotron>
