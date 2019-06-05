@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/SelfImage.57e3a0b2.png"
   },
   {
-    "revision": "b8dc92e408a0c579e22e",
-    "url": "/static/css/main.68621f31.chunk.css"
+    "revision": "0c1338c8f625327c1512",
+    "url": "/static/css/main.8038b7f2.chunk.css"
   },
   {
     "revision": "912ec66d7572ff821749319396470bde",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "617a26f0d3494580332693946f759bcf",
-    "url": "/static/media/logo.617a26f0.png"
+    "revision": "e1943b59429630faca154972ee053dbc",
+    "url": "/static/media/JoshSauderLogo.e1943b59.png"
   },
   {
     "revision": "a37584e7069ab1e068650814649c9002",
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/static/media/IMG_0138.6d76a614.png"
   },
   {
-    "revision": "b8dc92e408a0c579e22e",
-    "url": "/static/js/main.b8dc92e4.chunk.js"
+    "revision": "0c1338c8f625327c1512",
+    "url": "/static/js/main.0c1338c8.chunk.js"
   },
   {
-    "revision": "a005f853bcf64cb36bb3dc587f742aee",
-    "url": "/static/media/logoScreenShot.a005f853.png"
+    "revision": "c5f31e1e9b17d76aabeaadefcdc59444",
+    "url": "/static/media/logoShot.c5f31e1e.png"
   },
   {
     "revision": "2928664fe1fc6aca88583a6f606d60ba",
@@ -52,19 +52,19 @@ self.__precacheManifest = [
     "url": "/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "/static/media/fontawesome-webfont.674f50d2.eot"
-  },
-  {
     "revision": "b06871f281fee6b241d60582ae9369b9",
     "url": "/static/media/fontawesome-webfont.b06871f2.ttf"
+  },
+  {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
     "revision": "0a679ff6f2e8187c97cf",
     "url": "/static/css/1.f41e1a2a.chunk.css"
   },
   {
-    "revision": "f07069cb0c96d3ec089e2df762b1bcb7",
+    "revision": "41c6d9320c140616c1b98e39bc2af33d",
     "url": "/index.html"
   }
 ];
