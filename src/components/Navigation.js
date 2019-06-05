@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import logo from '../images/JoshSauderLogo.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import '../App.css';
@@ -14,7 +14,7 @@ class Navigation extends React.Component {
         <div className="nav-fixed-top">
         <Navbar variant="dark" expand="md" className="bg-darkPurple" id="basic-navbar-nav">
           <Navbar.Brand href="/">
-            <img src={logo} className="d-block" height="60" alt="logo" />
+            <img src={logo} className="d-block" height="40" alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggle">
             <i className="fa fa-align-right"></i>

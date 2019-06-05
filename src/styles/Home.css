@@ -26,3 +26,7 @@
 .chewy-font {
     font-family: chewy;
 }
+
+.img-max {
+    max-height: 180px;
+}
