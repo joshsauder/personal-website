@@ -123,21 +123,21 @@ class ContactForm extends Component {
   render() {
     return (
       <Modal show={this.state.show} onHide={this.props.onHide} onClose={this.props.onClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>{this.props.title} Form</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <ToggleFormAndAlert success={this.state.successAlert} fail={this.state.failAlert} />
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="primary" onClick={() => { this.handleClick(this.props) }} disabled={this.state.sentMail} >
+        <Modal.Header closeButton>
+          <Modal.Title>{this.props.title} Form</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <ToggleFormAndAlert success={this.state.successAlert} fail={this.state.failAlert} />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={() => { this.handleClick(this.props) }} disabled={this.state.sentMail} >
               Submit
-            </Button>
-            <Button variant="primary" onClick={this.props.onHide} >
+           </Button>
+          <Button variant="primary" onClick={this.props.onHide} >
               Close
-            </Button>
-          </Modal.Footer>        
-        </Modal>
+          </Button>
+        </Modal.Footer>        
+      </Modal>
     );
   }
 }
