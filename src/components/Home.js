@@ -21,7 +21,7 @@ class Home extends Component {
                 </Bounce>
                 <div className="row justify-content-center">
                   <Slide top duration={2000}>
-                  <div className="col-md-1 col-3 ml-5">
+                  <div className="col-md-1 col-3 ml-4">
                     <a href="mailto:joshsauder@gmail.com" title="Email"><i className="fa fa-envelope fa-lg btn-social"></i></a>
                   </div>
                   </Slide>

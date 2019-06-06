@@ -4,7 +4,8 @@ import Particles from 'react-particles-js';
 var style = {
     width: "102%",
     height: "100%",
-    position: "absolute"
+    position: "absolute",
+    top: "7rem"
 };
 
 
@@ -17,14 +18,15 @@ class ParticlesBackground extends Component {
                 params={{
                     "particles": {
                     "number": {
-                        "value": 80
-                    },
-                    "density": {
-                        "enable": true,
-                        "value_area": 800 
+                        "value": 85,
+                        "density": {
+                            "enable": true,
+                            "value_area": 780 
+                        }
                     },
                     "size": {
-                    "value": 2.5
+                        "value": 2.5,
+                        random: true
                     }
                 },
                     "interactivity": {
