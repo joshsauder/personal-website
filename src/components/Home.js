@@ -22,7 +22,7 @@ class Home extends Component {
             <div className="row justify-content-center">
               <Slide top duration={2000}>
                 <div className="col-md-1 col-3 ml-4">
-                  <a href="mailto:joshsauder@gmail.com" title="Email"><i className="fa fa-envelope fa-lg btn-social"></i></a>
+                  <a href="mailto:joshsauder@gmail.com" title="Send me an email"><i className="fa fa-envelope fa-lg btn-social"></i></a>
                 </div>
               </Slide>
               <Slide top duration={2000}>

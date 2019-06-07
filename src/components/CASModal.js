@@ -37,7 +37,7 @@ class CASModal extends Component {
           </ul>
           </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={this.props.onHide} >
+          <Button variant="primary" onClick={this.props.onHide} title="Close pop-up window">
             Close
           </Button>
         </Modal.Footer>

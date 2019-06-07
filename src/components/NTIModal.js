@@ -38,7 +38,7 @@ static getDerivedStateFromProps(nextProps, prevState){
           <p>On top of the above list, this job really involves a lot of communication. I have numerous meetings with customers (both scheduled and after-hours when an outage occurs, or production issue occurs), and this job requires you to able to quickly identify the issue at hand and find a resolution. It also requires you to be able to explain technical detail in a concise and efficient manner.</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={this.props.onHide} >
+          <Button variant="primary" onClick={this.props.onHide} title="Close pop-up window">
             Close
           </Button>
         </Modal.Footer>
