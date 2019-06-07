@@ -13,8 +13,8 @@ class Home extends Component {
     return (
       <div id={this.props.id}>
         <Navigation />
+        <ParticlesBackground />
         <div className="fill-screen">
-          <ParticlesBackground />
           <div className="mt-8">
             <Bounce left duration={2000} delay={2000}>
                 <img className="mx-auto d-block img-responsive img-max" alt="logo" src={Logo}></img>

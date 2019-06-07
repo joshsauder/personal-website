@@ -19,7 +19,7 @@ Setup transport
   var transporter = nodemailer.createTransport(transport)
 
   /*
-  Send the email here
+  Create email body
   */
   const parsedBody = JSON.parse(event.body);
   var body = parsedBody.name + '(' + parsedBody.email  + ') ' + 'from ' + parsedBody.organization + ' would like to request access. \n' + parsedBody.content
@@ -30,6 +30,10 @@ Setup transport
     subject: parsedBody.type,
     text: body,
   }
+
+  /*
+  Send the email here
+  */
   transporter.sendMail(mailOptions, function(error, response){
     if(error){
        callback.end("error");

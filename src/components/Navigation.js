@@ -21,33 +21,39 @@ class Navigation extends React.Component {
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Link className="nav-link" activeClass="active"
-                  to="Home"
-                  spy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={400}
-                  >
-                    Home
-                </Link>
-                <Link className="nav-link" activeClass="active"
-                  to="About"
-                  spy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={400}
-                  >
-                    About Me
-                </Link>
-                <Link className="nav-link" activeClass="active"
-                  to="Projects"
-                  spy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={400}
-                  >
-                    My Projects
-                </Link>
+                <Nav.Item>
+                  <Link className="nav-link" activeClass="active"
+                    to="Home"
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={400}
+                    >
+                      Home
+                  </Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Link className="nav-link" activeClass="active"
+                    to="About"
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={400}
+                    >
+                      About Me
+                  </Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Link className="nav-link" activeClass="active"
+                    to="Projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={400}
+                    >
+                      My Projects
+                  </Link>
+                </Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

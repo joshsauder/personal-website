@@ -5,6 +5,9 @@ import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 import $ from 'jquery';
 
+/*
+Conditional Rendering needed when a form is submitted to show an alert and hide the input fields
+*/
 function ToggleFormAndAlert(props) {
   if(props.success === true){
     return (
@@ -74,6 +77,9 @@ class ContactForm extends Component {
     }
 }
 
+/*
+When the submit button is clicked, call the sendMail backend function and depending on the response code, set the applicable alert state to true
+*/
   handleClick(props) {
     this.setState({ sentMail: true })
     var name = $('#name').val();
