@@ -28,7 +28,13 @@ class ParticlesBackground extends Component {
                     },
                     "size": {
                         "value": 2.5,
-                        random: true
+                        random: true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 0.8,
+                            "size_min": 0.1,
+                            "sync": false
+                          }
                     }
                 },
                     "interactivity": {
