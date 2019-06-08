@@ -100,7 +100,6 @@ class About extends Component {
             </Slide>
           </div>
           <Slide left>
-            <div className= "shadow mb-3">
                 <Jumbotron>
                   <div className="row featurette">
                       <div className="col-md-7">
@@ -116,7 +115,6 @@ class About extends Component {
                       </div>
                   </div>
                 </Jumbotron>
-            </div>
           </Slide>
           <Slide right>
             <Jumbotron>
