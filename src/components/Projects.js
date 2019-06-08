@@ -7,6 +7,19 @@ import appStore from '../images/appStore.svg'
 import ContactForm from './ContactForm';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
+import {InTheClearList, PersonalWebsiteList, InTheClearWebList} from '../data/projects';
+
+/*
+Populates each Featurette with paragraph items 
+*/
+function PopulateList(props){
+  const populatedList = props.list.map((item, index) =>
+    <p className="lead" key={index}>
+      {item}
+    </p>
+  )
+  return populatedList
+}
 
 class Projects extends Component {
 
@@ -28,11 +41,7 @@ class Projects extends Component {
               <div className="row featurette">
                     <div className="col-md-7">
                         <h2 className="featurette-heading">In The Clear</h2>
-                        <p className="lead">This app allows the user to determine what weather conditions they will be experiencing during their travels.</p>
-                        <p className="lead">It includes a drop-down menu that shows the user, city-by-city, what weather and temperatures they should expect.</p>
-                        <p className="lead">I've always had a fascination with meterology. A common problem with living in the midwest is that when you travel, you can experience a variety of different weather conditions. This app solves this issue by telling the user what types of weather they will experience during their travels.</p>
-                        <p className="lead">Built using Swift</p>
-                        <p className="lead">Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftlyJSON</p>
+                        <PopulateList list={InTheClearList} />
                         <p className="lead">Planned Updates:</p>
                         <ul>
                           <li className="lead">Implement a backend API to limit the number of API calls the users device has to make.</li>
@@ -59,10 +68,7 @@ class Projects extends Component {
                 <div className="row featurette">
                     <div className="col-md-7">
                         <h2 className="featurette-heading">Personal Website</h2>
-                        <p className="lead">A website that shows what I've done both professionally and in my free time.</p>
-                        <p className="lead">I've always enjoyed web development and a personal web page is something that has always been on my list of things to create.</p>
-                        <p className="lead">It's basically a great way to find out what I've done, and an easy way to get to know me.</p>
-                        <p className="lead">Build using ReactJS, Bootstrap, Webpack, NodeJS, and Netlify Functions</p>
+                        <PopulateList list={PersonalWebsiteList} />
                         <p>
                           <Button variant="outline-secondary" className="mr-3"  href="https://bitbucket.org/joshsauder/personal-webpage/src/master/" target="_blank" rel="noopener noreferrer" title="Link to source code">Source Code</Button>
                           <Button variant="outline-secondary" className="mr-3"  onClick={() => this.setState({ show: true, title: "Website Feedback", alert: false})} title="Give feedback on my website">Feedback</Button>
@@ -79,10 +85,7 @@ class Projects extends Component {
                 <div className="row featurette">
                   <div className="col-md-7">
                     <h2 className="featurette-heading">In The Clear Web App <span className="text-muted">Coming Soon!</span></h2>
-                    <p className="lead">A web app that will give the user all the functionality of the In The Clear iOS app.</p>
-                    <p className="lead">It will be built using ReactJS, NodeJS, and most likely MongoDB </p>
-                    <p className="lead">It will also use Google Maps and Google Places similar to the iOS App.</p>
-                    <p className="lead">Since this app isn't free, I will need to implement a user sign-in component (using MongoDB) on both the web app and iOS app.</p>
+                    <PopulateList list={InTheClearList} />
                   </div>
                   <div className="col-md-5 featurette-img-align">
                     <img className="featureete-image img-fluid mx-auto rounded" alt="In The Clear Logo" src={InTheClear}></img>

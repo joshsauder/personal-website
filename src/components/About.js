@@ -10,6 +10,19 @@ import NTIModal from './NTIModal';
 import CASModal from './CASModal';
 import XPOModal from './XPOModal';
 import OSUModal from './OSUModal';
+import {ProfessionalList, WhatIKnowList, WhatImLearningList, PersonalList, VolunteerWorkList} from '../data/personal.js';
+
+/*
+Populates each Featurette with paragraph items 
+*/
+function PopulateList(props){
+  const populatedList = props.list.map((item, index) =>
+    <p className="lead" key={index}>
+      {item}
+    </p>
+  )
+  return populatedList
+}
 
 class About extends Component {
 
@@ -43,8 +56,7 @@ class About extends Component {
                     <div className="featurette row">
                         <div className="col-md-7">
                           <h2 className="featurette-heading">Professionally</h2>
-                          <p className="lead">My goal, as a developer, is to create applications that better the users life. I truely believe software can positively impact a persons life and help make the world a much better place!</p>
-                          <p className="lead">One trait that has always helped me professionally is my curiosity. I've always been a curious person and learning a new skill has never been something I've shied away from. It has always helped me to increase my knowledge set, and broadens my horizons.</p>
+                          <PopulateList list={ProfessionalList} />
                         </div>
                         <div className="col-md-5 featurette-img-align">
                           <img className="featurette-image img-fluid mx-auto rounded" alt="Graduation" src={GradPhoto}></img>
@@ -76,10 +88,7 @@ class About extends Component {
                   <div className="featurette row">
                     <div className="col-md-12">
                       <h2 className="featurette-heading">What I Know</h2>
-                      <p className="lead">Languages and Frameworks - Javascript, AngularJS, HTML5, CSS, Bootstrap, ExpressJS, MSSQL, MySQL, Java, C++, Swift</p>
-                      <p className="lead">IDE/Text Editor - XCode, IntelliJ, Visual Studio Code, Eclipse</p>
-                      <p className="lead">Version Control - Git</p>
-                      <p className="lead">Project Management - Jira, Trello, Mantis</p>
+                      <PopulateList list={WhatIKnowList} />
                     </div>
                   </div>
                 </Jumbotron>
@@ -91,8 +100,7 @@ class About extends Component {
                   <div className="featurette row">
                     <div className="col-md-12">
                       <h2 className="featurette-heading">What I'm Learning</h2>
-                      <p className="lead">Currently - NodeJS, ReactJS, XCTest</p>
-                      <p className="lead">Upcoming - MongoDB, Mocha, GraphQL, Gulp</p>
+                      <PopulateList list={WhatImLearningList} />
                     </div>
                   </div>
                 </Jumbotron>
@@ -104,11 +112,7 @@ class About extends Component {
                   <div className="row featurette">
                       <div className="col-md-7">
                         <h2 className="featurette-heading">Personally</h2>
-                        <p className="lead">I was born in Pettisville, OH (Toledo area), and graduated from Pettisville High School with a class of 50. Pretty small right!</p>
-                        <p className="lead">I then went to and graduated from The Ohio State University. As you can probably imagine, there was a bit of culture shock going from a small school to a school the size of OSU.</p>
-                        <p className="lead">In my free-time you'll most likely find me, outside running. I'm sort of a self-proclaimed running fanatic. I've run 2 full marathons, 3 half marathons, and numerous 5K and 10K races. If you're wondering what I'm doing after work, there's a good chance I'm out running.</p>
-                        <p className="lead">I also love traveling and exploring new places. It forces me to get out of my confort zone and exposes me to new cuisines, and experiences. It also allows me to venture around and see various places and landmarks.</p>
-                        <p className="lead">Finally, I'm a huge Ohio State Buckeye fan. I love watching OSU football and basketball whether I'm at the game, or watching it on TV.</p>
+                        <PopulateList list={PersonalList} />
                       </div>
                       <div className="col-md-5 featurette-img-align">
                         <img className="featurette-image img-fluid mx-auto rounded" alt="Personal" src={Selfie}></img>
@@ -121,9 +125,7 @@ class About extends Component {
                 <div className="row featurette">
                   <div className="col-md-12">
                     <h2 className="featurette-heading">Volunteer Work</h2>
-                    <p className="lead">I've always been a firm believer that volunteer work is a vital aspect of a persons life. Not only for the personal benefits, but also because it benefits the communities involved.</p>
-                    <p className="lead">I've always enjoyed helping those with special needs, and always loved participating in athletics. I also noticed that those with special needs werent't always given the opportunity to participate in athletics earlier.</p>
-                    <p className="lead">I recently started volunteering at Special Olympic events and found it to be an awesome experience watching these individuals do things that others told them they couldn't. The encouragement and support they are given by the fans and volunteers is a fun sight to see, and gives the athletes an environment were they can be proud of there achievements.</p>
+                    <PopulateList list={VolunteerWorkList} />
                   </div>
                 </div>
             </Jumbotron>
