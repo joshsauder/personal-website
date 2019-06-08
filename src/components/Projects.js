@@ -55,7 +55,6 @@ class Projects extends Component {
               </Jumbotron>
           </Slide>
             <Slide right>
-              <div className= "shadow mb-5">
                 <Jumbotron>
                 <div className="row featurette">
                     <div className="col-md-7">
@@ -74,7 +73,6 @@ class Projects extends Component {
                     </div>
                 </div>
                 </Jumbotron>
-              </div>
             </Slide>
             <Slide left>
               <Jumbotron>

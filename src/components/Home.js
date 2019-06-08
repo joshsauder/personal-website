@@ -5,7 +5,8 @@ import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Navigation from './Navigation';
 import Logo from '../images/JoshSauderLogo.png';
-import ParticlesBackground from '../components/particles';
+import Particles from 'react-particles-js';
+import { particlesStyle, particlesParam} from '../data/particles';
 
 class Home extends Component {
 
@@ -13,7 +14,10 @@ class Home extends Component {
     return (
       <div id={this.props.id}>
         <Navigation />
-        <ParticlesBackground />
+        <Particles  
+        style = {particlesStyle}
+        params = {particlesParam}
+        />
         <div className="fill-screen">
           <div className="mt-8">
             <Bounce left duration={2000} delay={2000}>
