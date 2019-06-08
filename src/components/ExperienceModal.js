@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import '../App.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import {NTIModalData} from '../data/modal';
+import JobList from '../data/jobModal.json'
 
 /*
-Populates each Featurette with paragraph items 
+Populates each Modal with paragraph items 
 */
 function PopulateList(props){
   var ntiList = props.list
@@ -32,34 +32,36 @@ function PopulateTechList(props){
   );
 }
 
-class NTIModal extends Component {
+class ExperienceModal extends Component {
 
   constructor(props) {
     super(props)
-    this.state = { NTIShow: props.modal };
+    this.state = { 
+      NTIShow: props.modal, 
+    };
+
  }
 
-static getDerivedStateFromProps(nextProps, prevState){
-  if(nextProps.modal !== prevState.NTIShow){
-      return {
-          NTIShow: nextProps.modal 
-      }
-  }else {
-      return null;
+  static getDerivedStateFromProps(nextProps, prevState){
+    if(nextProps.modal !== prevState.NTIShow){
+        return {
+            NTIShow: nextProps.modal 
+        }
+    }else {
+        return null;
+    }
   }
-}
 
 
   render() {
     return (
       <Modal show={this.state.NTIShow} onHide={this.props.onHide}>
         <Modal.Header closeButton>
-          <Modal.Title>NTI - June 2018 - Present</Modal.Title>
+          <Modal.Title>{JobList[this.props.index].title} - {JobList[this.props.index].date}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <PopulateList list={NTIModalData[0]} />
-          <p>Technologies used:</p>
-          <PopulateTechList list={NTIModalData[1]} />
+          <PopulateList list={this.props.jobDescription[0]} />
+          <PopulateTechList list={this.props.jobDescription[1]} />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={this.props.onHide} title="Close pop-up window">
@@ -71,4 +73,4 @@ static getDerivedStateFromProps(nextProps, prevState){
    }
 }
 
-export default NTIModal;
+export default ExperienceModal;

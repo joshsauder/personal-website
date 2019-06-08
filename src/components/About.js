@@ -6,11 +6,9 @@ import Button from 'react-bootstrap/Button'
 import Slide from 'react-reveal/Slide';
 import GradPhoto from '../images/IMG_0138.png';
 import Selfie from '../images/SelfImage.png';
-import NTIModal from './NTIModal';
-import CASModal from './CASModal';
-import XPOModal from './XPOModal';
-import OSUModal from './OSUModal';
+import ExperienceModal from './ExperienceModal';
 import {ProfessionalList, WhatIKnowList, WhatImLearningList, PersonalList, VolunteerWorkList} from '../data/personal.js';
+import {NTIModalData, CASModalData, XPOModalData, OSUModalData} from '../data/modal';
 
 /*
 Populates each Featurette with paragraph items 
@@ -43,10 +41,10 @@ class About extends Component {
 
     return (
       <div id={this.props.id}>
-        <NTIModal modal={this.state.NTIShow} onHide={NTIClose} />
-        <CASModal modal={this.state.CASShow} onHide={CASClose} />
-        <XPOModal modal={this.state.XPOShow} onHide={XPOClose} />
-        <OSUModal modal={this.state.OSUShow} onHide={OSUClose} />
+        <ExperienceModal modal={this.state.NTIShow} onHide={NTIClose} jobDescription={NTIModalData} index={0} />
+        <ExperienceModal modal={this.state.CASShow} onHide={CASClose} jobDescription={CASModalData} index={1}/>
+        <ExperienceModal modal={this.state.XPOShow} onHide={XPOClose} jobDescription={XPOModalData} index={2}/>
+        <ExperienceModal modal={this.state.OSUShow} onHide={OSUClose} jobDescription={OSUModalData} index={3}/>
         <h1 className="text-center text-white">About Me</h1>
         <div className="container marketing">
           <div className="row ">
