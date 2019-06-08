@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import '../styles/About.css'
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import JobList from '../data/jobModal.json'
@@ -57,7 +58,10 @@ class ExperienceModal extends Component {
     return (
       <Modal show={this.state.NTIShow} onHide={this.props.onHide}>
         <Modal.Header closeButton>
-          <Modal.Title>{JobList[this.props.index].title} - {JobList[this.props.index].date}</Modal.Title>
+          <Modal.Title>
+            <p className="modal-p">{JobList[this.props.index].title}</p>
+            <p className="modal-p">{JobList[this.props.index].date}</p>
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <PopulateList list={this.props.jobDescription[0]} />

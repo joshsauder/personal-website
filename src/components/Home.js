@@ -4,8 +4,8 @@ import '../styles/Home.css';
 import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Navigation from './Navigation';
-import Logo from '../images/JoshSauderLogo.png';
 import Particles from 'react-particles-js';
+import Logo from '../images/JoshSauderLogo.png';
 import { particlesStyle, particlesParam} from '../data/particles';
 
 class Home extends Component {

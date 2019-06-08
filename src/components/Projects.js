@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Slide from 'react-reveal/Slide';
-import InTheClear from '../images/InTheClear.png';
-import logoShot from '../images/logoShot.png';
-import appStore from '../images/appStore.svg'
 import ContactForm from './ContactForm';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
+import InTheClear from '../images/InTheClear.png';
+import logoShot from '../images/logoShot.png';
+import appStore from '../images/appStore.svg'
 import {InTheClearList, PersonalWebsiteList, InTheClearWebList, InTheClearPlansList} from '../data/projects';
 
 /*

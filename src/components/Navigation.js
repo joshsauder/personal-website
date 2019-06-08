@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../images/JoshSauderLogo.png';
+import '../App.css';
+import { Link } from "react-scroll";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import '../App.css';
+import logo from '../images/JoshSauderLogo.png';
 import 'font-awesome/css/font-awesome.min.css';
-import { Link } from "react-scroll";
 import '../styles/Navigation.css';
 
 class Navigation extends React.Component {

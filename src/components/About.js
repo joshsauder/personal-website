@@ -4,9 +4,9 @@ import '../styles/About.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button'
 import Slide from 'react-reveal/Slide';
+import ExperienceModal from './ExperienceModal';
 import GradPhoto from '../images/IMG_0138.png';
 import Selfie from '../images/SelfImage.png';
-import ExperienceModal from './ExperienceModal';
 import {ProfessionalList, WhatIKnowList, WhatImLearningList, PersonalList, VolunteerWorkList} from '../data/personal.js';
 import {NTIModalData, CASModalData, XPOModalData, OSUModalData} from '../data/modal';
 
@@ -41,6 +41,7 @@ class About extends Component {
 
     return (
       <div id={this.props.id}>
+        {/* Index based on location in JSON */}
         <ExperienceModal modal={this.state.NTIShow} onHide={NTIClose} jobDescription={NTIModalData} index={0} />
         <ExperienceModal modal={this.state.CASShow} onHide={CASClose} jobDescription={CASModalData} index={1}/>
         <ExperienceModal modal={this.state.XPOShow} onHide={XPOClose} jobDescription={XPOModalData} index={2}/>
