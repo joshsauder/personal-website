@@ -21,6 +21,9 @@ function PopulateList(props){
   return populatedList
 }
 
+/*
+Populates each list 
+*/
 function PopulatePlansList(props){
   const populatedList = props.list.map((item, index) =>
   <li className="lead" key={index}>
@@ -91,7 +94,7 @@ class Projects extends Component {
                 <div className="row featurette">
                   <div className="col-md-7">
                     <h2 className="featurette-heading">In The Clear Web App <span className="text-muted">Coming Soon!</span></h2>
-                    <PopulateList list={InTheClearList} />
+                    <PopulateList list={InTheClearWebList} />
                   </div>
                   <div className="col-md-5 featurette-img-align">
                     <img className="featureete-image img-fluid mx-auto rounded" alt="In The Clear Logo" src={InTheClear}></img>

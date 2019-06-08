@@ -2,7 +2,35 @@ import React, { Component } from 'react';
 import '../App.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import {XPOModalData} from "../data/modal"
 
+/*
+Populates each Featurette with paragraph items 
+*/
+function PopulateList(props){
+  var xpoList = props.list
+  const populatedList = xpoList.map((item, index) =>
+    <p key={index}>
+      {item}
+    </p>
+  )
+  return populatedList
+}
+
+/*
+Populates each list 
+*/
+function PopulateTechList(props){
+  var xpoTechList = props.list
+  const populatedList = xpoTechList.map((item, index) =>
+  <li key={index}>
+    {item}
+  </li>
+  )
+  return(
+    <ul>{populatedList}</ul>
+  );
+}
 
 class XPOModal extends Component {
 
@@ -30,13 +58,9 @@ class XPOModal extends Component {
           <Modal.Title>XPO Logistics- June 2016 - August 206</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>I primarily worked with Microsoft SQL Server creating SQL scripts, and business reports using SSRS. </p>
-          <p>I also tested an in-house application looking for various bugs.</p>
+          <PopulateList list={XPOModalData[0]} />
           <p>Technologies used:</p>
-          <ul>
-            <li>MSSQL</li>
-            <li>SQL Server and SQL Server Reporting Services</li>
-          </ul>
+          <PopulateTechList list={XPOModalData[1]} />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={this.props.onHide} title="Close pop-up window">

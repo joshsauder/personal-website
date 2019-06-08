@@ -21,7 +21,7 @@ class Navigation extends React.Component {
             </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Item>
+                <Nav.Item eventkey={1}>
                     <Link className="nav-link" activeClass="active"
                       to="Home"
                       spy={true}
@@ -32,7 +32,7 @@ class Navigation extends React.Component {
                         Home
                     </Link>
                 </Nav.Item>
-                <Nav.Item>
+                <Nav.Item eventkey={2}>
                     <Link className="nav-link" activeClass="active"
                       to="About Me"
                       spy={true}
@@ -43,7 +43,7 @@ class Navigation extends React.Component {
                         About Me
                     </Link>
                 </Nav.Item>
-                <Nav.Item>
+                <Nav.Item eventkey={3}>
                     <Link className="nav-link" activeClass="active"
                       to="Projects"
                       spy={true}

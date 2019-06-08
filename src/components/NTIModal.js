@@ -2,6 +2,35 @@ import React, { Component } from 'react';
 import '../App.css';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import {NTIModalData} from '../data/modal';
+
+/*
+Populates each Featurette with paragraph items 
+*/
+function PopulateList(props){
+  var ntiList = props.list
+  const populatedList = ntiList.map((item, index) =>
+    <p key={index}>
+      {item}
+    </p>
+  )
+  return populatedList
+}
+
+/*
+Populates each list 
+*/
+function PopulateTechList(props){
+  var ntiTechList = props.list
+  const populatedList = ntiTechList.map((item, index) =>
+  <li key={index}>
+    {item}
+  </li>
+  )
+  return(
+    <ul>{populatedList}</ul>
+  );
+}
 
 class NTIModal extends Component {
 
@@ -28,14 +57,9 @@ static getDerivedStateFromProps(nextProps, prevState){
           <Modal.Title>NTI - June 2018 - Present</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>I am currently working with customers to complete any projects they are currently working on related to our products (system migrations, upgrades, new data endpoints, etc), and solving any issues they run into. This typically involves replicating what they are trying to accomplish, or re-creating the issue they are experiencing.</p>
-          <p>Customers also come up with ways to use our product in ways that have not been done yet, and it's my job to test it in the manner they want to use it and ensure that I can provide adequate support.</p>
+          <PopulateList list={NTIModalData[0]} />
           <p>Technologies used:</p>
-          <ul>
-            <li>MSSQL, Oracle SQL, MySQL</li>
-            <li>Replicating data from an HPE NonStop to another HPE Nonstop, Amazon AWS, Oracle, SQL Server, Splunk.</li>
-          </ul>
-          <p>On top of the above list, this job really involves a lot of communication. I have numerous meetings with customers (both scheduled and after-hours when an outage occurs, or production issue occurs), and this job requires you to able to quickly identify the issue at hand and find a resolution. It also requires you to be able to explain technical detail in a concise and efficient manner.</p>
+          <PopulateTechList list={NTIModalData[1]} />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={this.props.onHide} title="Close pop-up window">
