@@ -19,3 +19,10 @@ export const InTheClearWebList = [
     "It will also use Google Maps and Google Places similar to the iOS App.",
     "Since this app isn't free, I will need to implement a user sign-in component (using MongoDB) on both the web app and iOS app."
 ]
+
+export const InTheClearPlansList = [
+    "Implement a backend API to limit the number of API calls the users device has to make.",
+    "Allow the user to plan stops (overnight hotel stays) along the way.",
+    "Give the user the option to input a planned start time so they can plan ahead.",
+    "Tell the user if they will experience any severe weather (blizzard conditions, or severe storms) along the way."
+]

@@ -20,7 +20,7 @@ class Navigation extends React.Component {
               <i className="fa fa-align-right"></i>
             </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mr-auto" activeKey="1">
+              <Nav className="mr-auto">
                 <Nav.Item>
                     <Link className="nav-link" activeClass="active"
                       to="Home"

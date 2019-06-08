@@ -7,7 +7,7 @@ import appStore from '../images/appStore.svg'
 import ContactForm from './ContactForm';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
-import {InTheClearList, PersonalWebsiteList, InTheClearWebList} from '../data/projects';
+import {InTheClearList, PersonalWebsiteList, InTheClearWebList, InTheClearPlansList} from '../data/projects';
 
 /*
 Populates each Featurette with paragraph items 
@@ -19,6 +19,17 @@ function PopulateList(props){
     </p>
   )
   return populatedList
+}
+
+function PopulatePlansList(props){
+  const populatedList = props.list.map((item, index) =>
+  <li className="lead" key={index}>
+    {item}
+  </li>
+  )
+  return(
+    <ul>{populatedList}</ul>
+  );
 }
 
 class Projects extends Component {
@@ -43,12 +54,7 @@ class Projects extends Component {
                         <h2 className="featurette-heading">In The Clear</h2>
                         <PopulateList list={InTheClearList} />
                         <p className="lead">Planned Updates:</p>
-                        <ul>
-                          <li className="lead">Implement a backend API to limit the number of API calls the users device has to make.</li>
-                          <li className="lead">Allow the user to plan stops (overnight hotel stays) along the way.</li>
-                          <li className="lead">Give the user the option to input a planned start time so they can plan ahead.</li>
-                          <li className="lead">Tell the user if they will experience any severe weather (blizzard conditions, or severe storms) along the way.</li>
-                        </ul>
+                        <PopulatePlansList list={InTheClearPlansList} />
                         <p>
                           <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Request", alert: false})} title="Request source code">Source Code Request</Button>
                           <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Feedback", alert: false})} title="Give feedback on In The Clear">Feedback</Button>
