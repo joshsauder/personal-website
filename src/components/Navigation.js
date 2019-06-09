@@ -12,7 +12,7 @@ class Navigation extends React.Component {
     render() {
         return (
         <div className="nav-fixed-top">
-          <Navbar collapseOnSelect variant="dark" expand="md" className="bg-darkPurple" id="responsive-navbar-nav">
+          <Navbar collapseOnSelect variant="dark" expand="md" className="bg-darkPurple">
             <Navbar.Brand href="/">
               <img src={logo} className="d-block" height="40" alt="logo" />
             </Navbar.Brand>
@@ -21,7 +21,7 @@ class Navigation extends React.Component {
             </Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Item eventkey={1}>
+                <Nav.Link eventkey={1}>
                     <Link className="nav-link" activeClass="active"
                       to="Home"
                       spy={true}
@@ -31,8 +31,8 @@ class Navigation extends React.Component {
                       >
                         Home
                     </Link>
-                </Nav.Item>
-                <Nav.Item eventkey={2}>
+                </Nav.Link>
+                <Nav.Link eventkey={2}>
                     <Link className="nav-link" activeClass="active"
                       to="About Me"
                       spy={true}
@@ -42,8 +42,8 @@ class Navigation extends React.Component {
                       >
                         About Me
                     </Link>
-                </Nav.Item>
-                <Nav.Item eventkey={3}>
+                </Nav.Link>
+                <Nav.Link eventkey={3}>
                     <Link className="nav-link" activeClass="active"
                       to="Projects"
                       spy={true}
@@ -53,7 +53,7 @@ class Navigation extends React.Component {
                       >
                         My Projects
                     </Link>
-                </Nav.Item>
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
