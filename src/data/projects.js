@@ -1,6 +1,6 @@
 export const InTheClearList = [
     "This app allows the user to determine what weather conditions they will be experiencing during their travels.",
-    "It includes a drop-down menu that shows the user, city-by-city, what weather and temperatures they should expect.",
+    "It includes a personalized route line that is colored based on the weather conditions, and a table that shows the user, city-by-city, what weather and temperatures they should expect.",
     "I've always had a fascination with meterology. A common problem with living in the midwest is that when you travel, you can experience a variety of different weather conditions. This app solves this issue by telling the user what types of weather they will experience during their travels.",
     "Built using Swift",
     "Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftlyJSON"
