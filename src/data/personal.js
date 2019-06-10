@@ -6,7 +6,7 @@ export const ProfessionalList = [
 ]
 
 export const WhatIKnowList = [
-    "Languages and Frameworks - Javascript, AngularJS, HTML5, CSS, Bootstrap, ExpressJS, MSSQL, MySQL, Java, C++, Swift",
+    "Languages and Frameworks - Javascript, AngularJS, HTML5, CSS, Bootstrap, ExpressJS, MSSQL, MySQL, Java, C++, Swift, Spring",
     "IDE/Text Editor - XCode, IntelliJ, Visual Studio Code, Eclipse",
     "Version Control - Git",
     "Project Management - Jira, Trello, Mantis"
