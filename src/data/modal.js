@@ -27,8 +27,8 @@ export const OSUModalData = [
 
 export const CASModalData = [
     [
-        "During this Co-Op, I worked primary on an in-house web app. I worked with 5 other developers and a scrum master in an Agile environment. Each week, we'd have a weekly sprint meeting to determine what was completed, and what items from the product backlog were to be completed during the next sprint.",
-        "I was also given the opportunity to work on my own project to showcase what I had learned throughout my Co-Op. I worked with an employee who had to manually call numerous web-services just to obtain a single ID. I ended up building a web app that allowed him to put in a single ID and it would return a list of ID's that he may need. He also requested that I give him the option to output an Excel spreadsheet of any associated ID's and other applicable data. By the end of my Co-Op, it was made known to me that numerous other employees had found out about this tool, and had determined that it made their job much easier.",
+        "During this Co-op, I worked primary on an in-house web app. I worked with 5 other developers and a scrum master in an Agile environment. Each week, we'd have a weekly sprint meeting to determine what was completed, and what items from the product backlog were to be completed during the next sprint.",
+        "I was also given the opportunity to work on my own project to showcase what I had learned throughout my Co-op. I worked with an employee who had to manually call numerous web-services just to obtain a single ID. I ended up building a web app that allowed him to put in a single ID and it would return a list of ID's that he may need. He also requested that I give him the option to output an Excel spreadsheet of any associated ID's and other applicable data. By the end of my Co-Op, it was made known to me that numerous other employees had found out about this tool, and had determined that it made their job much easier.",
         //place any new information above string below
         "Technologies used:"
     ],

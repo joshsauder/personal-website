@@ -72,7 +72,7 @@ class About extends Component {
                         <h2 className="featurette-heading">Experience</h2>
                         <Button variant="outline-secondary" className="text-left mb-3" onClick={() => this.setState({ OSUShow: true })} title="More info on my time at OSU">B.S. Computer Science Engineering - The Ohio State University</Button>
                         <Button variant="outline-secondary" className=" text-left mb-3" onClick={() => this.setState({ NTIShow: true })} title="More info on my time at Network Technologies Internation">Software Engineer - Network Technologies International</Button>
-                        <Button variant="outline-secondary" className=" text-left mb-3" onClick={() => this.setState({ CASShow: true })} title="More info on my time at Chemical Abstract Services">Chemical Abstract Services - Software Engineering Co-Op</Button>
+                        <Button variant="outline-secondary" className=" text-left mb-3" onClick={() => this.setState({ CASShow: true })} title="More info on my time at Chemical Abstract Services">Chemical Abstract Services - Software Engineering Co-op</Button>
                         <Button variant="outline-secondary" className=" text-left" onClick={() => this.setState({ XPOShow: true })} title="More info on my time at XPO Logistics">XPO Logistics - IT Intern</Button>
                       </div>
                     </div>  
