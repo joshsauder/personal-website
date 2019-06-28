@@ -31,7 +31,12 @@ class Home extends Component {
               </Slide>
               <Slide top duration={2000}>
                 <div className="col-md-1 col-3">
-                  <a href="www.linkedin.com/in/josh-sauder-5231a1106" title="LinkedIn Profile"><i className="fa fa-linkedin fa-lg btn-social"></i></a>
+                  <a href="https://www.linkedin.com/in/josh-sauder-5231a1106" title="LinkedIn Profile" target="_blank"><i className="fa fa-linkedin fa-lg btn-social"></i></a>
+                </div>
+              </Slide>
+              <Slide top duration={2000}>
+                <div className="col-md-1 col-3">
+                  <a href="https://github.com/joshsauder" title="Github Profile" target="_blank"><i className="fa fa-github fa-lg btn-social"></i></a>
                 </div>
               </Slide>
             </div>
