@@ -79,7 +79,7 @@ class Projects extends Component {
                         <h2 className="featurette-heading">Personal Website</h2>
                         <PopulateList list={PersonalWebsiteList} />
                         <p>
-                          <Button variant="outline-secondary" className="mr-3"  href="https://bitbucket.org/joshsauder/personal-webpage/src/master/" target="_blank" rel="noopener noreferrer" title="Link to source code">Source Code</Button>
+                          <Button variant="outline-secondary" className="mr-3"  href="https://github.com/joshsauder/personal-website" target="_blank" rel="noopener noreferrer" title="Link to source code">Source Code</Button>
                           <Button variant="outline-secondary" className="mr-3"  onClick={() => this.setState({ show: true, title: "Website Feedback", alert: false})} title="Give feedback on my website">Feedback</Button>
                         </p>
                     </div>
