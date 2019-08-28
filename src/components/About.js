@@ -28,7 +28,7 @@ class About extends Component {
     super(props);
     this.state = {
       NTIShow: false,
-      ODShow: false.
+      ODShow: false,
       CASShow: false,
       XPOShow: false,
       OSUModal: false,
@@ -36,6 +36,7 @@ class About extends Component {
   }
   render() {
     let NTIClose = () => this.setState({ NTIShow: false });
+    let ODClose = () => this.setState({ ODShow: false });
     let CASClose = () => this.setState({ CASShow: false });
     let XPOClose = () => this.setState({ XPOShow: false });
     let OSUClose = () => this.setState({ OSUShow: false });
