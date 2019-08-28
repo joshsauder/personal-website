@@ -12,7 +12,7 @@ export const NTIModalData = [
 
 ]
 
-export const OpenDemiaModalDate = [
+export const OpenDemiaModalData = [
     [
         "I was contacted by a fellow OSU student about joining his start-up as a part-time developer. I accepted and began working primary on the backend.",
         "There is a total of 5 people in the company so it is important that you work with the other members of the team, and also meet deadlines.",
