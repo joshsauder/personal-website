@@ -12,6 +12,21 @@ export const NTIModalData = [
 
 ]
 
+export const OpenDemiaModalDate = [
+    [
+        "I was contacted by a fellow OSU student about joining his start-up as a part-time developer. I accepted and began working primary on the backend.",
+        "There is a total of 5 people in the company so it is important that you work with the other members of the team, and also meet deadlines.",
+        "All backend development is done in Java using Spring Boot. When I'm ready to deploy, I create a Docker image and deploy it to ECS.",
+        "When I'm tasked with a frontend task, it is done in ReactJS and Bootstrap. We use a tool called Amplify so we can manage deployment environments (i.e. Test, Pre-Production, and Production).",
+        "Technologies Used:"
+    ],
+    [
+        "Front-End: ReactJS, Bootstrap",
+        "Back-End: Amazon AWS (ECS, ECK, DyanamoDB), Spring Boot, Java EE",
+        "Project Management: Amazon Amplify, Trello, Git, Figma"
+    ]
+]
+
 export const OSUModalData = [
     [
         "During my time at OSU, I always enjoyed courses that involved web development, and appreciated the freedom we had in selecting the tech stacks that we were going to use. I loved learning the many Javascript frameworks, and various back-end options. At OSU, I was able to build apps using Ruby on Rails, Spring, NodeJS, AngularJS, ExpressJS, and vanilla Javascript.",

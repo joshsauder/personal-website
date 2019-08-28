@@ -1,7 +1,9 @@
 export const InTheClearList = [
     "This app allows the user to determine what weather conditions they should expect to be experiencing during their travels.",
     "It includes a personalized route line that is colored based on the weather conditions, and a table that shows the user, city-by-city, what weather and temperatures they should expect.",
+    "It also allows the user to plan stops (overnight hotel stays, visit to long lost cousin) along the way, and allows the user to select a departure time.",
     "I've always had a fascination with meterology. A common problem with living in the midwest is that when you travel, you can experience a variety of different weather conditions, some of which are not safe to be driving in. This app solves this issue by telling the user what types of weather they should expect to be experiencing during their travels.",
+    "Implemented a backend service to limit the number of API calls the users device has to make. This was done using AWS Lambda and I currently have two functions that handle the reverse geolocation and weather calls.",
     "Built using Swift",
     "Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftlyJSON"
 ]
@@ -21,8 +23,8 @@ export const InTheClearWebList = [
 ]
 
 export const InTheClearPlansList = [
-    "Implement a backend API to limit the number of API calls the users device has to make.",
-    "Allow the user to plan stops (overnight hotel stays) along the way.",
-    "Give the user the option to input a planned start time so they can plan ahead.",
-    "Tell the user if they will experience any severe weather (blizzard conditions, or severe storms) along the way."
+    "The app currently does tell the user if they will experience severe weather (blizzard conditions, or severe storms) along the way; however, this could be portrayed better (i.e. better explanation of what they'll experience).",
+    "Implement a city list screen that shows the user the weather they will experience while there visiting. Would pull from the trip stops list and also the final destination.",
+    "Implement a sign in screen once the web app is complete (see below).",
+    "On the city list screen, allow the user to toggle to a directions list that will show the user the weather turn-by-turn."
 ]
