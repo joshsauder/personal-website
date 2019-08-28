@@ -8,7 +8,7 @@ import ExperienceModal from './ExperienceModal';
 import GradPhoto from '../images/IMG_0138.png';
 import Selfie from '../images/SelfImage.png';
 import {ProfessionalList, WhatIKnowList, WhatImLearningList, PersonalList, VolunteerWorkList} from '../data/personal.js';
-import {NTIModalData, CASModalData, XPOModalData, OSUModalData} from '../data/modal';
+import {NTIModalData, CASModalData, OpenDemiaModalData ,XPOModalData, OSUModalData} from '../data/modal';
 
 /*
 Populates each Featurette with paragraph items 
@@ -28,6 +28,7 @@ class About extends Component {
     super(props);
     this.state = {
       NTIShow: false,
+      ODShow: false.
       CASShow: false,
       XPOShow: false,
       OSUModal: false,
@@ -43,9 +44,10 @@ class About extends Component {
       <div id={this.props.id}>
         {/* Index based on location in JSON */}
         <ExperienceModal modal={this.state.NTIShow} onHide={NTIClose} jobDescription={NTIModalData} index={0} />
-        <ExperienceModal modal={this.state.CASShow} onHide={CASClose} jobDescription={CASModalData} index={1}/>
-        <ExperienceModal modal={this.state.XPOShow} onHide={XPOClose} jobDescription={XPOModalData} index={2}/>
-        <ExperienceModal modal={this.state.OSUShow} onHide={OSUClose} jobDescription={OSUModalData} index={3}/>
+        <ExperienceModal modal={this.state.ODShow} onHide={ODClose} jobDescription={OpenDemiaModalData} index={1} />
+        <ExperienceModal modal={this.state.CASShow} onHide={CASClose} jobDescription={CASModalData} index={2}/>
+        <ExperienceModal modal={this.state.XPOShow} onHide={XPOClose} jobDescription={XPOModalData} index={3}/>
+        <ExperienceModal modal={this.state.OSUShow} onHide={OSUClose} jobDescription={OSUModalData} index={4}/>
         <h1 className="text-center text-white">About Me</h1>
         <div className="container marketing">
           <div className="row ">
@@ -72,6 +74,7 @@ class About extends Component {
                         <h2 className="featurette-heading">Experience</h2>
                         <Button variant="outline-secondary" className="text-left mb-3" onClick={() => this.setState({ OSUShow: true })} title="More info on my time at OSU">B.S. Computer Science Engineering - The Ohio State University</Button>
                         <Button variant="outline-secondary" className=" text-left mb-3" onClick={() => this.setState({ NTIShow: true })} title="More info on my time at Network Technologies Internation">Software Engineer - Network Technologies International</Button>
+                        <Button variant="outline-secondary" className=" text-left mb-3" onClick={() => this.setState({ ODShow: true })} title="More info on my time at OpenDemia">Part-Time Developer - OpenDemia</Button>
                         <Button variant="outline-secondary" className=" text-left mb-3" onClick={() => this.setState({ CASShow: true })} title="More info on my time at Chemical Abstract Services">Chemical Abstract Services - Software Engineering Co-op</Button>
                         <Button variant="outline-secondary" className=" text-left" onClick={() => this.setState({ XPOShow: true })} title="More info on my time at XPO Logistics">XPO Logistics - IT Intern</Button>
                       </div>
