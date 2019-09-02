@@ -19,7 +19,7 @@
     "jquery": "^3.4.1",
     "netlify-lambda": "^1.4.13",
     "nodemailer": "^5.1.1",
-    "npm": "^6.9.0",
+    "npm": "^6.11.2",
     "particlesjs": "^2.2.3",
     "popper.js": "^1.14.6",
     "react": "^16.5.2",
