@@ -2,7 +2,8 @@
     "name": "functions",
     "description": "functions",
     "dependencies": {
-      "nodemailer": "^4.6.4",
-      "dotenv": "8.0.0"
+        "@sendgrid/mail": "^6.4.0",
+        "dotenv": "8.0.0",
+        "nodemailer": "^4.6.4"
     }
 }
