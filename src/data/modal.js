@@ -22,7 +22,7 @@ export const OpenDemiaModalData = [
     ],
     [
         "Front-End: ReactJS, Bootstrap",
-        "Back-End: Amazon AWS (ECS, ECK, DyanamoDB), Spring Boot, Java EE",
+        "Back-End: Amazon AWS (ECS, ECR, DyanamoDB), Spring Boot, Java EE",
         "Project Management: Amazon Amplify, Trello, Git, Figma"
     ]
 ]
