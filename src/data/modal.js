@@ -15,9 +15,9 @@ export const NTIModalData = [
 export const OpenDemiaModalData = [
     [
         "I was contacted by a fellow OSU Alumni about joining his start-up as a developer. I had just finished the In The Clear iOS app, and had free-time outside my current job so I immediately joined.",
-        "There is a total of 5 people in the company so it is important that you communicate and work with with the other team members.",
-        "All backend development is done in Java using Spring Boot. When I'm ready to deploy, I use a Docker image and push it to AWS ECR and update the ECS instance.",
-        "When I'm tasked with a frontend task, it is done using ReactJS and Bootstrap. We use a tool called AWS Amplify to manage user login credentials and measure analytics.",
+        "There are a total of 5 people in the company so it is important that you communicate and work with the other team members.",
+        "All backend development is done in Java using Spring Boot. When I'm ready to deploy, I package the project into a Docker image and deploy it to AWS ECS.",
+        "I also perform tasks on the frontend using ReactJS and Bootstrap. We use a tool called AWS Amplify to manage user login credentials and measure analytics.",
         "Technologies Used:"
     ],
     [
