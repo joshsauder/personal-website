@@ -13,7 +13,8 @@ export function handler(event, context, callback){
   Create email body
   */
   const parsedBody = JSON.parse(event.body);
-  var body = parsedBody.name + '(' + parsedBody.email  + ') ' + 'from ' + parsedBody.organization + ' would like to request access. \n' + parsedBody.content
+  var github = parsedBody.github ? parsedBody.github : "";
+  var body = `Name: ${parsedBody.name} \n Email: ${parsedBody.email} \n Github: ${github} \n Organization: ${parsedBody.organization} \n\n ${parsedBody.content}`
   var mailOptions = {
     from: 'joshsauder@gmail.com',
     to: 'intheclearapp@gmail.com',

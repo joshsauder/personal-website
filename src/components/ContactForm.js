@@ -38,9 +38,15 @@ function ToggleFormAndAlert(props) {
             <label htmlFor="email" className="col-form-label">Email</label>
             <input type="text" className="form-control" id="email" maxLength="254"/>
           </div>
+          {props.title == "In The Clear Request" &&
+            <div className="form-group">
+              <label htmlFor="organization" className="col-form-label">Github Username</label>
+              <input type="text" className="form-control" id="github" maxLength="100"/>
+            </div>
+          }
           <div className="form-group">
             <label htmlFor="organization" className="col-form-label">Organization (optional)</label>
-            <input type="text" className="form-control" id="organization"maxLength="100"/>
+            <input type="text" className="form-control" id="organization" maxLength="100"/>
           </div>
           <div className="form-group">
             <label htmlFor="comments" className="col-form-label">Comments (optional)</label>
@@ -50,6 +56,7 @@ function ToggleFormAndAlert(props) {
       )
   }
 }
+
 
 class ContactForm extends Component {
 
@@ -133,7 +140,7 @@ When the submit button is clicked, call the sendMail backend function and depend
           <Modal.Title>{this.props.title} Form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <ToggleFormAndAlert success={this.state.successAlert} fail={this.state.failAlert} />
+          <ToggleFormAndAlert success={this.state.successAlert} fail={this.state.failAlert} title={this.props.title} />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={() => { this.handleClick(this.props) }} disabled={this.state.sentMail} title="Submit Form">
