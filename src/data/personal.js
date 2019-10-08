@@ -6,14 +6,14 @@ export const ProfessionalList = [
 ]
 
 export const WhatIKnowList = [
-    "Languages and Frameworks - Javascript, AngularJS, HTML5, CSS, Bootstrap, ExpressJS, MSSQL, MySQL, Java, Swift, Spring",
+    "Languages and Frameworks - Javascript, AngularJS, ReactJS, HTML5, CSS, Bootstrap, NodeJS, ExpressJS, MSSQL, MySQL, Java, Swift, Spring",
     "IDE/Text Editor - XCode, IntelliJ, Visual Studio Code, Eclipse",
     "Version Control - Git",
     "Project Management - Jira, Trello, Mantis"
 ]
 
 export const WhatImLearningList = [
-    "Currently - NodeJS, ReactJS, XCTest, AWS Lambda, Mocha/Chai, AWS DynamoDB",
+    "Currently - XCTest, AWS Lambda, Mocha/Chai, AWS DynamoDB", "Docker",
     "Upcoming - MongoDB, GraphQL, Gulp, Kitura (IBM server-side Swift framework)"
 ]
 
