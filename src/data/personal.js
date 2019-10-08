@@ -13,7 +13,7 @@ export const WhatIKnowList = [
 ]
 
 export const WhatImLearningList = [
-    "Currently - XCTest, AWS Lambda, Mocha/Chai, AWS DynamoDB", "Docker",
+    "Currently - XCTest, AWS Lambda, Mocha/Chai, AWS DynamoDB, Docker",
     "Upcoming - MongoDB, GraphQL, Gulp, Kitura (IBM server-side Swift framework)"
 ]
 
