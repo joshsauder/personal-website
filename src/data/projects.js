@@ -16,9 +16,10 @@ export const PersonalWebsiteList = [
 
 export const InTheClearWebList = [
     "A web app that will give the user all the functionality of the In The Clear iOS app.",
-    "It will be built using ReactJS, NodeJS, AWS Lambda, and most likely MongoDB.",
+    "It will be built using ReactJS, Bootstrap, NodeJS, ExpressJS, AWS Lambda, and MongoDB.",
     "It will also use Google Maps and Google Places similar to the iOS App.",
-    "Since this app isn't free, I will need to implement a user sign-in component (using MongoDB) on both the web app and iOS app."
+    "Docker will be used, and the Docker image will be deployed to AWS Lightsail.",
+    "Since this iOS app isn't free, I will need to implement a user sign-in component (using MongoDB) on both the web app and iOS app."
 ]
 
 export const InTheClearPlansList = [
