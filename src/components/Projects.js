@@ -59,7 +59,7 @@ class Projects extends Component {
                         <p className="lead">Planned Updates:</p>
                         <PopulatePlansList list={InTheClearPlansList} />
                         <p>
-                          <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Request", alert: false})} title="Request source code">Source Code Request</Button>
+                          <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Source Code Request", alert: false})} title="Request source code">Source Code Request</Button>
                           <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Feedback", alert: false})} title="Give feedback on In The Clear">Feedback</Button>
                           <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mt-3">
                             <img alt="App Store Link" src={appStore}></img>

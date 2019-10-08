@@ -38,9 +38,9 @@ function ToggleFormAndAlert(props) {
             <label htmlFor="email" className="col-form-label">Email</label>
             <input type="text" className="form-control" id="email" maxLength="254"/>
           </div>
-          {props.title == "In The Clear Request" &&
+          {props.title === "In The Clear Source Code Request" &&
             <div className="form-group">
-              <label htmlFor="organization" className="col-form-label">Github Username</label>
+              <label htmlFor="github" className="col-form-label">Github Username</label>
               <input type="text" className="form-control" id="github" maxLength="100"/>
             </div>
           }
@@ -93,6 +93,7 @@ When the submit button is clicked, call the sendMail backend function and depend
     var email = $('#email').val();
     var org = $('#organization').val();
     var comments = $("textarea[name='comments']").val();
+    var github = $('#github').val();
 
     fetch('/.netlify/functions/sendMail', {
       method: 'Post',
@@ -104,7 +105,8 @@ When the submit button is clicked, call the sendMail backend function and depend
         email: email,
         organization: org,
         content: comments,
-        type: props.title
+        type: props.title,
+        github: github
       })
     })
     .then((response)=> {
@@ -137,7 +139,7 @@ When the submit button is clicked, call the sendMail backend function and depend
     return (
       <Modal show={this.state.show} onHide={this.props.onHide} onClose={this.props.onClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{this.props.title} Form</Modal.Title>
+          <Modal.Title>{this.props.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <ToggleFormAndAlert success={this.state.successAlert} fail={this.state.failAlert} title={this.props.title} />

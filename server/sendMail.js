@@ -13,6 +13,7 @@ export function handler(event, context, callback){
   Create email body
   */
   const parsedBody = JSON.parse(event.body);
+  //needed since Github field only conditionally renders
   var github = parsedBody.github ? parsedBody.github : "";
   var body = `Name: ${parsedBody.name} \n Email: ${parsedBody.email} \n Github: ${github} \n Organization: ${parsedBody.organization} \n\n ${parsedBody.content}`
   var mailOptions = {
