@@ -14,16 +14,16 @@ export const NTIModalData = [
 
 export const OpenDemiaModalData = [
     [
-        "I was contacted by a fellow OSU student about joining his start-up as a part-time developer. I accepted and began working primarily on the backend.",
-        "There is a total of 5 people in the company so it is important that you commuicate with the other team members, and meet deadlines.",
-        "All backend development is done in Java using Spring Boot. When I'm ready to deploy, I use a Docker image and deploy it to ECS.",
-        "When I'm tasked with a frontend task, it is done using ReactJS and Bootstrap. We use a tool called AWS Amplify to manage deployment environments (i.e. Test, Pre-Production, and Production).",
+        "I was contacted by a fellow OSU Alumni about joining his start-up as a developer. I had just finished the In The Clear iOS app, and had free-time outside my current job so I immediately joined.",
+        "There is a total of 5 people in the company so it is important that you communicate and work with with the other team members.",
+        "All backend development is done in Java using Spring Boot. When I'm ready to deploy, I use a Docker image and push it to AWS ECR and update the ECS instance.",
+        "When I'm tasked with a frontend task, it is done using ReactJS and Bootstrap. We use a tool called AWS Amplify to manage user login credentials and measure analytics.",
         "Technologies Used:"
     ],
     [
         "Front-End: ReactJS, Bootstrap",
-        "Back-End: Amazon AWS (ECS, ECR, DyanamoDB), Spring Boot, Java EE",
-        "Project Management: Amazon Amplify, Trello, Git, Figma"
+        "Back-End: Amazon AWS (ECS, ECR, S3, DyanamoDB), Spring Boot, Java EE",
+        "Project Management: Trello, Git, Figma"
     ]
 ]
 
