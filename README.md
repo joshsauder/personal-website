@@ -5,7 +5,7 @@
 ## Tech Stack
 1. [ReactJS](https://reactjs.org) - Javascript Framework
 2. [Bootstrap](https://getbootstrap.com) - CSS Framework
-3. [Nodemailer](https://nodemailer.com/about/) - NodeJS module used to e-mail source code requests and feedback to myself.
+3. [Sendgrid](https://sendgrid.com) - NodeJS module used to e-mail source code requests and feedback to myself.
 4. [Netlify](https://www.netlify.com) - Static Site Hosting
 5. [Netlify Function](https://www.netlify.com/docs/functions/) - The serverless function API used to request access/send feedback to my email. It's based on Amazon Web Services Lambda function.
 
