@@ -1,13 +1,13 @@
 export const NTIModalData = [
     [
-        "I am currently working with customers to complete any projects they are currently implementing (system migrations, upgrades, new data endpoints, etc), and solving any issues they run into. This typically involves replicating what they are trying to accomplish, or re-creating the issue they are experiencing.",
+        "I am currently working with customers to implement any projects they are currently pursuing (system migrations, upgrades, new data endpoints, etc), and solving any issues they run into. This typically involves replicating what they are trying to accomplish, or re-creating the issue they are experiencing.",
         "Customers also come up with ways to use our product that have not been attempted yet, and it's my job to test it in the manner they want to use it and ensure that I'm able to provide adequate support.",
-        "On top of the above, this job really involves a lot of communication. I have numerous meetings with customers (both scheduled and after hours when a production issue occurs), and this job requires you to able to quickly identify the issue at hand and find a solution. It also requires you to be able to explain technical detail in a concise and efficient manner.",
+        "On top of the above, this job really involves a lot of communication. I have numerous meetings with customers (both scheduled and after-hours when a production issue occurs), and this job requires you to able to quickly identify the issue at hand and find a solution. It also requires you to be able to explain technical detail in a concise and efficient manner.",
         "Technologies used:"
     ],
     [
         "MSSQL, Oracle SQL, MySQL",
-        "Replicating data from an HPE NonStop to another HPE Nonstop, Amazon AWS, Oracle, SQL Server, Splunk.",
+        "Replicating data from a HPE NonStop to another HPE Nonstop, Amazon AWS, Oracle, SQL Server, Splunk.",
     ]
 
 ]
@@ -43,7 +43,7 @@ export const OSUModalData = [
 export const CASModalData = [
     [
         "During this Co-op, I worked primary on an in-house web app. I worked with 5 other developers and a scrum master in an Agile environment. Each week, we'd have a weekly sprint meeting to determine what was completed, and what items from the product backlog were to be completed during the next sprint.",
-        "I was also given the opportunity to work on my own project to showcase what I had learned throughout my Co-op. I worked with an employee who had to manually call numerous web-services just to obtain a single ID. I ended up building a web app that allowed him to put in a single ID and it would return a list of ID's that he may need. He also requested that I give him the option to output an Excel spreadsheet of any associated ID's and other applicable data. By the end of my Co-Op, it was made known to me that numerous other employees had found out about this tool, and had determined that it made their job much easier.",
+        "I was also given the opportunity to work on my own project to showcase what I had learned throughout my Co-op. I worked with an employee who had to manually call numerous web-services just to obtain a single ID. I ended up building a web app that allowed him to input a single ID and it would return a list of ID's that he may need. I also implemented a feature that would output an Excel spreadsheet of any associated ID's and other applicable data. By the end of my Co-Op, it was made known to me that numerous other employees had found out about this tool, and had determined that it made their job much easier.",
         //place any new information above string below
         "Technologies used:"
     ],

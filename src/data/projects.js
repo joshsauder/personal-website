@@ -1,10 +1,10 @@
 export const InTheClearList = [
-    "I've always had a fascination with meterology. A common problem with living in the midwest is that when you travel, you can experience a variety of different weather conditions, some of which are not safe to be driving in.",
+    "I've always had a fascination with meterology. A common problem with living in the Midwest is that when you travel, you can experience a variety of different weather conditions, some of which are unsafe to be driving in.",
     "This app allows the user to determine what weather conditions they should expect to experience during their travels.",
-    "It includes a personalized route line that is colored based on the weather conditions, and a table that shows, city-by-city, what weather and temperatures they can expect.",
-    "It also gives the option to plan stops (overnight hotel stays, visit to long lost cousin), and select a departure times.",
+    "It includes a personalized route line that is colored based on the weather conditions, and a table that shows, city-by-city, what weather conditions and temperatures they can expect.",
+    "It also gives the option to plan stops (overnight hotel stays, visit to long lost cousin, etc.), and select a departure times.",
     "Implemented a backend service to limit the number of API calls the users device has to make. This was done using AWS Lambda with two functions that handle the reverse geolocation and weather calls.",
-    "The app was built using Swift, and the backend was built using AWS Lambda and NodeJS. The Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftlyJSON.",
+    "The app was built using Swift, and the backend was built using AWS Lambda and NodeJS. The Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftyJSON.",
 ]
 
 export const PersonalWebsiteList = [
@@ -18,7 +18,7 @@ export const InTheClearWebList = [
     "A web app that will give the user all the functionality of the In The Clear iOS app.",
     "It is being built using ReactJS, Bootstrap, NodeJS, ExpressJS, AWS Lambda, and MongoDB.",
     "It will also use Google Maps and Google Places similar to the iOS App.",
-    "Docker will be used, and the Docker image will be deployed to AWS Lightsail.",
+    "The web app will be packed into a Docker image and will be deployed via AWS Lightsail.",
     "Since this iOS app isn't free, I will need to implement a user sign-in component (using MongoDB) on both the web app and iOS app."
 ]
 
