@@ -3,7 +3,7 @@ export const InTheClearList = [
     "This app allows the user to determine what weather conditions they should expect to experience during their travels.",
     "It includes a personalized route line that is colored based on the weather conditions, and a table that shows, city-by-city, what weather conditions and temperatures they can expect.",
     "It also gives the option to plan stops (overnight hotel stays, visit to long lost cousin, etc.), and select a departure times.",
-    "Implemented a backend service to limit the number of API calls the users device has to make. This was done using AWS Lambda with two functions that handle the reverse geolocation and weather calls.",
+    "Implemented a backend service to limit the number of API calls the users device has to make. This was done using AWS Lambda with two functions that handle the reverse geolocation and weather API calls.",
     "The app was built using Swift, and the backend was built using AWS Lambda and NodeJS. The Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftyJSON.",
 ]
 
