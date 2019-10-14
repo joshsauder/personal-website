@@ -20,3 +20,6 @@ yarn-error.log*
 
 #env file
 .env
+
+#remove build
+/build
