@@ -49,7 +49,7 @@ export const CASModalData = [
     ],
     [
         "Front-End: AngularJS, Bootstrap, Gulp (Automated Development Workflow)",
-        "Back-End: Spring, Spring Boot, Java EE",
+        "Back-End: Spring MVC, Spring Boot, Java EE",
         "Testing: JUnit, Jasmine and Karma"
     ]
 
