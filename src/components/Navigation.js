@@ -14,7 +14,7 @@ class Navigation extends React.Component {
         <div className="nav-fixed-top">
           <Navbar collapseOnSelect variant="dark" expand="md" className="bg-darkPurple">
             <Navbar.Brand href="/">
-              <img src={logo} className="d-block" height="40" alt="logo" />
+              <h4 className="chewy-font">Josh Sauder</h4>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggle">
               <i className="fa fa-align-right"></i>

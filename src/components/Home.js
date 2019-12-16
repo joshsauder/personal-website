@@ -21,7 +21,7 @@ class Home extends Component {
         <div className="fill-screen">
           <div className="mt-8">
             <Bounce left duration={2000} delay={2000}>
-                <img className="mx-auto d-block img-responsive img-max" alt="logo" src={Logo}></img>
+                <h1 className="text-center text-white chewy-font mt-5 mb-4">Josh Sauder</h1>
             </Bounce>
             <div className="row justify-content-center">
               <Slide top duration={2000}>

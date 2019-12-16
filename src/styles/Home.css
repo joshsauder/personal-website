@@ -34,3 +34,7 @@
 .img-max {
     max-height: 180px;
 }
+
+h1.react-reveal {
+    font-size: 6rem;
+}
