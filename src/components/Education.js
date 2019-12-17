@@ -13,7 +13,7 @@ Populates each Featurette with paragraph items
 function PopulateList(props){
   const populatedList = props.list.map((item, index) =>
     <div className="lead col-md-4" key={index}>
-      <h3>{item.title}</h3> 
+      <h4>{item.title}</h4> 
       {item.description.map(description => 
         <p>{description}</p>
       )}
