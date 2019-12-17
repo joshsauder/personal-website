@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import '../styles/About.css';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import {Jumbotron, Button} from 'react-bootstrap';
 import Slide from 'react-reveal/Slide';
 import ExperienceModal from './ExperienceModal';
 import EducationList from "../data/education.json"
@@ -44,6 +44,9 @@ class Education extends Component {
             <Jumbotron>
               <div className="featurette row">
                 <PopulateList list={EducationList}/>
+              </div>
+              <div className="row justify-content-center">
+                <Button variant="outline-secondary" onClick={() => {this.setState({OSUModal: true})}}>Want to know more about my time at OSU?</Button>
               </div>
             </Jumbotron>
           </Slide>   
