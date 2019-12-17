@@ -1,22 +1,22 @@
 [
     {
-        "title": "Network Technologies International",
+        "company": "Network Technologies International",
+        "title": "Software Engineer",
         "date": "June 2018 - Present"
     },
     {
-        "title": "OpenDemia",
+        "company": "OpenDemia",
+        "title": "Software Engineer (Part-Time)",
         "date": "August 2019 - Present"
     },
     {
-        "title": "Chemical Abstract Services",
+        "company": "Chemical Abstract Services",
+        "title": "Software Engineering Co-Op",
         "date": "May 2017 - May 2018"
     },
     {
-        "title": "XPO Logistics",
+        "company": "XPO Logistics",
+        "title": "IT Intern",
         "date": "June 2016 - August 2016"
-    },
-    {
-        "title": "The Ohio State University",
-        "date": "August 2014 - May 2018"
     }
 ]
