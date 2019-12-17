@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Degree",
+        "description": ["Bachelors of Science - Computer Science Engineering - The Ohio State University"]
+    },
+    {
+        "title": "Languages and Frameworks",
+        "description": ["Java, Swift, Javascript, AngularJS, ReactJS, HTML5, CSS, Bootstrap, NodeJS, ExpressJS, Spring MVC, MSSQL, MySQL, DynamoDB"]
+        
+    },
+    {
+        "title": "What I'm Learning", 
+        "description": [
+            "Currently - XCTest, Mocha/Chai, Docker, MongoDB",
+            "Upcoming - GraphQL, Gulp, Kitura (IBM server-side Swift framework)"
+        ]
+    }
+]

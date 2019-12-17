@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Home from './components/Home';
-import About from './components/About';
+import Education from './components/Education';
 import Projects from "./components/Projects";
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (   
       <div>
         <Home id="Home" />
-        <About id="About Me" />
+        <Education id="Education" />
         <Projects id="Projects" />
       </div>
     );
