@@ -33,6 +33,17 @@ class Navigation extends React.Component {
                     </Link>
                 </Nav.Link>
                 <Nav.Link eventkey={2}>
+                  <Link className="nav-link" activeClass="active"
+                    to="Experience"
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={400}
+                    >
+                      Work Experience
+                  </Link>
+                </Nav.Link>
+                <Nav.Link eventkey={2}>
                     <Link className="nav-link" activeClass="active"
                       to="Education"
                       spy={true}

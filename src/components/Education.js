@@ -11,7 +11,6 @@ import {OSUModalData} from '../data/modal';
 Populates each Featurette with paragraph items 
 */
 function PopulateList(props){
-  console.log(props.list)
   const populatedList = props.list.map((item, index) =>
     <div className="lead col-md-4" key={index}>
       <h3>{item.title}</h3> 

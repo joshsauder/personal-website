@@ -2,21 +2,29 @@
     {
         "company": "Network Technologies International",
         "title": "Software Engineer",
-        "date": "June 2018 - Present"
+        "date": "June 2018 - Present",
+        "modal": "NTIModal"
     },
     {
         "company": "OpenDemia",
         "title": "Software Engineer (Part-Time)",
-        "date": "August 2019 - Present"
+        "date": "August 2019 - Present",
+        "modal": "ODModal"
     },
     {
         "company": "Chemical Abstract Services",
         "title": "Software Engineering Co-Op",
-        "date": "May 2017 - May 2018"
+        "date": "May 2017 - May 2018",
+        "modal": "CASModal"
     },
     {
         "company": "XPO Logistics",
         "title": "IT Intern",
-        "date": "June 2016 - August 2016"
+        "date": "June 2016 - August 2016",
+        "modal": "XPOModal"
+    },
+    {
+        "company": "The Ohio State University",
+        "date": "August 2014 - May 2018"
     }
 ]
