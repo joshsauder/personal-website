@@ -12,17 +12,19 @@ class Personal extends Component {
         return (
             <div id={this.props.id}>
                 <h1 className="text-center text-white">Interests</h1>
-                <Slide right>
-                    <Jumbotron>
-                        <div className="featurette row">
-                            {Interests.map(interest => 
-                                <div className="lead col-md-3">
-                                    <p>{interest}</p>
-                                </div>
-                            )}
-                        </div>
-                    </Jumbotron>
-                </Slide>
+                <div className="container marketing">
+                    <Slide right>
+                        <Jumbotron>
+                            <div className="featurette row">
+                                {Interests.map(interest => 
+                                    <div className="lead col-md-3">
+                                        <p>{interest}</p>
+                                    </div>
+                                )}
+                            </div>
+                        </Jumbotron>
+                    </Slide>
+                </div>
             </div>
         )
     }
