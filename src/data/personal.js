@@ -1,1 +1,1 @@
-const interests = ["Running", "Lifting", "Watching OSU Football", "Travel"]
+export const Interests = ["Running", "Lifting", "Watching OSU Football", "Travel"]

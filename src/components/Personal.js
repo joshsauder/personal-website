@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
-import {interests} from '../data/personal';
+import {Interests} from '../data/personal'
 import { Jumbotron } from 'react-bootstrap';
+import Slide from 'react-reveal';
 //need running, travel, and osu football pic
 
 
@@ -14,11 +15,11 @@ class Personal extends Component {
                 <Slide right>
                     <Jumbotron>
                         <div className="featurette row">
-                            {interests.map(interest => {
+                            {Interests.map(interest => 
                                 <div className="lead col-md-3">
                                     <p>{interest}</p>
                                 </div>
-                            })}
+                            )}
                         </div>
                     </Jumbotron>
                 </Slide>

@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Slide from 'react-reveal/Slide';
 import ContactForm from './ContactForm';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Button from 'react-bootstrap/Button';
+import {Jumbotron, Button, Nav} from 'react-bootstrap';
 import InTheClear from '../images/InTheClear.png';
 import logoShot from '../images/logoShot.png';
 import appStore from '../images/appStore.svg'
@@ -52,52 +51,40 @@ class Projects extends Component {
         <div className="container marketing">
           <Slide left>
               <Jumbotron>
-              <div className="row featurette">
-                    <div className="col-md-7">
-                        <h2 className="featurette-heading">In The Clear</h2>
-                        <PopulateList list={InTheClearList} />
-                        <p className="lead">Planned Updates:</p>
-                        <PopulatePlansList list={InTheClearPlansList} />
-                        <p>
-                          <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Source Code Request", alert: false})} title="Request source code">Source Code Request</Button>
-                          <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ show: true, title: "In The Clear Feedback", alert: false})} title="Give feedback on In The Clear">Feedback</Button>
+                <div className="row">
+                  <div className="col-3">
+                    <Nav className="flex-column" variant="pills">
+                      <Nav.Link href="#InTheClear">In The Clear</Nav.Link>
+                      <Nav.Link href="#InTheClearWeb">In The Clear Web</Nav.Link>
+                      <Nav.Link href="#PersonalWebsite">Personal Website</Nav.Link>
+                    </Nav>
+                  </div>
+                    <div className="col-9">
+                      <div className="tab-content" id="tabContent">
+                        <div className="tab-pane fade show active" id="InTheClear" role="tabpanel">
+                          <div className="lead">
+                          iOS App that allows the user to determine what weather conditions they should expect to experience during their travels
+                          </div>
+                          <Button variant="outline-secondary" href="" title="Give feedback on In The Clear">Github Repo</Button>
                           <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mt-3">
                             <img alt="App Store Link" src={appStore}></img>
                           </a>
-                        </p>
+                        </div>
+                        <div className="tab-pane fade show active" id="InTheClearWeb" role="tabpanel">
+                          <div className="lead">
+                          A web app that will give the user all the functionality of the In The Clear iOS app
+                          </div>
+                          <Button variant="outline-secondary" href="" title="In The Clear Web Repo">Github Repo</Button>
+                        </div>
+                        <div className="tab-pane fade show active" id="PersonalWebsite" role="tabpanel">
+                          <div className="lead">
+                          A website that shows what I've done both professionally and in my free time
+                          </div>
+                          <Button variant="outline-secondary" href="" title="In The Clear Web Repo">Github Repo</Button>
+                        </div>
+                      </div>
+                    <div>
                     </div>
-                    <div className="col-md-5 featurette-img-align">
-                        <img className="featurette-image img-fluid mx-auto rounded" alt="In The Clear Logo" src={InTheClear}></img>
-                    </div>
-                </div>
-              </Jumbotron>
-          </Slide>
-            <Slide right>
-                <Jumbotron>
-                <div className="row featurette">
-                    <div className="col-md-7">
-                        <h2 className="featurette-heading">Personal Website</h2>
-                        <PopulateList list={PersonalWebsiteList} />
-                        <p>
-                          <Button variant="outline-secondary" className="mr-3"  href="https://github.com/joshsauder/personal-website" target="_blank" rel="noopener noreferrer" title="Link to source code">Source Code</Button>
-                          <Button variant="outline-secondary" className="mr-3"  onClick={() => this.setState({ show: true, title: "Website Feedback", alert: false})} title="Give feedback on my website">Feedback</Button>
-                        </p>
-                    </div>
-                    <div className="col-md-5 featurette-img-align">
-                        <img className="featurette-image img-fluid mx-auto rounded" alt="Personal Logo" src={logoShot}></img>
-                    </div>
-                </div>
-                </Jumbotron>
-            </Slide>
-            <Slide left>
-              <Jumbotron>
-                <div className="row featurette">
-                  <div className="col-md-7">
-                    <h2 className="featurette-heading">In The Clear Web App <span className="text-muted">Coming Soon!</span></h2>
-                    <PopulateList list={InTheClearWebList} />
-                  </div>
-                  <div className="col-md-5 featurette-img-align">
-                    <img className="featureete-image img-fluid mx-auto rounded" alt="In The Clear Logo" src={InTheClear}></img>
                   </div>
                 </div>
               </Jumbotron>
