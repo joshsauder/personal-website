@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import '../App.css';
-import {Interests} from '../data/personal'
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron , Nav} from 'react-bootstrap';
 import Slide from 'react-reveal';
 //need running, travel, and osu football pic
 
 
 class Personal extends Component {
+
+    constructor(props){
+        super(props)
+        this.state = {show: "Running"}
+    }
 
     render() {
         let interest;
@@ -25,16 +29,46 @@ class Personal extends Component {
                         </div>
                         <div className="col-md-4"> 
                             <div className="featurette-img-align">
-                                <img className="featurette-image img-fluid mx-auto rounded" alt="In The Clear Logo" src={InTheClear}></img>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
             )
         }else if(this.state.show === "Football"){
-
+            interest = (
+                <div className="tab-pane fade show active" id="Football" role="tabpanel">
+                        <div className="row">
+                            <div className="col-md-8">
+                                <div className="lead">
+                                    As you can probably guess, I'm a a huge Ohio State Buckeye fan. I absolutely love watching and attending OSU football games.
+                                </div>
+                            </div>
+                            <div className="col-md-4"> 
+                                <div className="featurette-img-align">
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            )
         }else if(this.state.show === "Travel"){
-
+            interest = (
+                <div className="tab-pane fade show active" id="Travel" role="tabpanel">
+                        <div className="row">
+                            <div className="col-md-8">
+                                <div className="lead">
+                                    Traveling and exploring new places has always been something I try and do on a normal basis. It forces me to get out of my confort zone and exposes me to new cuisines, and experiences. It also allows me to venture around and see various places and landmarks.
+                                </div>
+                            </div>
+                            <div className="col-md-4"> 
+                                <div className="featurette-img-align">
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            )
         }
         return (
             <div id={this.props.id}>
@@ -52,7 +86,7 @@ class Personal extends Component {
                                 </div>
                                 <div className="col-9">
                                     <div className="tab-content" id="tabContent">
-                                        {project}
+                                        {interest}
                                     </div>
                                 </div>
                             </div>
