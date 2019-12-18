@@ -8,32 +8,6 @@ import logoShot from '../images/logoShot.png';
 import appStore from '../images/appStore.svg'
 import {InTheClearList, PersonalWebsiteList, InTheClearWebList, InTheClearPlansList} from '../data/projects';
 
-/*
-Populates each Featurette with paragraph items 
-*/
-function PopulateList(props){
-  const populatedList = props.list.map((item, index) =>
-    <p className="lead" key={index}>
-      {item}
-    </p>
-  )
-  return populatedList
-}
-
-/*
-Populates each list 
-*/
-function PopulatePlansList(props){
-  const populatedList = props.list.map((item, index) =>
-  <li className="lead" key={index}>
-    {item}
-  </li>
-  )
-  return(
-    <ul>{populatedList}</ul>
-  );
-}
-
 class Projects extends Component {
 
   constructor(props) {
@@ -45,31 +19,56 @@ class Projects extends Component {
     if(this.state.show === "InTheClear"){
       project = (
         <div className="tab-pane fade show active" id="InTheClear" role="tabpanel">
-          <div className="lead">
-            iOS App that allows the user to determine what weather conditions they should expect to experience during their travels
+          <div className="row">
+            <div className="col-md-8">
+              <div className="lead">
+                iOS App that allows the user to determine what weather conditions they should expect to experience during their travels
+              </div>
+              <Button variant="outline-secondary" href="" title="Give feedback on In The Clear">Github Repo</Button>
+              <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mt-3">
+                  <img alt="App Store Link" src={appStore}></img>
+              </a>
+            </div>
+            <div className="col-md-4"> 
+              <div className="featurette-img-align">
+                <img className="featurette-image img-fluid mx-auto rounded" alt="In The Clear Logo" src={InTheClear}></img>
+              </div>
+            </div>
           </div>
-          <Button variant="outline-secondary" href="" title="Give feedback on In The Clear">Github Repo</Button>
-          <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mt-3">
-              <img alt="App Store Link" src={appStore}></img>
-          </a>
         </div>
       )
     }else if(this.state.show === "InTheClearWeb"){
       project = (
         <div className="tab-pane fade show active" id="InTheClearWeb" role="tabpanel">
-          <div className="lead">
-             A web app that will give the user all the functionality of the In The Clear iOS app
+          <div className="row">
+            <div className="col-md-8">
+              <div className="lead">
+                A web app that will give the user all the functionality of the In The Clear iOS app
+              </div>
+              <Button variant="outline-secondary" href="" title="In The Clear Web Repo">Github Repo</Button>
+            </div>
+            <div className="col-md-4"> 
+              <div className="featurette-img-align">
+                <img className="featurette-image img-fluid mx-auto rounded" alt="In The Clear Logo" src={InTheClear}></img>
+              </div>
+            </div>
           </div>
-          <Button variant="outline-secondary" href="" title="In The Clear Web Repo">Github Repo</Button>
         </div>
       )
     }else if(this.state.show === "PersonalWebsite"){
       project = (
         <div className="tab-pane fade show active" id="PersonalWebsite" role="tabpanel">
-          <div className="lead">
-            A website that shows what I've done both professionally and in my free time
+          <div className="row">
+            <div className="col-md-8">
+              <div className="lead">
+                A website that shows what I've done both professionally and in my free time
+              </div>
+              <Button variant="outline-secondary" href="" title="In The Clear Web Repo">Github Repo</Button>
+            </div>
+            <div className="col-md-4 featurette-img-align">
+              <img className="featurette-image img-fluid mx-auto rounded" alt="Personal Website Logo" src={logoShot}></img>
+            </div>
           </div>
-          <Button variant="outline-secondary" href="" title="In The Clear Web Repo">Github Repo</Button>
         </div>
       )
     }
