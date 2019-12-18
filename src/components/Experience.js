@@ -35,7 +35,7 @@ class Experience extends Component {
         
         return (
             <div id={this.props.id}>
-                <h1 className="text-center text-white">Professional Experience</h1>
+                <h1 className="text-center text-white">Work Experience</h1>
                 <div className="container marketing">
                     <Slide right>
                         <Jumbotron>

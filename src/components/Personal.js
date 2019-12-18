@@ -10,11 +10,14 @@ class Personal extends Component {
     render() {
         return (
             <div id={this.props.id}>
+                <h1 className="text-center text-white">Interests</h1>
                 <Slide right>
                     <Jumbotron>
                         <div className="featurette row">
                             {interests.map(interest => {
-                                <div>{interest}</div>
+                                <div className="lead col-md-3">
+                                    <p>{interest}</p>
+                                </div>
                             })}
                         </div>
                     </Jumbotron>
@@ -23,3 +26,5 @@ class Personal extends Component {
         )
     }
 }
+
+export default Personal;

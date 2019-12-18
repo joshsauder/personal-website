@@ -54,6 +54,17 @@ class Navigation extends React.Component {
                         Education
                     </Link>
                 </Nav.Link>
+                <Nav.Link eventkey={2}>
+                    <Link className="nav-link" activeClass="active"
+                      to="Personal"
+                      spy={true}
+                      smooth={true}
+                      offset={-120}
+                      duration={400}
+                      >
+                        Interests
+                    </Link>
+                </Nav.Link>
                 <Nav.Link eventkey={3}>
                     <Link className="nav-link" activeClass="active"
                       to="Projects"
