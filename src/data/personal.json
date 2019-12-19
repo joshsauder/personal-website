@@ -1,7 +1,9 @@
 [
     {
         "title": "Running",
-        "description": "I'm sort of a self-proclaimed running fanatic. I've run 2 full marathons, 3 half marathons, and numerous 5K and 10K races. If you're wondering what I'm doing after work, there's a good chance I'm out running."
+        "description": "I'm sort of a self-proclaimed running fanatic. If you're wondering what I'm doing after work, there's a good chance I'm out running.",
+        "fullList": ["Columbus Nationwide Childrens Hospital Marathon - 2016", "Toledo Glass City Marathon - 2015"],
+        "halfList": ["Cap City Half Marathon - 2019", "Cap City Half Marathon - 2016", "Jen Abby Memorial Half Marathon - 2014"]
     },
     {
         "title": "Football",

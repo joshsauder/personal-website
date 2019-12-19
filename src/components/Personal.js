@@ -15,8 +15,8 @@ function PersonalTab(props){
                     <div className="lead">
                         {props.list.description}
                     </div>
+                    {props.children}
                 </div>
-                {props.children}
                 <div className="col-md-4"> 
                     <div className="featurette-img-align">
                         <img className="featurette-image img-fluid mx-auto rounded" alt="Logo" src={props.image}></img>
@@ -24,6 +24,17 @@ function PersonalTab(props){
                 </div>
             </div>
         </div>
+    )
+}
+
+function CreateList(props){
+    return (
+        <ul className={props.class}>
+            <h3>{props.title}</h3>
+            {props.list.map(race => 
+                <li>{race}</li>
+            )}
+        </ul>
     )
 }
 
@@ -38,7 +49,15 @@ class Personal extends Component {
         let interest;
 
         if(this.state.show === "Running"){
-            interest = <PersonalTab list={PersonalList[0]} image={RunningPic} />
+            interest = (
+            <PersonalTab list={PersonalList[0]} image={RunningPic}>
+                <div className="lead">Listed below is a list of the half and full marathons I've run so far!</div>
+                <div class="row">
+                    <CreateList class="col-md-6 lead" title="Full Marathons" list={PersonalList[0].fullList} />
+                    <CreateList class="col-md-6 lead" title="Half Marathons" list={PersonalList[0].halfList} />
+                </div>
+            </PersonalTab>
+            )
         }else if(this.state.show === "Football"){
             interest = <PersonalTab list={PersonalList[1]} image={OSUPic} />
         }else if(this.state.show === "Travel"){
