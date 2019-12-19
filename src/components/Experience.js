@@ -3,6 +3,8 @@ import Slide from 'react-reveal/Slide';
 import { Jumbotron, Button } from 'react-bootstrap';
 import jobModal from '../data/jobModal.json'
 import '../styles/About.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faServer, faShippingFast, faGraduationCap, faFlask} from '@fortawesome/free-solid-svg-icons';
 
 /*
 Populates each Featurette with paragraph items 
@@ -10,6 +12,7 @@ Populates each Featurette with paragraph items
 function PopulateList(props){
   return props.list.slice(0,4).map((item, index) =>
     <div className="lead col-md-3" key={index}>
+      <FontAwesomeIcon icon={faServer} />
       <h4 className="text-center">{item.title}</h4> 
       <p>{item.company}</p>
       <p>{item.date}</p>
