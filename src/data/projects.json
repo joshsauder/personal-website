@@ -1,0 +1,20 @@
+[
+    {
+        "name": "In The Clear",
+        "description": "iOS App that allows the user to determine what weather conditions they should expect to experience during their travels",
+        "techStack": "The app was built using Swift, and the backend was built using AWS Lambda and NodeJS. The Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftyJSON.",
+        "github": ""
+    },
+    {
+        "name": "In The Clear Web",
+        "description": "A web app that will give the user all the functionality of the In The Clear iOS app",
+        "techStack": "It is being built using ReactJS, Bootstrap, NodeJS, ExpressJS, AWS Lambda, AWS ECS/EC2 and MongoDB. Like the iOS app, Google Maps and Google Places will be used.",
+        "github": ""
+    }, 
+    {
+        "name": "Personal Website",
+        "description": "A website that shows what I've done both professionally and in my free time",
+        "techStack": "Built using ReactJS, Bootstrap, NodeJS, and Netlify Functions",
+        "github": ""
+    }
+]
