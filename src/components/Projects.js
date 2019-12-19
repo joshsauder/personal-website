@@ -76,6 +76,8 @@ class Projects extends Component {
       )
     }
 
+    let modalClose = () => this.setState({ modal: false });
+
     return (
       <div id={this.props.id}>
         <ContactForm modal={this.state.modal} onHide={modalClose} title={this.state.title} alert={this.state.alert} onClose={modalClose}/>
