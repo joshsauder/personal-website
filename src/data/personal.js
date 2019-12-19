@@ -1,1 +1,0 @@
-export const Interests = ["Running", "Lifting", "Watching OSU Football", "Travel"]
