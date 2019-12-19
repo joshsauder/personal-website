@@ -52,7 +52,7 @@ class Personal extends Component {
             interest = (
             <PersonalTab list={PersonalList[0]} image={RunningPic}>
                 <div className="lead">Listed below is a list of the half and full marathons I've run so far!</div>
-                <div class="row">
+                <div className="row">
                     <CreateList class="col-md-6 lead" title="Full Marathons" list={PersonalList[0].fullList} />
                     <CreateList class="col-md-6 lead" title="Half Marathons" list={PersonalList[0].halfList} />
                 </div>
