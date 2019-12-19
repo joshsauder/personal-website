@@ -12,7 +12,7 @@ class Projects extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {show: "InTheClear"}
+    this.state = {show: "InTheClear", modal: false, title: "", alert: false}
   }
   render() {
     let project;
@@ -25,6 +25,7 @@ class Projects extends Component {
                 iOS App that allows the user to determine what weather conditions they should expect to experience during their travels
               </div>
               <Button variant="outline-secondary" href="" title="Give feedback on In The Clear">Github Repo</Button>
+              <Button variant="outline-secondary" className="mr-3" onClick={() => this.setState({ modal: true, title: "In The Clear Feedback", alert: false})} title="Give feedback on In The Clear">Feedback</Button>
               <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mt-3">
                   <img alt="App Store Link" src={appStore}></img>
               </a>
@@ -45,7 +46,8 @@ class Projects extends Component {
               <div className="lead">
                 A web app that will give the user all the functionality of the In The Clear iOS app
               </div>
-              <Button variant="outline-secondary" href="" title="In The Clear Web Repo">Github Repo</Button>
+              <Button variant="outline-secondary" className="mr-3" href="" title="In The Clear Web Repo">Github Repo</Button>
+              <Button variant="outline-secondary" onClick={() => this.setState({ modal: true, title: "In The Clear Web Feedback", alert: false})} title="Give feedback on In The Clear Web">Feedback</Button>
             </div>
             <div className="col-md-4"> 
               <div className="featurette-img-align">
@@ -63,7 +65,8 @@ class Projects extends Component {
               <div className="lead">
                 A website that shows what I've done both professionally and in my free time
               </div>
-              <Button variant="outline-secondary" href="" title="In The Clear Web Repo">Github Repo</Button>
+              <Button variant="outline-secondary" className="mr-3"  href="" title="Personal Website Repo">Github Repo</Button>
+              <Button variant="outline-secondary" onClick={() => this.setState({ modal: true, title: "Personal Website Feedback", alert: false})} title="Give feedback on my Personal Website">Feedback</Button>
             </div>
             <div className="col-md-4 featurette-img-align">
               <img className="featurette-image img-fluid mx-auto rounded" alt="Personal Website Logo" src={logoShot}></img>
@@ -75,6 +78,7 @@ class Projects extends Component {
 
     return (
       <div id={this.props.id}>
+        <ContactForm modal={this.state.modal} onHide={modalClose} title={this.state.title} alert={this.state.alert} onClose={modalClose}/>
         <div className="featurette-divider"></div>
         <h1 className="text-center text-white mt-5">My Projects</h1>
         <div className="container marketing">
