@@ -14,8 +14,8 @@ function PopulateList(props){
   const populatedList = props.list.map((item, index) =>
     <div className="lead col-md-4" key={index}>
       <h4>{item.title}</h4> 
-      {item.description.map(description => 
-        <p>{description}</p>
+      {item.description.map((description, index) => 
+        <p key={index}>{description}</p>
       )}
     </div>
   )

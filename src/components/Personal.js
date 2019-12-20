@@ -32,8 +32,8 @@ function CreateList(props){
     return (
         <ul className={props.class}>
             <h3>{props.title}</h3>
-            {props.list.map(race => 
-                <li>{race}</li>
+            {props.list.map((race, index) => 
+                <li key={index}>{race}</li>
             )}
         </ul>
     )
