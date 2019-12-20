@@ -11,3 +11,12 @@
   .modal-p {
     margin-bottom: 0rem;
   }
+
+  .navNotActive{
+    color: #4A148C !important;
+  }
+  
+  a.nav-link.active {
+    color: white !important;
+    background-color: #4A148C !important;
+  }

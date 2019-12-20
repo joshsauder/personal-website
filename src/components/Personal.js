@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import '../styles/About.css'
 import { Jumbotron , Nav} from 'react-bootstrap';
 import Slide from 'react-reveal';
 import PersonalList from '../data/personal.json';
@@ -51,7 +52,7 @@ class Personal extends Component {
         if(this.state.show === "Running"){
             interest = (
             <PersonalTab list={PersonalList[0]} image={RunningPic}>
-                <div className="lead">Listed below is a list of the half and full marathons I've run so far!</div>
+                <div className="lead mt-2">Listed below is a list of the half and full marathons I've run so far!</div>
                 <div className="row">
                     <CreateList class="col-md-6 lead" title="Full Marathons" list={PersonalList[0].fullList} />
                     <CreateList class="col-md-6 lead" title="Half Marathons" list={PersonalList[0].halfList} />
@@ -59,9 +60,16 @@ class Personal extends Component {
             </PersonalTab>
             )
         }else if(this.state.show === "Football"){
-            interest = <PersonalTab list={PersonalList[1]} image={OSUPic} />
+            interest = (
+            <PersonalTab list={PersonalList[1]} image={OSUPic}>
+                <div className="lead mt-2">As you can see by the picture on the right, I did travel to the Big House in 2018 to watch the Buckeyes win.</div>
+            </PersonalTab>
+            )
         }else if(this.state.show === "Travel"){
-            interest = <PersonalTab list={PersonalList[2]} image={BeachPic} />
+            interest = (
+            <PersonalTab list={PersonalList[2]} image={BeachPic}>
+            </PersonalTab>
+            )
         }
         return (
             <div id={this.props.id}>
@@ -71,10 +79,10 @@ class Personal extends Component {
                         <Jumbotron>
                             <div className="row">
                                 <div className="col-3">
-                                    <Nav className="flex-column" variant="pills" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
-                                        <Nav.Link eventKey="Running">Running</Nav.Link>
-                                        <Nav.Link eventKey="Football">Watching OSU Football</Nav.Link>
-                                        <Nav.Link eventKey="Travel">Travel</Nav.Link>
+                                    <Nav className="flex-column" variant="pills" defaultActiveKey="Running" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
+                                        <Nav.Link eventKey="Running" className="navNotActive">Running</Nav.Link>
+                                        <Nav.Link eventKey="Football" className="navNotActive">Watching OSU Football</Nav.Link>
+                                        <Nav.Link eventKey="Travel" className="navNotActive">Travel</Nav.Link>
                                     </Nav>
                                 </div>
                                 <div className="col-9">

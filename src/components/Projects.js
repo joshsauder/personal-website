@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import '../styles/About.css';
 import Slide from 'react-reveal/Slide';
 import ContactForm from './ContactForm';
 import {Jumbotron, Button, Nav} from 'react-bootstrap';
@@ -67,10 +68,10 @@ class Projects extends Component {
               <Jumbotron>
                 <div className="row">
                   <div className="col-3">
-                    <Nav className="flex-column" variant="pills" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
-                      <Nav.Link eventKey="InTheClear">In The Clear</Nav.Link>
-                      <Nav.Link eventKey="InTheClearWeb">In The Clear Web</Nav.Link>
-                      <Nav.Link eventKey="PersonalWebsite">Personal Website</Nav.Link>
+                    <Nav className="flex-column" variant="pills" defaultActiveKey="InTheClear" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
+                      <Nav.Link eventKey="InTheClear" className="navNotActive">In The Clear</Nav.Link>
+                      <Nav.Link eventKey="InTheClearWeb" className="navNotActive">In The Clear Web</Nav.Link>
+                      <Nav.Link eventKey="PersonalWebsite" className="navNotActive">Personal Website</Nav.Link>
                     </Nav>
                   </div>
                     <div className="col-9">
