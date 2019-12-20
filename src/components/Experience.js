@@ -20,10 +20,6 @@ class Experience extends Component {
         };
     }
 
-    componentDidUpdate(){
-      console.log(this.state)
-    }
-
     populateList = (list) => {
       return list.slice(0,4).map((item, index) =>
         <div className="lead col-md-3 text-center" key={index}>

@@ -31,12 +31,12 @@ class Education extends Component {
     };
   }
   render() {
-    let OSUClose = () => this.setState({ OSUShow: false });
+    let OSUClose = () => this.setState({ OSUModal: false });
 
     return (
       <div id={this.props.id}>
         {/* Index based on location in JSON */}
-        <ExperienceModal modal={this.state.OSUShow} onHide={OSUClose} jobDescription={OSUModalData} index={4}/>
+        <ExperienceModal modal={this.state.OSUModal} onHide={OSUClose} jobDescription={OSUModalData} index={4}/>
         <h1 className="text-center text-white">Education</h1>
         <div className="container marketing">
           <Slide left>
