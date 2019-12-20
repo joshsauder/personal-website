@@ -23,26 +23,13 @@ class Experience extends Component {
     populateList = (list) => {
       return list.slice(0,4).map((item, index) =>
         <div className="lead col-md-3 text-center" key={index}>
-          <FontAwesomeIcon icon={this.determineIcon(item.company)} size="2x" />
+          <FontAwesomeIcon icon={item.icon} size="2x" />
           <h4 className="mt-4">{item.title}</h4> 
           <p className="mt-4">{item.company}</p>
           <p>{item.date}</p>
           <Button variant="outline-secondary" onClick={() => {this.setState({[item.modal]: true})}}>More Info</Button>
         </div>
       )
-    }
-
-    determineIcon = (job) => {
-      switch(job){
-        case "Network Technologies International":
-          return faServer
-        case "OpenDemia":
-          return faGraduationCap
-        case "Chemical Abstract Services":
-          return faFlask
-        case "XPO Logistics":
-          return faShippingFast
-      }
     }
 
     render(){

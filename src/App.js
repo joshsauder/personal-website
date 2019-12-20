@@ -4,8 +4,27 @@ import Education from './components/Education';
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Personal from "./components/Personal"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faGraduationCap, 
+  faLaptopCode,
+  faCode,
+  faServer, 
+  faShippingFast, 
+  faFlask
+} from '@fortawesome/free-solid-svg-icons'
+
+library.add(
+  faGraduationCap, 
+  faCode, 
+  faLaptopCode,
+  faServer,
+  faShippingFast, 
+  faFlask
+  )
 
 class App extends Component {
+
   render() {
     return (   
       <div>
