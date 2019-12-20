@@ -7,12 +7,50 @@ import logo from '../images/JoshSauderLogo.png';
 import 'font-awesome/css/font-awesome.min.css';
 import '../styles/Navigation.css';
 
+function DetectScroll(props){
+  console.log(props.scrollPos)
+    if(props.scrollPos > 500){
+      return(
+      <Navbar collapseOnSelect variant="dark" expand="md" className="bg-darkPurple">
+        {props.children}
+      </Navbar>
+      )
+    }else {
+      return(
+      <Navbar collapseOnSelect variant="dark" expand="md" className="">
+        {props.children}
+      </Navbar>
+      )
+    }
+  
+}
+
 class Navigation extends React.Component {
+
+    constructor(props){
+      super(props)
+      this.state = {
+        scroll: false
+      }
+    }
+
+    componentDidMount(){
+      var scroll = 0
+      window.addEventListener('scroll', this.setScrollPos)
+    }
+
+    setScrollPos = () => {
+      if(window.scrollY > 500 && !this.state.scroll){
+        this.setState({scroll: true})
+      }else if(window.scrollY < 500 && this.state.scroll) {
+        this.setState({scroll: false})
+      }
+    }
 
     render() {
         return (
         <div className="nav-fixed-top">
-          <Navbar collapseOnSelect variant="dark" expand="md" className="bg-darkPurple">
+          <Navbar collapseOnSelect variant="dark" expand="md" className={this.state.scroll ? "bg-darkPurple" : ""}>
             <Navbar.Brand href="/" className="mt-2">
               <h4 className="chewy-font">Josh Sauder</h4>
             </Navbar.Brand>
