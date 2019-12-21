@@ -24,7 +24,7 @@ class Projects extends Component {
               <div className="lead">
                 {list.description}
               </div>
-              <div className="lead">
+              <div className="lead mt-3">
                 {list.techStack}
               </div>
               <div className="mt-3">
