@@ -3,27 +3,8 @@ import '../App.css';
 import { Link } from "react-scroll";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import logo from '../images/JoshSauderLogo.png';
 import 'font-awesome/css/font-awesome.min.css';
 import '../styles/Navigation.css';
-
-function DetectScroll(props){
-  console.log(props.scrollPos)
-    if(props.scrollPos > 500){
-      return(
-      <Navbar collapseOnSelect variant="dark" expand="md" className="bg-darkPurple">
-        {props.children}
-      </Navbar>
-      )
-    }else {
-      return(
-      <Navbar collapseOnSelect variant="dark" expand="md" className="">
-        {props.children}
-      </Navbar>
-      )
-    }
-  
-}
 
 class Navigation extends React.Component {
 
