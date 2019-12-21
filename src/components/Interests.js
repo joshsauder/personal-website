@@ -17,7 +17,7 @@ function PersonalTab(props){
                         {props.list.description}
                     </div>
                     {props.list.funFact &&
-                    <Card className="mt-3 shadow">
+                    <Card className="mt-3 mb-3 shadow">
                         <Card.Title className="chewy-font text-center mt-2">Fun Fact</Card.Title>
                         {props.list.funFact.map((item, index) =>                            
                             <div className="lead card-text" key={index}>{item}</div>
@@ -71,14 +71,14 @@ class Personal extends Component {
                         <Jumbotron>
                             <h1 className="text-center chewy-font mb-4">Interests</h1>
                             <div className="row">
-                                <div className="col-3">
+                                <div className="col-md-3">
                                     <Nav className="flex-column" variant="pills" defaultActiveKey="Running" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
                                         <Nav.Link eventKey="Running" className="navNotActive">Running</Nav.Link>
                                         <Nav.Link eventKey="Football" className="navNotActive">Watching OSU Football</Nav.Link>
                                         <Nav.Link eventKey="Travel" className="navNotActive">Travel</Nav.Link>
                                     </Nav>
                                 </div>
-                                <div className="col-9">
+                                <div className="col-md-9">
                                     <div className="tab-content" id="tabContent">
                                         {interest}
                                     </div>

@@ -6,7 +6,6 @@ import jobModal from '../data/jobModal.json';
 import {NTIModalData, CASModalData, OpenDemiaModalData ,XPOModalData, OSUModalData} from '../data/modal';
 import '../styles/About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faServer, faShippingFast, faGraduationCap, faFlask} from '@fortawesome/free-solid-svg-icons';
 
 class Experience extends Component {
 
@@ -22,7 +21,7 @@ class Experience extends Component {
 
     populateList = (list) => {
       return list.slice(0,4).map((item, index) =>
-        <div className="lead col-md-3 text-center" key={index}>
+        <div className="lead col-md-3 text-center mt-5" key={index}>
           <FontAwesomeIcon icon={item.icon} size="2x" />
           <h4 className="mt-4">{item.title}</h4> 
           <p className="mt-4">{item.company}</p>
@@ -47,7 +46,7 @@ class Experience extends Component {
               <div className="container marketing">
                   <Slide right>
                       <Jumbotron>
-                          <h1 className="text-center mb-4 chewy-font">Work Experience</h1>
+                          <h1 className="text-center chewy-font">Work Experience</h1>
                           <div className="featurette row">
                               {this.populateList(jobModal)}
                           </div>

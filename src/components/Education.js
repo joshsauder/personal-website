@@ -13,7 +13,7 @@ Populates each Featurette with paragraph items
 */
 function PopulateList(props){
   const populatedList = props.list.map((item, index) =>
-    <div className="lead col-md-4 text-center" key={index}>
+    <div className="lead col-md-4 text-center mt-4" key={index}>
       <FontAwesomeIcon icon={item.icon} size="2x" />
       <h4 className="mt-4 mb-4">{item.title}</h4> 
       {item.description.map((description, index) => 
@@ -42,7 +42,7 @@ class Education extends Component {
         <div className="container marketing">
           <Slide left>
             <Jumbotron>
-              <h1 className="text-center mb-4 chewy-font">Education</h1>
+              <h1 className="text-center chewy-font">Education</h1>
               <div className="featurette row">
                 <PopulateList list={EducationList}/>
               </div>

@@ -33,8 +33,8 @@ class Projects extends Component {
                     <img alt="App Store Link" src={appStore}></img>
                   </a>
                 }
-                <Button variant="outline-secondary" className="mr-3" href={list.github}>Github Repo</Button>
-                <Button variant="outline-secondary" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
+                <Button variant="outline-secondary" className="mr-3 mb-3" href={list.github}>Github Repo</Button>
+                <Button variant="outline-secondary" className="mb-3" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
               </div>
             </div>
             <div className="col-md-4"> 
@@ -67,14 +67,14 @@ class Projects extends Component {
               <Jumbotron>
                 <h1 className="text-center chewy-font mb-4">Projects</h1>
                 <div className="row">
-                  <div className="col-3">
+                  <div className="col-md-3">
                     <Nav className="flex-column" variant="pills" defaultActiveKey="InTheClear" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
                       <Nav.Link eventKey="InTheClear" className="navNotActive">In The Clear</Nav.Link>
                       <Nav.Link eventKey="InTheClearWeb" className="navNotActive">In The Clear Web</Nav.Link>
                       <Nav.Link eventKey="PersonalWebsite" className="navNotActive">Personal Website</Nav.Link>
                     </Nav>
                   </div>
-                    <div className="col-9">
+                    <div className="col-md-9">
                       <div className="tab-content" id="tabContent">
                         {project}
                       </div>
