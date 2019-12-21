@@ -73,10 +73,10 @@ class Personal extends Component {
         }
         return (
             <div id={this.props.id}>
-                <h1 className="text-center text-white">Interests</h1>
                 <div className="container marketing">
                     <Slide right>
                         <Jumbotron>
+                            <h1 className="text-center">Interests</h1>
                             <div className="row">
                                 <div className="col-3">
                                     <Nav className="flex-column" variant="pills" defaultActiveKey="Running" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>

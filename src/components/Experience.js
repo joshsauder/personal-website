@@ -44,10 +44,10 @@ class Experience extends Component {
               <ExperienceModal modal={this.state.ODModal} onHide={ODClose} jobDescription={OpenDemiaModalData} index={1} />
               <ExperienceModal modal={this.state.CASModal} onHide={CASClose} jobDescription={CASModalData} index={2}/>
               <ExperienceModal modal={this.state.XPOModal} onHide={XPOClose} jobDescription={XPOModalData} index={3}/>
-              <h1 className="text-center text-white">Work Experience</h1>
               <div className="container marketing">
                   <Slide right>
                       <Jumbotron>
+                          <h1 className="text-center mb-3">Work Experience</h1>
                           <div className="featurette row">
                               {this.populateList(jobModal)}
                           </div>

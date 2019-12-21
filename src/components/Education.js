@@ -39,10 +39,10 @@ class Education extends Component {
       <div id={this.props.id}>
         {/* Index based on location in JSON */}
         <ExperienceModal modal={this.state.OSUModal} onHide={OSUClose} jobDescription={OSUModalData} index={4}/>
-        <h1 className="text-center text-white">Education</h1>
         <div className="container marketing">
           <Slide left>
             <Jumbotron>
+              <h1 className="text-center mb-4">Education</h1>
               <div className="featurette row">
                 <PopulateList list={EducationList}/>
               </div>

@@ -62,10 +62,10 @@ class Projects extends Component {
       <div id={this.props.id}>
         <ContactForm modal={this.state.modal} onHide={modalClose} title={this.state.title} alert={this.state.alert} onClose={modalClose}/>
         <div className="featurette-divider"></div>
-        <h1 className="text-center text-white mt-5">My Projects</h1>
         <div className="container marketing">
           <Slide left>
               <Jumbotron>
+                <h1 className="text-center mb-4">Projects</h1>
                 <div className="row">
                   <div className="col-3">
                     <Nav className="flex-column" variant="pills" defaultActiveKey="InTheClear" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>

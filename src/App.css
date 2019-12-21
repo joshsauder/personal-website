@@ -50,3 +50,9 @@ body {
 .mt-8 {
   margin-top: 8rem !important;
 }
+
+@media(min-width: 576px){
+  .jumbotron {
+    padding: 3rem 2rem !important;
+  }
+}
