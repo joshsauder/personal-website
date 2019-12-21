@@ -47,12 +47,13 @@ class Experience extends Component {
               <div className="container marketing">
                   <Slide right>
                       <Jumbotron>
-                          <h1 className="text-center mb-3">Work Experience</h1>
+                          <h1 className="text-center mb-4 chewy-font">Work Experience</h1>
                           <div className="featurette row">
                               {this.populateList(jobModal)}
                           </div>
                       </Jumbotron>
                   </Slide>
+                  <hr className="featurette-divider"/>
               </div>
           </div>
         )

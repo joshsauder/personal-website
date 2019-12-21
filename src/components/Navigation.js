@@ -72,6 +72,7 @@ class Navigation extends React.Component {
                 </Link>
                 <Link className="nav-link" activeClass="active"
                       to="Personal"
+                      href="#"
                       spy={true}
                       smooth={true}
                       offset={-120}

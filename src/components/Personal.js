@@ -31,7 +31,7 @@ function PersonalTab(props){
 function CreateList(props){
     return (
         <ul className={props.class}>
-            <h3>{props.title}</h3>
+            <h4>{props.title}</h4>
             {props.list.map((race, index) => 
                 <li key={index}>{race}</li>
             )}
@@ -76,7 +76,7 @@ class Personal extends Component {
                 <div className="container marketing">
                     <Slide right>
                         <Jumbotron>
-                            <h1 className="text-center">Interests</h1>
+                            <h1 className="text-center chewy-font mb-4">Interests</h1>
                             <div className="row">
                                 <div className="col-3">
                                     <Nav className="flex-column" variant="pills" defaultActiveKey="Running" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
@@ -93,6 +93,7 @@ class Personal extends Component {
                             </div>
                         </Jumbotron>
                     </Slide>
+                    <hr className="featurette-divider"/>
                 </div>
             </div>
         )

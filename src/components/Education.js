@@ -42,7 +42,7 @@ class Education extends Component {
         <div className="container marketing">
           <Slide left>
             <Jumbotron>
-              <h1 className="text-center mb-4">Education</h1>
+              <h1 className="text-center mb-4 chewy-font">Education</h1>
               <div className="featurette row">
                 <PopulateList list={EducationList}/>
               </div>

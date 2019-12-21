@@ -65,7 +65,7 @@ class Projects extends Component {
         <div className="container marketing">
           <Slide left>
               <Jumbotron>
-                <h1 className="text-center mb-4">Projects</h1>
+                <h1 className="text-center chewy-font mb-4">Projects</h1>
                 <div className="row">
                   <div className="col-3">
                     <Nav className="flex-column" variant="pills" defaultActiveKey="InTheClear" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
@@ -84,6 +84,7 @@ class Projects extends Component {
                 </div>
               </Jumbotron>
             </Slide>
+            <hr className="featurette-divider"/>
         </div>
       </div>
     );
