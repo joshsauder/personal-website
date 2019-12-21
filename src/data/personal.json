@@ -2,12 +2,13 @@
     {
         "title": "Running",
         "description": "I'm sort of a self-proclaimed running fanatic. If you're wondering what I'm doing after work, there's a good chance I'm out running.",
-        "fullList": ["Columbus Nationwide Childrens Hospital Marathon - 2016", "Toledo Glass City Marathon - 2015"],
-        "halfList": ["Cap City Half Marathon - 2019", "Cap City Half Marathon - 2016", "Jen Abby Memorial Half Marathon - 2014"]
+        "funFact": ["I've run 2 full and 3 half marathons. I listed them below:", "Columbus Nationwide Childrens Hospital Marathon - 2016", "Toledo Glass City Marathon - 2015",
+                       "Cap City Half Marathon - 2019, 2016", "Jen Abby Memorial Half Marathon - 2014"]
     },
     {
         "title": "Football",
-        "description": "As you can probably guess, I'm a a huge Ohio State Buckeye fan. I absolutely love watching and attending OSU football games."
+        "description": "As you can probably guess, I'm a a huge Ohio State Buckeye fan. I absolutely love watching and attending OSU football games.",
+        "funFact": ["As you can see by the picture on the left (or below if your viewing on a mobile device), I did travel to the Big House to watch \"The Game.\" And yes, the Buckeyes did come out victorious!"]
     },
     {
         "title": "Travel",

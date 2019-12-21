@@ -69,3 +69,7 @@ button:hover {
   border-color: black !important;
   color: #4A148C !important;
 }
+
+.lead {
+  font-weight: 400 !important;
+}

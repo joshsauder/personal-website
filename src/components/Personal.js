@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import '../styles/About.css'
-import { Jumbotron , Nav} from 'react-bootstrap';
+import { Jumbotron , Nav, Card} from 'react-bootstrap';
 import Slide from 'react-reveal';
 import PersonalList from '../data/personal.json';
 import OSUPic from '../images/OSU.png';
@@ -16,7 +16,14 @@ function PersonalTab(props){
                     <div className="lead">
                         {props.list.description}
                     </div>
-                    {props.children}
+                    {props.list.funFact &&
+                    <Card className="mt-3 shadow">
+                        <Card.Title className="chewy-font text-center mt-2">Fun Fact</Card.Title>
+                        {props.list.funFact.map((item, index) =>                            
+                            <div className="lead card-text" key={index}>{item}</div>
+                        )}
+                    </Card>
+                    }
                 </div>
                 <div className="col-md-4"> 
                     <div className="featurette-img-align">
@@ -25,17 +32,6 @@ function PersonalTab(props){
                 </div>
             </div>
         </div>
-    )
-}
-
-function CreateList(props){
-    return (
-        <ul className={props.class}>
-            <h4>{props.title}</h4>
-            {props.list.map((race, index) => 
-                <li key={index}>{race}</li>
-            )}
-        </ul>
     )
 }
 
@@ -52,11 +48,8 @@ class Personal extends Component {
         if(this.state.show === "Running"){
             interest = (
             <PersonalTab list={PersonalList[0]} image={RunningPic}>
-                <div className="lead mt-2">Listed below is a list of the half and full marathons I've run so far!</div>
-                <div className="row">
-                    <CreateList class="col-md-6 lead" title="Full Marathons" list={PersonalList[0].fullList} />
-                    <CreateList class="col-md-6 lead" title="Half Marathons" list={PersonalList[0].halfList} />
-                </div>
+                <div className="lead mt-2">Full Marathons - Columbus Nationwide Childrens Hospital Marathon - 2016, Toledo Glass City Marathon - 2015</div>
+                <div className="lead mt-2">Half Marathons - Cap City Half Marathon - 2019, 2016, Jen Abby Memorial Half Marathon - 2014</div>
             </PersonalTab>
             )
         }else if(this.state.show === "Football"){
