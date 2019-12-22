@@ -21,7 +21,6 @@ class Navigation extends React.Component {
     }
 
     setScrollPos = () => {
-      console.log(window.screen.width)
       if(window.scrollY > 500 && !this.state.scroll){
         this.setState({scroll: true})
       }else if(window.scrollY < 500 && this.state.scroll) {

@@ -45,25 +45,13 @@ class Personal extends Component {
         let interest;
 
         if(this.state.show === "Running"){
-            interest = (
-            <PersonalTab list={PersonalList[0]} image={RunningPic}>
-            </PersonalTab>
-            )
+            interest = (<PersonalTab list={PersonalList[0]} image={RunningPic} />)
         }else if(this.state.show === "Watching OSU Football"){
-            interest = (
-            <PersonalTab list={PersonalList[2]} image={OSUPic}>
-            </PersonalTab>
-            )
+            interest = (<PersonalTab list={PersonalList[2]} image={OSUPic} />)
         }else if(this.state.show === "Travel"){
-            interest = (
-            <PersonalTab list={PersonalList[3]} image={BeachPic}>
-            </PersonalTab>
-            )
+            interest = (<PersonalTab list={PersonalList[3]} image={BeachPic} />)
         }else if (this.state.show === "Volunteer Work"){
-            interest = (
-            <PersonalTab list={PersonalList[1]} image={SpecialOlympics}>
-            </PersonalTab>
-            )
+            interest = (<PersonalTab list={PersonalList[1]} image={SpecialOlympics} />)
         }
         return (
             <div id={this.props.id}>
