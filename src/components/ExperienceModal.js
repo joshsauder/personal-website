@@ -68,7 +68,7 @@ class ExperienceModal extends Component {
           <PopulateTechList list={this.props.jobDescription[1]} />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={this.props.onHide} title="Close pop-up window">
+          <Button variant="outline-secondary" onClick={this.props.onHide} title="Close pop-up window">
             Close
           </Button>
         </Modal.Footer>

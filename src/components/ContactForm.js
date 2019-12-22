@@ -145,10 +145,10 @@ When the submit button is clicked, call the sendMail backend function and depend
           <ToggleFormAndAlert success={this.state.successAlert} fail={this.state.failAlert} title={this.props.title} />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={() => { this.handleClick(this.props) }} disabled={this.state.sentMail} title="Submit Form">
+          <Button variant="outline-secondary" onClick={() => { this.handleClick(this.props) }} disabled={this.state.sentMail} title="Submit Form">
               Submit
            </Button>
-          <Button variant="primary" onClick={this.props.onHide} title="Close pop-up window">
+          <Button variant="outline-secondary" onClick={this.props.onHide} title="Close pop-up window">
               Close
           </Button>
         </Modal.Footer>        
