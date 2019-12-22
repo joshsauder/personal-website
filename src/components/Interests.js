@@ -7,6 +7,7 @@ import PersonalList from '../data/personal.json';
 import OSUPic from '../images/OSU.png';
 import BeachPic from '../images/Beach.png';
 import RunningPic from '../images/Running.png';
+import SpecialOlympics from '../images/SpecialOlympics.png';
 
 function PersonalTab(props){
     return (
@@ -48,19 +49,21 @@ class Personal extends Component {
         if(this.state.show === "Running"){
             interest = (
             <PersonalTab list={PersonalList[0]} image={RunningPic}>
-                <div className="lead mt-2">Full Marathons - Columbus Nationwide Childrens Hospital Marathon - 2016, Toledo Glass City Marathon - 2015</div>
-                <div className="lead mt-2">Half Marathons - Cap City Half Marathon - 2019, 2016, Jen Abby Memorial Half Marathon - 2014</div>
             </PersonalTab>
             )
-        }else if(this.state.show === "Football"){
+        }else if(this.state.show === "Watching OSU Football"){
             interest = (
-            <PersonalTab list={PersonalList[1]} image={OSUPic}>
-                <div className="lead mt-2">As you can see by the picture on the right, I did travel to the Big House in 2018 to watch the Buckeyes win.</div>
+            <PersonalTab list={PersonalList[2]} image={OSUPic}>
             </PersonalTab>
             )
         }else if(this.state.show === "Travel"){
             interest = (
-            <PersonalTab list={PersonalList[2]} image={BeachPic}>
+            <PersonalTab list={PersonalList[3]} image={BeachPic}>
+            </PersonalTab>
+            )
+        }else if (this.state.show === "Volunteer Work"){
+            interest = (
+            <PersonalTab list={PersonalList[1]} image={SpecialOlympics}>
             </PersonalTab>
             )
         }
@@ -73,9 +76,9 @@ class Personal extends Component {
                             <div className="row">
                                 <div className="col-md-3">
                                     <Nav className="flex-column" variant="pills" defaultActiveKey="Running" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
-                                        <Nav.Link eventKey="Running" className="navNotActive">Running</Nav.Link>
-                                        <Nav.Link eventKey="Football" className="navNotActive">Watching OSU Football</Nav.Link>
-                                        <Nav.Link eventKey="Travel" className="navNotActive">Travel</Nav.Link>
+                                        {PersonalList.map(item => 
+                                            <Nav.Link eventKey={item.title} className="navNotActive">{item.title}</Nav.Link>
+                                        )}
                                     </Nav>
                                 </div>
                                 <div className="col-md-9">

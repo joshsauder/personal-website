@@ -33,8 +33,8 @@ class Projects extends Component {
                     <img alt="App Store Link" src={appStore}></img>
                   </a>
                 }
-                <Button variant="outline-secondary" className="mr-3 mb-3" href={list.github}>Github Repo</Button>
-                <Button variant="outline-secondary" className="mb-3" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
+                <Button variant="outline-secondary" className="mr-3 mb-md-0 mb-3" href={list.github}>Github Repo</Button>
+                <Button variant="outline-secondary" className="mb-md-0 mb-3" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
               </div>
             </div>
             <div className="col-md-4"> 
