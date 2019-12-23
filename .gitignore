@@ -23,3 +23,6 @@ yarn-error.log*
 
 #remove build
 /build
+
+#remove netlify-lambda build
+lambda/
