@@ -17,6 +17,11 @@ class Projects extends Component {
     this.state = {show: "InTheClear", modal: false, title: "", alert: false}
   }
 
+  /*
+  Renders each project
+  list - project list from ProjectList
+  logo - applicable image
+  */
   renderProject = (list, logo) => {
     return (
       <div className="tab-pane fade show active" id={list.name} role="tabpanel">
@@ -48,7 +53,9 @@ class Projects extends Component {
     )
   }
   render() {
+
     let project;
+    //Render the selected project
     if(this.state.show === "InTheClear"){
       project = this.renderProject(ProjectList[0], InTheClear)      
     }else if(this.state.show === "InTheClearWeb"){

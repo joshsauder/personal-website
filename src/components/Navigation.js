@@ -19,6 +19,9 @@ class Navigation extends React.Component {
       window.addEventListener('scroll', this.setScrollPos)
     }
 
+    /*
+    If position moves, determine if the nav bar should be transparant or not
+    */
     setScrollPos = () => {
       if(window.scrollY > 500 && !this.state.scroll){
         this.setState({scroll: true})

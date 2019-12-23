@@ -9,6 +9,10 @@ import BeachPic from '../images/Beach.png';
 import RunningPic from '../images/Running.png';
 import SpecialOlympics from '../images/SpecialOlympics.png';
 
+/*
+Renders each personal item
+props - the personal list item, and the applicable image
+*/
 function PersonalTab(props){
     return (
         <div className="tab-pane fade show active" id={props.list.title} role="tabpanel">
@@ -43,7 +47,7 @@ class Personal extends Component {
 
     render() {
         let interest;
-
+        //Show the personal item selected
         if(this.state.show === "Running"){
             interest = (<PersonalTab list={PersonalList[0]} image={RunningPic} />)
         }else if(this.state.show === "Ohio State Football"){
@@ -53,6 +57,7 @@ class Personal extends Component {
         }else if(this.state.show === "Travel"){
             interest = (<PersonalTab list={PersonalList[3]} image={BeachPic} />)
         }
+
         return (
             <div id={this.props.id}>
                 <div className="container marketing">

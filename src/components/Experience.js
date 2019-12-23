@@ -19,6 +19,10 @@ class Experience extends Component {
         };
     }
 
+    /*
+    Renders each experience item
+    list - given list item from jobModal
+    */
     populateList = (list) => {
       return list.slice(0,4).map((item, index) =>
         <div className="lead col-md-3 text-center mt-5" key={index}>
