@@ -11,8 +11,9 @@ import {
   faCode,
   faServer, 
   faShippingFast, 
-  faFlask
+  faFlask,
 } from '@fortawesome/free-solid-svg-icons'
+import {fab} from '@fortawesome/free-brands-svg-icons'
 
 library.add(
   faGraduationCap, 
@@ -20,7 +21,8 @@ library.add(
   faLaptopCode,
   faServer,
   faShippingFast, 
-  faFlask
+  faFlask,
+  fab
   )
 
 class App extends Component {

@@ -4,6 +4,7 @@ import '../styles/About.css';
 import Slide from 'react-reveal/Slide';
 import ContactForm from './ContactForm';
 import {Jumbotron, Button, Nav} from 'react-bootstrap';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import InTheClear from '../images/InTheClear.png';
 import logoShot from '../images/logoShot.png';
 import appStore from '../images/appStore.svg'
@@ -28,7 +29,7 @@ class Projects extends Component {
                 {list.techStack}
               </div>
               <div className="mt-3">
-                <Button variant="outline-secondary" className="mr-2 mb-2 mb-md-0" target="_blank" href={list.github}>Github Repo</Button>
+                <Button variant="outline-secondary" className="mr-2 mb-2 mb-md-0" target="_blank" href={list.github}><FontAwesomeIcon icon={['fab', 'github']}/> Github Repo</Button>
                 <Button variant="outline-secondary" className="mr-2 mb-2 mb-md-0" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
                 {list.name === "In The Clear" && 
                   <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mr-3">
