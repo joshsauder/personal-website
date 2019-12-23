@@ -45,7 +45,7 @@ class Experience extends Component {
               <ExperienceModal modal={this.state.XPOModal} onHide={XPOClose} jobDescription={XPOModalData} index={3}/>
               <div className="container marketing">
                   <Slide right>
-                      <Jumbotron>
+                      <Jumbotron className="shadow-lg">
                           <h1 className="text-center chewy-font">Work Experience</h1>
                           <div className="featurette row">
                               {this.populateList(jobModal)}

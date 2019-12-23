@@ -28,16 +28,16 @@ class Projects extends Component {
                 {list.techStack}
               </div>
               <div className="mt-3">
+                <Button variant="outline-secondary" className="mr-2 mb-2 mb-md-0" href={list.github}>Github Repo</Button>
+                <Button variant="outline-secondary" className="mr-2 mb-2 mb-md-0" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
                 {list.name === "In The Clear" && 
-                  <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mt-3 mr-3">
-                    <img alt="App Store Link" src={appStore}></img>
+                  <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mr-3">
+                     <img alt="App Store Link" src={appStore}></img>
                   </a>
                 }
-                <Button variant="outline-secondary" className="mr-3 mb-md-0 mb-3" href={list.github}>Github Repo</Button>
-                <Button variant="outline-secondary" className="mb-md-0 mb-3" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
               </div>
             </div>
-            <div className="col-md-4"> 
+            <div className="col-md-4 mt-2 mt-md-2"> 
               <div className="featurette-img-align">
                   <img className="featurette-image img-fluid mx-auto rounded" alt="Logo" src={logo}></img>
               </div>
@@ -64,7 +64,7 @@ class Projects extends Component {
         <div className="featurette-divider"></div>
         <div className="container marketing">
           <Slide left>
-              <Jumbotron>
+              <Jumbotron className="shadow-lg">
                 <h1 className="text-center chewy-font mb-4">Projects</h1>
                 <div className="row">
                   <div className="col-md-3">

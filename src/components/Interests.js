@@ -57,7 +57,7 @@ class Personal extends Component {
             <div id={this.props.id}>
                 <div className="container marketing">
                     <Slide right>
-                        <Jumbotron>
+                        <Jumbotron className="shadow-lg">
                             <h1 className="text-center chewy-font mb-4">Interests</h1>
                             <div className="row">
                                 <div className="col-md-3">

@@ -41,7 +41,7 @@ class Education extends Component {
         <ExperienceModal modal={this.state.OSUModal} onHide={OSUClose} jobDescription={OSUModalData} index={4}/>
         <div className="container marketing">
           <Slide left>
-            <Jumbotron>
+            <Jumbotron className="shadow-lg">
               <h1 className="text-center chewy-font">Education</h1>
               <div className="featurette row">
                 <PopulateList list={EducationList}/>
