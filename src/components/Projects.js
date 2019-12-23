@@ -21,7 +21,7 @@ class Projects extends Component {
     return (
       <div className="tab-pane fade show active" id={list.name} role="tabpanel">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-lg-8">
               <div className="lead">
                 {list.description}
               </div>
@@ -29,8 +29,8 @@ class Projects extends Component {
                 {list.techStack}
               </div>
               <div className="mt-3">
-                <Button variant="outline-secondary" className="mr-2 mb-2 mb-md-0" target="_blank" href={list.github}><FontAwesomeIcon icon={['fab', 'github']}/> Github Repo</Button>
-                <Button variant="outline-secondary" className="mr-2 mb-2 mb-md-0" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
+                <Button variant="outline-secondary" className="mr-2 mb-2 mb-lg-0" target="_blank" href={list.github}><FontAwesomeIcon icon={['fab', 'github']}/> Github Repo</Button>
+                <Button variant="outline-secondary" className="mr-2 mb-2 mb-lg-0" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
                 {list.name === "In The Clear" && 
                   <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mr-3">
                      <img alt="App Store Link" src={appStore}></img>
@@ -38,7 +38,7 @@ class Projects extends Component {
                 }
               </div>
             </div>
-            <div className="col-md-4 mt-2 mt-md-2"> 
+            <div className="col-lg-4 mt-2 mt-lg-2"> 
               <div className="featurette-img-align">
                   <img className="featurette-image img-fluid mx-auto rounded" alt="Logo" src={logo}></img>
               </div>
@@ -68,14 +68,14 @@ class Projects extends Component {
               <Jumbotron className="shadow-lg">
                 <h1 className="text-center chewy-font mb-4">Projects</h1>
                 <div className="row">
-                  <div className="col-md-3">
+                  <div className="col-lg-3">
                     <Nav className="flex-column" variant="pills" defaultActiveKey="InTheClear" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
                       {ProjectList.map(project => 
                         <Nav.Link eventKey={project.eventKey} key={project.eventKey} className="navNotActive">{project.name}</Nav.Link>
                       )}
                     </Nav>
                   </div>
-                    <div className="col-md-9">
+                    <div className="col-lg-9">
                       <div className="tab-content" id="tabContent">
                         {project}
                       </div>

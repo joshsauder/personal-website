@@ -13,7 +13,7 @@ function PersonalTab(props){
     return (
         <div className="tab-pane fade show active" id={props.list.title} role="tabpanel">
             <div className="row">
-                <div className="col-md-8">
+                <div className="col-lg-8">
                     <div className="lead">
                         {props.list.description}
                     </div>
@@ -24,7 +24,7 @@ function PersonalTab(props){
                         )}
                     </Card>
                 </div>
-                <div className="col-md-4"> 
+                <div className="col-lg-4"> 
                     <div className="featurette-img-align">
                         <img className="featurette-image img-fluid mx-auto rounded" alt="Logo" src={props.image}></img>
                     </div>
@@ -60,14 +60,14 @@ class Personal extends Component {
                         <Jumbotron className="shadow-lg">
                             <h1 className="text-center chewy-font mb-4">Interests</h1>
                             <div className="row">
-                                <div className="col-md-3">
+                                <div className="col-lg-3">
                                     <Nav className="flex-column" variant="pills" defaultActiveKey="Running" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
                                         {PersonalList.map(item => 
                                             <Nav.Link eventKey={item.title} key={item.title} className="navNotActive">{item.title}</Nav.Link>
                                         )}
                                     </Nav>
                                 </div>
-                                <div className="col-md-9">
+                                <div className="col-lg-9">
                                     <div className="tab-content" id="tabContent">
                                         {interest}
                                     </div>
