@@ -7,7 +7,7 @@ export const NTIModalData = [
     ],
     [
         "MSSQL, Oracle SQL, MySQL",
-        "Replicating data from a HPE NonStop to another HPE Nonstop, Amazon AWS, Oracle, SQL Server, Splunk.",
+        "Replicating data from a HPE NonStop to another HPE Nonstop, AWS RDS, Oracle, SQL Server, Splunk.",
     ]
 
 ]

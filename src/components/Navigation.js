@@ -16,7 +16,6 @@ class Navigation extends React.Component {
     }
 
     componentDidMount(){
-      var scroll = 0
       window.addEventListener('scroll', this.setScrollPos)
     }
 

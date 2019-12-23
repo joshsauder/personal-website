@@ -9,8 +9,8 @@ import JobList from '../data/jobModal.json'
 Populates each Modal with paragraph items 
 */
 function PopulateList(props){
-  var ntiList = props.list
-  const populatedList = ntiList.map((item, index) =>
+  var experienceList = props.list
+  const populatedList = experienceList.map((item, index) =>
     <p key={index}>
       {item}
     </p>
@@ -22,8 +22,8 @@ function PopulateList(props){
 Populates each list 
 */
 function PopulateTechList(props){
-  var ntiTechList = props.list
-  const populatedList = ntiTechList.map((item, index) =>
+  var experienceTechList = props.list
+  const populatedList = experienceTechList.map((item, index) =>
   <li key={index}>
     {item}
   </li>
@@ -38,15 +38,15 @@ class ExperienceModal extends Component {
   constructor(props) {
     super(props)
     this.state = { 
-      NTIShow: props.modal, 
+      ExperienceShow: props.modal, 
     };
 
  }
 
   static getDerivedStateFromProps(nextProps, prevState){
-    if(nextProps.modal !== prevState.NTIShow){
+    if(nextProps.modal !== prevState.ExperienceShow){
         return {
-            NTIShow: nextProps.modal 
+            ExperienceShow: nextProps.modal 
         }
     }else {
         return null;
@@ -56,7 +56,7 @@ class ExperienceModal extends Component {
 
   render() {
     return (
-      <Modal show={this.state.NTIShow} onHide={this.props.onHide}>
+      <Modal show={this.state.ExperienceShow} onHide={this.props.onHide}>
         <Modal.Header closeButton>
           <Modal.Title>
             <p className="modal-p">{JobList[this.props.index].title}</p>

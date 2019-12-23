@@ -6,7 +6,7 @@ import ContactForm from './ContactForm';
 import {Jumbotron, Button, Nav} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import InTheClear from '../images/InTheClear.png';
-import logoShot from '../images/logoShot.png';
+import logoShot from '../images/WebsiteLogo.png';
 import appStore from '../images/appStore.svg'
 import ProjectList from '../data/projects.json';
 
@@ -70,9 +70,9 @@ class Projects extends Component {
                 <div className="row">
                   <div className="col-md-3">
                     <Nav className="flex-column" variant="pills" defaultActiveKey="InTheClear" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
-                      <Nav.Link eventKey="InTheClear" className="navNotActive">In The Clear</Nav.Link>
-                      <Nav.Link eventKey="InTheClearWeb" className="navNotActive">In The Clear Web</Nav.Link>
-                      <Nav.Link eventKey="PersonalWebsite" className="navNotActive">Personal Website</Nav.Link>
+                      {ProjectList.map(project => 
+                        <Nav.Link eventKey={project.eventKey} key={project.eventKey} className="navNotActive">{project.name}</Nav.Link>
+                      )}
                     </Nav>
                   </div>
                     <div className="col-md-9">

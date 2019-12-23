@@ -3,7 +3,7 @@ import ExperienceModal from './ExperienceModal';
 import Slide from 'react-reveal/Slide';
 import { Jumbotron, Button } from 'react-bootstrap';
 import jobModal from '../data/jobModal.json';
-import {NTIModalData, CASModalData, OpenDemiaModalData ,XPOModalData, OSUModalData} from '../data/modal';
+import {NTIModalData, CASModalData, OpenDemiaModalData ,XPOModalData} from '../data/modal';
 import '../styles/About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

@@ -46,12 +46,12 @@ class Personal extends Component {
 
         if(this.state.show === "Running"){
             interest = (<PersonalTab list={PersonalList[0]} image={RunningPic} />)
-        }else if(this.state.show === "Watching OSU Football"){
-            interest = (<PersonalTab list={PersonalList[2]} image={OSUPic} />)
+        }else if(this.state.show === "Ohio State Football"){
+            interest = (<PersonalTab list={PersonalList[1]} image={OSUPic} />)
+        }else if (this.state.show === "Volunteer Work"){
+            interest = (<PersonalTab list={PersonalList[2]} image={SpecialOlympics} />)
         }else if(this.state.show === "Travel"){
             interest = (<PersonalTab list={PersonalList[3]} image={BeachPic} />)
-        }else if (this.state.show === "Volunteer Work"){
-            interest = (<PersonalTab list={PersonalList[1]} image={SpecialOlympics} />)
         }
         return (
             <div id={this.props.id}>
@@ -63,7 +63,7 @@ class Personal extends Component {
                                 <div className="col-md-3">
                                     <Nav className="flex-column" variant="pills" defaultActiveKey="Running" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
                                         {PersonalList.map(item => 
-                                            <Nav.Link eventKey={item.title} className="navNotActive">{item.title}</Nav.Link>
+                                            <Nav.Link eventKey={item.title} key={item.title} className="navNotActive">{item.title}</Nav.Link>
                                         )}
                                     </Nav>
                                 </div>
