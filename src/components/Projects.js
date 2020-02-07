@@ -33,13 +33,22 @@ class Projects extends Component {
               <div className="lead mt-3">
                 {list.techStack}
               </div>
-              <div className="mt-3">
-                <Button variant="outline-secondary" className="mr-2 mb-2 mb-md-0" target="_blank" rel="noopener noreferrer" href={list.github}><FontAwesomeIcon className="github" icon={['fab', 'github']}/> Github Repo</Button>
-                <Button variant="outline-secondary" className="mr-2 mb-2 mb-md-0" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
+              <div className="mt-3 container row">
+                <Button variant="outline-secondary" className="mr-2 mb-2" target="_blank" rel="noopener noreferrer" href={list.github}><FontAwesomeIcon className="github" icon={['fab', 'github']}/> Github Repo</Button>
+                <Button variant="outline-secondary" className="mr-2 mb-2" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
                 {list.name === "In The Clear" && 
-                  <a href="https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8" target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mr-3">
+                  <div className="mb-2">
+                  <a href={list.project} target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mr-3">
                      <img alt="App Store Link" src={appStore}></img>
                   </a>
+                  </div>
+                }
+                {
+                  list.name === "In The Clear Main Page" &&
+                  <React.Fragment>
+                    <Button variant="outline-secondary" className="mr-2 mb-2" target="_blank" rel="noopener noreferrer" href={list.project}>Website</Button>
+                    <Button variant="outline-secondary" className="mb-2" target="_blank" rel="noopener noreferrer" href={list.article}><FontAwesomeIcon className="github" icon={['fab', 'medium']}/> Article</Button>
+                  </React.Fragment>
                 }
               </div>
             </div>
@@ -60,8 +69,10 @@ class Projects extends Component {
       project = this.renderProject(ProjectList[0], InTheClear)      
     }else if(this.state.show === "InTheClearWeb"){
       project = this.renderProject(ProjectList[1], InTheClear)
+    }else if(this.state.show === "InTheClearMain"){
+      project = this.renderProject(ProjectList[2], InTheClear)
     }else if(this.state.show === "PersonalWebsite"){
-      project = this.renderProject(ProjectList[2], logoShot)
+      project = this.renderProject(ProjectList[3], logoShot)
     }
 
     let modalClose = () => this.setState({ modal: false });

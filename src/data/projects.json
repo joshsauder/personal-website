@@ -4,7 +4,8 @@
         "eventKey": "InTheClear",
         "description": "iOS App that allows the user to determine what weather conditions they should expect to experience during their travels.",
         "techStack": "Built using Swift; the backend was built using AWS Lambda and NodeJS. The Podfiles used include Google Maps, Google Places, AlamoFire, and SwiftyJSON.",
-        "github": "https://github.com/joshsauder/In-The-Clear"
+        "github": "https://github.com/joshsauder/In-The-Clear",
+        "project": "https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8"
     },
     {
         "name": "In The Clear Web - Coming Soon!",
@@ -13,6 +14,15 @@
         "techStack": "Built using ReactJS, Bootstrap, NodeJS, ExpressJS, AWS Lambda, AWS ECS/EC2 and MongoDB. Like the iOS app, Google Maps and Google Places are used.",
         "github": "https://github.com/joshsauder/InTheClearWeb"
     }, 
+    {
+        "name": "In The Clear Main Page",
+        "eventKey": "InTheClearMain",
+        "description": "The front facing webpage for In The Clear. It includes a list of features, updates, pricing, and privacy policy.",
+        "techStack": "Built using GatsbyJS, ReactJS, TailwindsCSS, and GraphQL",
+        "github": "https://github.com/joshsauder/InTheClearMainPage",
+        "project": "https://intheclearapp.com",
+        "article": "https://medium.com/@joshsauder/building-a-static-site-using-gatsbyjs-bea653bc0e13?source=friends_link&sk=fade9e0264d54288fe4212838bf0672f"  
+    },
     {
         "name": "Personal Website",
         "eventKey": "PersonalWebsite",
