@@ -11,7 +11,7 @@
         "name": "In The Clear Web - Coming Soon!",
         "eventKey": "InTheClearWeb",
         "description": "A web app that will give the user all the functionality of the In The Clear iOS app.",
-        "techStack": "Built using ReactJS, Bootstrap, NodeJS, ExpressJS, AWS Lambda, AWS ECS/EC2 and MongoDB. Like the iOS app, Google Maps and Google Places are used.",
+        "techStack": "Built using ReactJS, Bootstrap, .Net Core, AWS Lambda, MSSQL, and Docker. Like the iOS app, Google Maps and Google Places are used.",
         "github": "https://github.com/joshsauder/InTheClearWeb"
     }, 
     {
