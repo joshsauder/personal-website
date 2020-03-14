@@ -6,6 +6,7 @@ import ContactForm from './ContactForm';
 import {Jumbotron, Button, Nav} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import InTheClear from '../images/InTheClear.png';
+import InTheClearWhite from '../images/InTheClearFill.png'
 import logoShot from '../images/WebsiteLogo.png';
 import appStore from '../images/appStore.svg'
 import ProjectList from '../data/projects.json';
@@ -68,7 +69,7 @@ class Projects extends Component {
     if(this.state.show === "InTheClear"){
       project = this.renderProject(ProjectList[0], InTheClear)      
     }else if(this.state.show === "InTheClearWeb"){
-      project = this.renderProject(ProjectList[1], InTheClear)
+      project = this.renderProject(ProjectList[1], InTheClearWhite)
     }else if(this.state.show === "InTheClearMain"){
       project = this.renderProject(ProjectList[2], InTheClear)
     }else if(this.state.show === "PersonalWebsite"){
