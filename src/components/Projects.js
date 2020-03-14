@@ -36,7 +36,7 @@ class Projects extends Component {
               <div className="mt-3 container row">
                 <Button variant="outline-secondary" className="mr-2 mb-2" target="_blank" rel="noopener noreferrer" href={list.github}><FontAwesomeIcon className="github" icon={['fab', 'github']}/> Github Repo</Button>
                 <Button variant="outline-secondary" className="mr-2 mb-2" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
-                {list.name === "In The Clear" && 
+                {list.appStore && 
                   <div className="mb-2">
                   <a href={list.appStore} target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mr-3">
                      <img alt="App Store Link" src={appStore}></img>
