@@ -5,14 +5,15 @@
         "description": "iOS App that allows the user to determine what weather conditions they should expect to experience during their travels.",
         "techStack": "Built using Swift; the backend was built using AWS Lambda and NodeJS. The Podfiles used include Google Maps, Google Places, Firebase (Authentication), AlamoFire, and SwiftyJSON.",
         "github": "https://github.com/joshsauder/In-The-Clear",
-        "project": "https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8"
+        "appStore": "https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8"
     },
     {
-        "name": "In The Clear Web - Coming Soon!",
+        "name": "In The Clear Web",
         "eventKey": "InTheClearWeb",
         "description": "A web app that will give the user all the functionality of the In The Clear iOS app.",
         "techStack": "Built using ReactJS, Redux, Firebase (Authentication), Bootstrap, .Net Core, AWS Lambda, MSSQL, and Docker. Like the iOS app, Google Maps and Google Places are used.",
-        "github": "https://github.com/joshsauder/InTheClearWebV2"
+        "github": "https://github.com/joshsauder/InTheClearWebV2",
+        "project": "https://app.intheclearapp.com"
     }, 
     {
         "name": "In The Clear Home Page",

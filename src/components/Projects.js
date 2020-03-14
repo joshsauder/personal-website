@@ -38,16 +38,16 @@ class Projects extends Component {
                 <Button variant="outline-secondary" className="mr-2 mb-2" onClick={() => this.setState({ modal: true, title: `${list.name} Feedback`, alert: false})} title={"Give Feedback on" + list.name}>Feedback</Button> 
                 {list.name === "In The Clear" && 
                   <div className="mb-2">
-                  <a href={list.project} target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mr-3">
+                  <a href={list.appStore} target="_blank" rel="noopener noreferrer" title="Link to In The Clear's App Store page" className="mr-3">
                      <img alt="App Store Link" src={appStore}></img>
                   </a>
                   </div>
                 }
                 {
-                  list.name === "In The Clear Main Page" &&
+                  list.project &&
                   <React.Fragment>
                     <Button variant="outline-secondary" className="mr-2 mb-2" target="_blank" rel="noopener noreferrer" href={list.project}>Website</Button>
-                    <Button variant="outline-secondary" className="mb-2" target="_blank" rel="noopener noreferrer" href={list.article}><FontAwesomeIcon className="github" icon={['fab', 'medium']}/> Article</Button>
+                    { list.article && <Button variant="outline-secondary" className="mb-2" target="_blank" rel="noopener noreferrer" href={list.article}><FontAwesomeIcon className="github" icon={['fab', 'medium']}/> Article</Button> }
                   </React.Fragment>
                 }
               </div>
