@@ -1,5 +1,6 @@
 # Josh Sauder's Personal Website
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/53e04a03-6182-419c-aa29-4eb3945136ad/deploy-status)](https://app.netlify.com/sites/admiring-engelbart-be7c63/deploys)
 
 ### This is the source code for my [personal website](joshsauder.com). This website was build using React via the [create-react-app](https://facebook.github.io/create-react-app/) CLI tool.
