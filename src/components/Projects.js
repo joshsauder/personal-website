@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import '../styles/About.css';
+import ListItems from './ListItems'
 import Slide from 'react-reveal/Slide';
 import ContactForm from './ContactForm';
 import {Jumbotron, Button, Nav} from 'react-bootstrap';
@@ -13,27 +14,6 @@ import logoShot from '../images/WebsiteLogo.png';
 import appStore from '../images/appStore.svg'
 import PathFinder from '../images/PathFinder.png'
 
-
-function createList(item){
-  return (<Nav.Link eventKey={item.eventKey} key={item.eventKey} className="navNotActive">{item.name}</Nav.Link>)
-}
-
-
-function ListItem({project}) {
-  if(project.items.length > 1){
-    let show = false
-    return (
-      <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" role="button" onClick={() => {show=true}}>{project.name}</a>
-        {show &&
-          project.items.map(item => createList(item))
-        }
-      </li>
-    )
-  }else {
-    return createList(project.items[0])
-  }
-}
 
 class Projects extends Component {
 
@@ -116,7 +96,7 @@ class Projects extends Component {
                   <div className="col-lg-3">
                     <Nav className="flex-column" variant="pills" defaultActiveKey="InTheClear" onSelect={selectedKey => this.setState({show: `${selectedKey}`})}>
                       {ProjectList.map(project => 
-                        <ListItem project={project} />
+                        <ListItems project={project} />
                       )}
                     </Nav>
                   </div>

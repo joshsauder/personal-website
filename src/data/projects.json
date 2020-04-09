@@ -3,7 +3,7 @@
         "name": "In The Clear",
         "items": [
             {
-                "name": "In The Clear",
+                "name": "In The Clear iOS App",
                 "eventKey": "InTheClear",
                 "description": "iOS App that allows the user to determine what weather conditions they should expect to experience during their travels.",
                 "techStack": "Built using Swift; the backend was built using AWS Lambda and NodeJS. The Podfiles used include Google Maps, Google Places, Firebase (Authentication), Realm, AlamoFire, and SwiftyJSON.",
