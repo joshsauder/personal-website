@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 import '../styles/Home.css';
 import Slide from 'react-reveal/Slide';
@@ -7,11 +7,9 @@ import Navigation from './Navigation';
 import Particles from 'react-particles-js';
 import { particlesStyle, particlesParam} from '../data/particles';
 
-class Home extends Component {
-
-  render() {
+function Home({id}){
     return (
-      <div id={this.props.id}>
+      <div id={id}>
         <Navigation />
         <Particles  
         style = {particlesStyle}
@@ -46,7 +44,6 @@ class Home extends Component {
         </div>
       </div>
     );
-  }
 }
 
 export default Home;

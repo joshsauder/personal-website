@@ -8,7 +8,7 @@
                 "description": "iOS App that allows the user to determine what weather conditions they should expect to experience during their travels.",
                 "techStack": "Built using Swift; the backend was built using AWS Lambda and NodeJS. The Podfiles used include Google Maps, Google Places, Firebase (Authentication), Realm, AlamoFire, and SwiftyJSON.",
                 "github": "https://github.com/joshsauder/In-The-Clear",
-                "appStore": "https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8"
+                "appStore": "https://apps.apple.com/us/app/in-the-clear/id1458058092?ls=1"
             },
             {
                 "name": "In The Clear Web",
@@ -39,7 +39,7 @@
                 "techStack": "Built using React Native, Typescript, Expo, and Native Base.",
                 "github": "https://github.com/joshsauder/PathFindingVisualization",
                 "project": "https://expo.io/@joshsauder/PathFindingVisualization",
-                "appStore": "https://itunes.apple.com/us/app/in-the-clear/id1458058092?ls=1&#38;mt=8"
+                "appStore": "https://apps.apple.com/us/app/path-finding-visualization/id1506957834?ls=1"
             }
         ]
     },
