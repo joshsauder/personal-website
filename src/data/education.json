@@ -6,15 +6,15 @@
     },
     {
         "title": "Languages and Frameworks",
-        "description": ["Java, Swift, Javascript, AngularJS, ReactJS, HTML5, CSS, Bootstrap, NodeJS, ExpressJS, Spring MVC, MSSQL, MySQL, DynamoDB"],
+        "description": ["Java, Swift, Javascript, HTML5, CSS, ReactJS, AngularJS, Bootstrap, NodeJS, ExpressJS, Spring MVC, MSSQL, MySQL, DynamoDB, MongoDB"],
         "icon": "code"
         
     },
     {
         "title": "What I'm Learning", 
         "description": [
-            "Currently - XCTest, Mocha/Chai, Docker, MongoDB",
-            "Upcoming - GraphQL, Gulp, Kitura (IBM server-side Swift framework)"
+            "Currently - GraphQL, TailwindCSS, .Net Core",
+            "Upcoming - Gulp, Vapor (Server-side Swift framework), NextJS"
         ],
         "icon": "laptop-code"
     }
