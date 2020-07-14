@@ -43,8 +43,8 @@ class Experience extends Component {
         
         return (
             <div id={this.props.id}>
-              <ExperienceModal modal={this.state.NTIModal} onHide={NTIClose} jobDescription={NTIModalData} index={0} />
-              <ExperienceModal modal={this.state.ODModal} onHide={ODClose} jobDescription={OpenDemiaModalData} index={1} />
+              <ExperienceModal modal={this.state.ODModal} onHide={ODClose} jobDescription={OpenDemiaModalData} index={0} />
+              <ExperienceModal modal={this.state.NTIModal} onHide={NTIClose} jobDescription={NTIModalData} index={1} />
               <ExperienceModal modal={this.state.CASModal} onHide={CASClose} jobDescription={CASModalData} index={2}/>
               <ExperienceModal modal={this.state.XPOModal} onHide={XPOClose} jobDescription={XPOModalData} index={3}/>
               <div className="container marketing">
