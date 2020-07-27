@@ -12,6 +12,7 @@ import {
   faServer, 
   faShippingFast, 
   faFlask,
+  faUserFriends
 } from '@fortawesome/free-solid-svg-icons'
 import {fab} from '@fortawesome/free-brands-svg-icons'
 
@@ -22,6 +23,7 @@ library.add(
   faServer,
   faShippingFast, 
   faFlask,
+  faUserFriends,
   fab
   )
 

@@ -1,3 +1,13 @@
+export const MinderaModalData = [
+    [
+        "Coming Soon!",
+        "Technologies Used:"
+    ],
+    [
+        "Also, Coming Soon!"
+    ]
+]
+
 export const NTIModalData = [
     [
         "I worked with customers to implement any projects they were pursuing (system migrations, upgrades, new data endpoints, etc), and solving any issues they run into. This typically involves replicating what they are trying to accomplish, or re-creating the issue they are experiencing.",

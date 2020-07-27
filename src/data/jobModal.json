@@ -1,5 +1,12 @@
 [
     {
+        "company": "Mindera",
+        "title": "Backend Software Developer",
+        "date": "July 2020 - Present",
+        "modal": "MinderaModal",
+        "icon": "user-friends"
+    },
+    {
         "company": "Opendemia",
         "title": "Software Engineer (Part-Time)",
         "date": "August 2019 - Present",
